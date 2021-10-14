@@ -1,0 +1,33 @@
+@import '../../styles/colors.scss';
+
+.navigation {
+  height: 5rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+
+  background: rgba($black, 0.7);
+  color: $white;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style-type: none;
+    font-size: 1.4rem;
+
+    li {
+      height: 100%;
+      margin: 16px;
+    }
+  }
+}
