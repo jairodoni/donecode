@@ -1,5 +1,7 @@
-export default function App() {
-  return <h1>Home</h1>
+import { Routes } from './routes';
+
+function App() {
+  return <Routes />;
 }
 
-
+export default App;
