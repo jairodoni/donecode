@@ -1,10 +1,21 @@
 import { Navigation } from "../components/Navigation";
 
+import developer from '../assets/images/developer.svg'
+import waves from '../assets/images/waves.svg'
+import styles from '../styles/home.module.scss';
+
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <h1>Home</h1>
+      <main className={styles.main_container}>
+        <Navigation />
+        <section className={styles.front_cover}>
+
+          <img className={styles.developer} src={developer} alt="developer" />
+
+          <img className={styles.waves} src={waves} alt="waves" />
+        </section>
+      </main>
     </>
   );
 }
