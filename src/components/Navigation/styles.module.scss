@@ -9,6 +9,7 @@
   justify-content: space-around;
   flex-direction: row;
   position: fixed;
+  z-index: 1;
 
   background: rgba($black, 0.85);
   color: $white;
