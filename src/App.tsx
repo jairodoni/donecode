@@ -2,8 +2,9 @@ import { Navigation } from "./components/Navigation";
 
 import developer from './assets/images/developer.svg'
 import waves from './assets/images/waves.svg'
-import styles from './styles/home.module.scss';
-import { Curriculum } from "./components/Curriculum";
+import { Resume } from "./components/Resume";
+
+import styles from './styles/app.module.scss';
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
 
           <img className={styles.waves} src={waves} alt="waves" />
         </section>
-        <Curriculum />
+        <Resume />
       </main>
     </>
   );
