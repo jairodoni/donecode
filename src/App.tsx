@@ -5,6 +5,7 @@ import waves from './assets/images/waves.svg'
 import { Resume } from "./components/Resume";
 
 import styles from './styles/app.module.scss';
+import { Services } from "./components/Services/intex";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <img className={styles.waves} src={waves} alt="waves" />
         </section>
         <Resume />
+        <Services />
       </main>
     </>
   );

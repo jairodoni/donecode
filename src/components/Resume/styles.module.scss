@@ -89,9 +89,27 @@
 
   .userImage {
     padding: 4px;
-    background: $blue-800;
     border-radius: 50%;
     line-height: 0;
+
+    background: $gray-50;
+    background: rgb(134, 131, 181);
+    background: -moz-linear-gradient(
+      122deg,
+      rgba(134, 131, 181, 1) 0%,
+      rgba(55, 49, 129, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      122deg,
+      rgba(134, 131, 181, 1) 0%,
+      rgba(55, 49, 129, 1) 100%
+    );
+    background: linear-gradient(
+      122deg,
+      rgba(134, 131, 181, 1) 0%,
+      rgba(55, 49, 129, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8683b5",endColorstr="#373181",GradientType=1);
 
     img {
       width: 94px;
@@ -99,6 +117,16 @@
       transform: scaleX(-1);
       border-radius: 50%;
       border: 2px solid $gray-50;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    .info {
+      .button {
+        max-width: none;
+      }
     }
   }
 }
