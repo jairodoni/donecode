@@ -6,6 +6,7 @@ import { Resume } from "./components/Resume";
 
 import styles from './styles/app.module.scss';
 import { Services } from "./components/Services/intex";
+import { SoftwaresOnline } from "./components/SoftwaresOnline";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         </section>
         <Resume />
         <Services />
+        <SoftwaresOnline />
       </main>
     </>
   );
