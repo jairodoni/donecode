@@ -4,7 +4,7 @@ import maisumquiz from '../../assets/images/softwares/maisumquiz.png'
 import spacetraveling from '../../assets/images/softwares/spacetraveling.png'
 import techflix from '../../assets/images/softwares/techflix.png'
 import todo from '../../assets/images/softwares/todo.png'
-import clock from '../../assets/images/softwares/clock.jpg'
+import clock from '../../assets/images/softwares/clock.png'
 
 export function LayoutPrototypes() {
   return (

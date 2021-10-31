@@ -4,5 +4,208 @@
     "office":"Desenvolvedor Frontend",
     "avatar":"https://github.com/jairodoni.png",
     "description":"Sou Programador Frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Ganhei muito conhecimento durante meu tempo na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr), fiz muitas amizades que mantenho até hoje. Procuro trabalhar no desenvolvimento de softwares a fim de me aprimorar profissionalmente e procurar desenvolver soluções inovadoras."
-  }
+  },
+  "deploys":[
+    {
+      "id": 0,
+      "title":"Letmeask",
+      "image_url":"https://i.ibb.co/bzQsjB3/letmeask.png",
+      "repository_url":"https://github.com/jairodoni/Letmeask",
+      "preview_url":"letmeask-7a0d1.web.app",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Firebase",
+          "link": "https://firebase.google.com"
+        },
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "Sass",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "name": "React Hook Form",
+          "link": "https://react-hook-form.com"
+        },
+        {
+          "name": "React Hot Toast",
+          "link": "https://react-hot-toast.com"
+        },
+        {
+          "name": "React Modal",
+          "link": "https://github.com/reactjs/react-modal"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":""
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title":"Space Traveling",
+      "image_url":"https://i.ibb.co/26X4CQN/spacetraveling.png",
+      "repository_url":"https://github.com/jairodoni/space-traveling",
+      "preview_url":"https://space-traveling-jairodoni.vercel.app",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "sass",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "name": "Prismic CMS",
+          "link": "https://prismic.io"
+        },
+        {
+          "name": "Date-fns",
+          "link": "https://date-fns.org"
+        },
+        {
+          "name": "Utteranc",
+          "link": "https://utteranc.es"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title":"Mais Um Quiz",
+      "image_url":"https://i.ibb.co/0f9g4Zz/maisumquiz.png",
+      "repository_url":"https://github.com/jairodoni/MaisUmQuiz-1.0",
+      "preview_url":"quiz-react.jairodoni.vercel.app",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Styled Components",
+          "link": "https://styled-components.com"
+        },
+        {
+          "name": "Frame Motion",
+          "link": "https://www.framer.com/motion/"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title":"Techflix",
+      "image_url":"https://i.ibb.co/hWvQ0Sq/techflix.png",
+      "repository_url":"https://github.com/jairodoni/Techflix",
+      "preview_url":"techflixseries.vercel.app",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "React Router Dom",
+          "link": "https://github.com/remix-run/react-router/tree/main/packages/react-router-dom"
+        },
+        {
+          "name": "Material UI",
+          "link": "https://material-ui.com/pt/"
+        },
+        {
+          "name": "Styled Components",
+          "link": "https://styled-components.com"
+        },
+        {
+          "name": "Concurrently",
+          "link": "https://github.com/open-cli-tools/concurrently"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title":"To-do",
+      "image_url":"https://i.ibb.co/r0nfPN6/todo.png",
+      "repository_url":"https://github.com/jairodoni/To.Do",
+      "preview_url":"todoawesome.vercel.app",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "Webpack",
+          "link": "https://webpack.js.org"
+        },
+        {
+          "name": "Sass",
+          "link": "https://sass-lang.com"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title":"Digital Watch",
+      "image_url":"https://i.ibb.co/5W6RNfM/clock.png",
+      "repository_url":"https://github.com/jairodoni/relogiodigital",
+      "preview_url":"https://jairodoni.github.io/relogiodigital/",
+      "technologies": [
+        {
+          "name": "Javascript"
+        },
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "HTML"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":""
+        }
+      ]
+    }
+  ]
 }

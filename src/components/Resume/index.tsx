@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useProfile } from '../../hooks/useProfile'
 import data from '../../services/data.json'
 import { Perfil } from './Perfil'
 import styles from './styles.module.scss'
@@ -11,7 +12,7 @@ interface User {
 }
 
 export function Resume() {
-  const [user, setUser] = useState<User>(data.user)
+  const { user } = useProfile()
 
   return (
     <div className={styles.container}>

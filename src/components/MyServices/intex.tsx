@@ -4,7 +4,7 @@ import work03 from '../../assets/images/skill03.png'
 
 import styles from './styles.module.scss';
 
-export function Services() {
+export function MyServices() {
   return (
     <div className={styles.container}>
       <div className={styles.diamont}>

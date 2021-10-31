@@ -5,7 +5,7 @@ import waves from './assets/images/waves.svg'
 import { Resume } from "./components/Resume";
 
 import styles from './styles/app.module.scss';
-import { Services } from "./components/Services/intex";
+import { MyServices } from "./components/MyServices/intex";
 import { SoftwaresOnline } from "./components/SoftwaresOnline";
 import { Repositories } from "./components/Repositories";
 import { LayoutPrototypes } from "./components/LayoutPrototypes";
@@ -22,7 +22,7 @@ export default function App() {
           <img className={styles.waves} src={waves} alt="waves" />
         </section>
         <Resume />
-        <Services />
+        <MyServices />
         <SoftwaresOnline />
         <Repositories />
         <LayoutPrototypes />
