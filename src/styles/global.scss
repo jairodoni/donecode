@@ -25,13 +25,14 @@ textarea {
 }
 
 body {
-  background: $white;
+  background: $gray-100;
   color: $gray-800;
   -webkit-font-smoothing: antialiased;
 }
 
 button {
   cursor: pointer;
+  border: unset;
 }
 [disabled] {
   opacity: 0.6;
