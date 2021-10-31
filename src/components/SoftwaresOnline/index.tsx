@@ -12,27 +12,30 @@ export function SoftwaresOnline() {
       <h3>Softwares Online</h3>
       <div className={styles.cardList}>
         <div className={styles.card} >
-          <div className={styles.image}>
-            <img src={letmeask} alt="letmeask" />
-          </div>
+          <img src={letmeask} alt="letmeask" />
           <button type="button">Ver detalhes</button>
         </div>
+
         <div className={styles.card} >
           <img src={maisumquiz} alt="mais um quiz" />
           <button type="button">Ver detalhes</button>
         </div>
+
         <div className={styles.card} >
           <img src={spacetraveling} alt="space traveling" />
           <button type="button">Ver detalhes</button>
         </div>
+
         <div className={styles.card} >
           <img src={techflix} alt="techflix" />
           <button type="button">Ver detalhes</button>
         </div>
+
         <div className={styles.card} >
           <img src={todo} alt="todo" />
           <button type="button">Ver detalhes</button>
         </div>
+
         <div className={styles.card} >
           <img src={clock} alt="clock" />
           <button type="button">Ver detalhes</button>
