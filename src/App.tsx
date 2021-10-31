@@ -8,6 +8,7 @@ import styles from './styles/app.module.scss';
 import { Services } from "./components/Services/intex";
 import { SoftwaresOnline } from "./components/SoftwaresOnline";
 import { Repositories } from "./components/Repositories";
+import { LayoutPrototypes } from "./components/LayoutPrototypes";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Services />
         <SoftwaresOnline />
         <Repositories />
+        <LayoutPrototypes />
       </main>
     </>
   );
