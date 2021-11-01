@@ -3,6 +3,11 @@ export interface User {
   office: string;
   avatar: string;
   description: string;
+  contacts: {
+    email: string;
+    linkedin: string;
+    github: string;
+  };
 }
 
 export interface Deploy {

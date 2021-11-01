@@ -1,0 +1,152 @@
+@import '../../styles/colors.scss';
+
+.footer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $gray-800;
+  color: $gray-50;
+
+  font-family: 'Inter', sans-serif;
+
+  .container {
+    max-width: 1124px;
+    width: 100%;
+    padding: 3rem 5% 2rem;
+    gap: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    position: relative;
+    margin: 0 auto;
+
+    .contacts {
+      max-width: 290px;
+      width: 100%;
+      margin-bottom: 1.2rem;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      a {
+        height: 3.2rem;
+        width: 100%;
+        margin: 10px 0;
+        padding: 1.2rem;
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-weight: 800;
+        svg {
+          margin-right: 15px;
+        }
+      }
+    }
+    .sendMessageForm {
+      max-width: 340px;
+      flex: 1 1 270px;
+
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      label {
+        font-weight: 400;
+      }
+
+      input,
+      textarea {
+        height: 21px;
+        margin-top: 5px;
+        padding: 2px 5px;
+        border-radius: 4px;
+
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        color: $gray-50;
+
+        background: transparent;
+        border: 1px solid $gray-50;
+      }
+
+      input + label {
+        margin-top: 10px;
+      }
+
+      textarea {
+        min-height: 120px;
+        border-radius: 6px;
+        padding: 5px;
+      }
+
+      button {
+        height: 24px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+
+        background: $purple-500;
+        color: $gray-50;
+
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    .container {
+      .contacts {
+        max-width: 100%;
+        width: 100%;
+        a {
+          width: 100%;
+          margin: 15px 0;
+          justify-content: center;
+        }
+      }
+      .sendMessageForm {
+        max-width: 100%;
+        width: max-content;
+        button {
+          height: 34px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .footer {
+    .container {
+      .contacts {
+        a {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
