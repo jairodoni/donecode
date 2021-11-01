@@ -207,5 +207,420 @@
         }
       ]
     }
+  ],
+  "repositories":[
+    {
+      "id": 0,
+      "title":"ignews",
+      "image_url":"https://i.ibb.co/kJss4qh/ignews.png",
+      "repository_url":"https://github.com/jairodoni/ignews",
+      "description":"Ignews é um blog de tecnologia voltado a programação, com serviço pago mensal, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para deselvolvimento de softwares mais eficientes.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Next Auth",
+          "link": "https://next-auth.js.org"
+        },
+        {
+          "name": "GitHub OAuth",
+          "link": "https://docs.github.com/pt/developers/apps/building-oauth-apps/authorizing-oauth-apps"
+        },
+        {
+          "name": "Sass",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "name": "Prismic CMS",
+          "link": "https://prismic.io"
+        },
+        {
+          "name": "FaunaDB",
+          "link": "https://fauna.com"
+        },
+        {
+          "name": "Stripe",
+          "link": "https://fauna.com"
+        },
+        {
+          "name": "Jest",
+          "link": "https://jestjs.io/pt-BR/"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen02.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen05.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen03.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen04.png"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title":"Podcastr",
+      "image_url":"https://i.ibb.co/TmH4mzN/podcastr.png",
+      "repository_url":"https://github.com/jairodoni/Podcastr",
+      "description":"Podcastr é um website para ouvir podcasts que utiliza das principais funções do Next.js, trazendo uma otima performance para a aplicação e uma otima experiencia para o usuario, o Podcastr foi um projeto desenvolvido durante o evento semana NLW#5(Next Level Week 5) com conteudo produzido pela Rocketseat.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Sass",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "name": "JSON Server",
+          "link": "https://github.com/typicode/json-server"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen02.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title":"dtmoney",
+      "image_url":"https://i.ibb.co/XZjhWkH/dtmoney.png",
+      "repository_url":"https://github.com/jairodoni/dtmoney",
+      "description":"dtmoney é uma aplicação para ajudar qualquer pessoa com um pouco de conhecimento financeiro a registrar o dinheiro que entra e o que sai, calculando seus investimentos e lucros.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Mirage",
+          "link": "https://miragejs.com"
+        },
+        {
+          "name": "Styled Components",
+          "link": "https://styled-components.com"
+        },
+        {
+          "name": "React Modal",
+          "link": "https://github.com/reactjs/react-modal"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen02.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title":"Moveit",
+      "image_url":"https://i.ibb.co/VJwq6gv/moveit.png",
+      "repository_url":"https://github.com/jairodoni/Moveit",
+      "description":"Um projeto desenvolvido durante o event NLW04 da Rocketseat.O projeto Moveit tem o intuito de utilizar a tecnica de pomodoro e incentivar as pessoas tirarem um tempo para se alongar durante o trabalho, mantendo a saude e o bem estar do usuario com exercício basicos.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "CSS Modules",
+          "link": "https://github.com/css-modules/css-modules"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen02.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen03.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title":"dashgo",
+      "image_url":"https://i.ibb.co/T4dtMVk/dashgo.png",
+      "repository_url":"https://github.com/jairodoni/dashgo",
+      "description":"Dashgo é um template de dashboard com tecnologias avançadas do frontend, com tela de login, tela com graficos, tabela de usuários e tela de cadastro de usuários.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Mirage",
+          "link": "https://miragejs.com"
+        },
+        {
+          "name": "Chakra UI",
+          "link": "https://chakra-ui.com"
+        },
+        {
+          "name": "Apex Charts",
+          "link": "https://apexcharts.com"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen02.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen03.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title":"DoWhile",
+      "image_url":"https://i.ibb.co/C0ZD2V0/dowhile.png",
+      "repository_url":"https://github.com/jairodoni/DoWhile",
+      "description":"DoWhile foi um projeto desenvolvido durante o evento NLW Heat com aulas produzidas pela Rocketseat. DoWhile é uma plataforma para as pessoas interagirem e comentarem sobre o que esperam do evento DoWhile 2021, o mesmo permite fazer login social com github para com isso criar uma conta e poder interagir com o pessoal.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "React Native",
+          "link": "https://reactnative.dev"
+        },
+        {
+          "name": "Node",
+          "link": "https://nodejs.org/en/"
+        },
+        {
+          "name": "Expo",
+          "link": "https://expo.dev"
+        },
+        {
+          "name": "Sass",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "name": "Prisma",
+          "link": "https://www.prisma.io"
+        },
+        {
+          "name": "Socket.io",
+          "link": "https://socket.io"
+        },
+        {
+          "name": "JWT (JSON Web Token)",
+          "link": "https://jwt.io"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen02.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title":"UPFI",
+      "image_url":"https://i.ibb.co/7QcM3Zy/upfi.png",
+      "repository_url":"https://github.com/jairodoni/upfi",
+      "description":"Upfi é uma plataforma de upload de imagens, onde as pessoas podem divulgar imagens como wallpapers de smartphone ou desktop, podendo subir as imagens diretamente no site.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Next",
+          "link": "https://nextjs.org"
+        },
+        {
+          "name": "Chakra UI",
+          "link": "https://chakra-ui.com"
+        },
+        {
+          "name": "React Hook Form",
+          "link": "https://react-hook-form.com"
+        },
+        {
+          "name": "Fauna",
+          "link": "https://fauna.com"
+        },
+        {
+          "name": "imgBB",
+          "link": "https://pt-br.imgbb.com"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen01.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen02.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen03.png"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title":"BeTheHero",
+      "image_url":"https://i.ibb.co/Gs1wkhn/bethehero.png",
+      "repository_url":"https://github.com/jairodoni/BeTheHero",
+      "description":"O Be The Hero é um projeto social de ajuda ao animais para encontrar doadores para auxiliarem em situações de necessidade. O projeto foi desenvolvido com base nas aulas da semana Omnistack-11.0, evento criado pela Rocketseat.",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "React Native",
+          "link": "https://reactnative.dev"
+        },
+        {
+          "name": "Node",
+          "link": "https://nodejs.org/en/"
+        },
+        {
+          "name": "Expo",
+          "link": "https://expo.dev"
+        },
+        {
+          "name": "Knex",
+          "link": "https://knexjs.org"
+        },
+        {
+          "name": "SQLite",
+          "link": "https://github.com/mapbox/node-sqlite3"
+        },
+        {
+          "name": "Jest",
+          "link": "https://jestjs.io"
+        }
+
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasWeb.png"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasMobile.png"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title":"Ecoleta",
+      "image_url":"https://i.ibb.co/mTW42Jg/ecoleta.png",
+      "repository_url":"https://github.com/jairodoni/Ecoleta",
+      "description": "O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente. O projeto foi desenvolvido com base nas aulas da semana NextLevelWeek#1, evento criado pela Rocketseat.",
+      "technologies": [
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "React Native",
+          "link": "https://reactnative.dev"
+        },
+        {
+          "name": "Node",
+          "link": "https://nodejs.org/en/"
+        },
+        {
+          "name": "Expo",
+          "link": "https://expo.dev"
+        },
+        {
+          "name": "Leaflet",
+          "link": "https://react-leaflet.js.org"
+        },
+        {
+          "name": "Knex",
+          "link": "https://knexjs.org"
+        },
+        {
+          "name": "SQLite",
+          "link": "https://github.com/mapbox/node-sqlite3"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://github.com/jairodoni/Ecoleta/blob/master/.github/ecoleta.png?raw=true"
+        }
+      ]
+    }
   ]
 }

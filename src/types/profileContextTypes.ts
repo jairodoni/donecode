@@ -24,6 +24,7 @@ export interface Repository {
   title: string;
   image_url: string;
   repository_url: string;
+  description: string;
   technologies?: {
     name: string;
     link?: string;

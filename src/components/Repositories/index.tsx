@@ -1,45 +1,53 @@
 import styles from './styles.module.scss';
-import letmeask from '../../assets/images/softwares/letmeask.png'
-import maisumquiz from '../../assets/images/softwares/maisumquiz.png'
-import spacetraveling from '../../assets/images/softwares/spacetraveling.png'
-import techflix from '../../assets/images/softwares/techflix.png'
-import todo from '../../assets/images/softwares/todo.png'
-import clock from '../../assets/images/softwares/clock.png'
+import { useProfile } from '../../hooks/useProfile';
+import { useState } from 'react';
 
 export function Repositories() {
+  const { repositories } = useProfile()
+  const [seeMore, setSeeMore] = useState(false);
+  const repositoriesLimited = repositories.slice(0, 6);
+
+  function handleSeeMore() {
+    setSeeMore(!seeMore)
+  }
+
   return (
     <div className={styles.container}>
       <h3>Repositorios Github</h3>
       <div className={styles.cardList}>
-        <div className={styles.card} >
-          <img src={letmeask} alt="letmeask" />
-          <button type="button">Ver detalhes</button>
-        </div>
+        {seeMore === true ? repositories.map(project => (
+          <div key={project.id} className={styles.card} >
+            <img src={project.image_url} alt={project.title} />
+            <button type="button">Ver detalhes</button>
+          </div>
+        )) :
+          repositoriesLimited.map(project => (
+            <div key={project.id} className={styles.card} >
+              <img src={project.image_url} alt={project.title} />
+              <button type="button" >Ver detalhes</button>
+            </div>
+          ))
+        }
+      </div>
 
-        <div className={styles.card} >
-          <img src={maisumquiz} alt="mais um quiz" />
-          <button type="button">Ver detalhes</button>
-        </div>
-
-        <div className={styles.card} >
-          <img src={spacetraveling} alt="space traveling" />
-          <button type="button">Ver detalhes</button>
-        </div>
-
-        <div className={styles.card} >
-          <img src={techflix} alt="techflix" />
-          <button type="button">Ver detalhes</button>
-        </div>
-
-        <div className={styles.card} >
-          <img src={todo} alt="todo" />
-          <button type="button">Ver detalhes</button>
-        </div>
-
-        <div className={styles.card} >
-          <img src={clock} alt="clock" />
-          <button type="button">Ver detalhes</button>
-        </div>
+      <div className={styles.buttonSeeMore}>
+        {!seeMore ?
+          <button
+            type="button"
+            className={styles.buttonSeeMore}
+            onClick={handleSeeMore}
+          >
+            Ver mais
+          </button>
+          :
+          <button
+            type="button"
+            className={styles.buttonSeeMore}
+            onClick={handleSeeMore}
+          >
+            Ver menos
+          </button>
+        }
       </div>
     </div>
   );
