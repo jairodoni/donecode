@@ -36,5 +36,8 @@ export interface Repository {
 
 export interface Layout {
   id: number;
+  name: string;
+  tool: string;
   image_url: string;
+  layout_url: string;
 }

@@ -6,7 +6,7 @@ interface ProfileContextData {
   user: User;
   deploys: Deploy[];
   repositories: Repository[];
-  // layouts: Layout;
+  layouts: Layout[];
 }
 
 interface ProfileProviderProps {
@@ -19,9 +19,10 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
   const [user, setUser] = useState<User>(profile.user)
   const [deploys, setDeploys] = useState<Deploy[]>(profile.deploys)
   const [repositories, setRepositories] = useState<Repository[]>(profile.repositories)
+  const [layouts, setLayouts] = useState<Layout[]>(profile.layouts)
 
   return (
-    <ProfileContext.Provider value={{ user, deploys, repositories }}>
+    <ProfileContext.Provider value={{ user, deploys, repositories, layouts }}>
       {children}
     </ProfileContext.Provider>
   )

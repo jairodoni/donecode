@@ -622,5 +622,35 @@
         }
       ]
     }
+  ],
+  "layouts":[
+    {
+      "id":0,
+      "name":"My Profile",
+      "tool":"Figma",
+      "image_url":"https://i.ibb.co/9bwbmTT/myprofile02.png",
+      "layout_url":"https://www.figma.com/file/thTK2wiUOn3e3MwpKvGcus/MyProfile?node-id=0%3A1"
+    },
+    {
+      "id":1,
+      "name":"Semana da engenharia",
+      "tool":"Figma",
+      "image_url":"https://i.ibb.co/WPN4dQj/semanadaengenharia.png",
+      "layout_url":"https://www.figma.com/file/f1saEFhn9b5ZghznTPq0R0/UNIFAE---Semana-da-Engenharia?node-id=0%3A1"
+    },
+    {
+      "id":2,
+      "name":"Feira de Profissoes",
+      "tool":"Adobe XD",
+      "image_url":"https://i.ibb.co/wBvzyKK/feiradeprofiss-es.png",
+      "layout_url":"https://xd.adobe.com/view/07d63913-e487-4fa5-9ca0-15fe91342eb6-5285/"
+    },
+    {
+      "id":3,
+      "name":"Petlify",
+      "tool":"Adobe XD",
+      "image_url":"https://i.ibb.co/02mS71Q/petlify01.png",
+      "layout_url":"https://xd.adobe.com/view/48ef2590-3c91-4105-55e8-80b674affac4-3ede/flow"
+    }
   ]
 }
