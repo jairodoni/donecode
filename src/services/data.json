@@ -14,9 +14,11 @@
     {
       "id": 0,
       "title":"Letmeask",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/bzQsjB3/letmeask.png",
       "repository_url":"https://github.com/jairodoni/Letmeask",
-      "preview_url":"letmeask-7a0d1.web.app",
+      "preview_url":"https://letmeask-7a0d1.web.app",
+      "description":"Letmeask é um site que auxilia seus stremmers favoritos ou qualquer pessoa que precise de uma plataforma de gerenciamento de perguntas interagindo com seu publico de forma mais organizada. Letmeask permite criar salas de perguntas onde você pode reunir seu publico para tirar duvidas em tempo real.",
       "technologies": [
         {
           "name": "React",
@@ -49,16 +51,36 @@
       ],
       "screenshots":[
         {
-          "image_url":""
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen01.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen02.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen04.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen03.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen05.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen06.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen07.png?raw=true"
         }
       ]
     },
     {
       "id": 1,
       "title":"Space Traveling",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/26X4CQN/spacetraveling.png",
       "repository_url":"https://github.com/jairodoni/space-traveling",
       "preview_url":"https://space-traveling-jairodoni.vercel.app",
+      "description":"Space Traveling é um blog de tecnologia voltado a programação, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para desenvolvimento de softwares mais eficientes.",
       "technologies": [
         {
           "name": "React",
@@ -91,16 +113,21 @@
       ],
       "screenshots":[
         {
-          "image_url":""
+          "image_url":"https://github.com/jairodoni/space-traveling/blob/master/.github/screen01.gif?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/space-traveling/blob/master/.github/screen02.gif?raw=true"
         }
       ]
     },
     {
       "id": 2,
       "title":"Mais Um Quiz",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/0f9g4Zz/maisumquiz.png",
       "repository_url":"https://github.com/jairodoni/MaisUmQuiz-1.0",
       "preview_url":"quiz-react.jairodoni.vercel.app",
+      "description":"O Mais Um Quiz é com o simples proposito de divertir as pessoas e passar um tempo criado desafios, nesta versão é somente um quiz de react, mas futuramente tera a opção de criar outros quizzes e se desafiar com eles, é um projeto feito na 'Imersão React #2' da Alura e que tera continuidade com aprimoramentos futuros.",
       "technologies": [
         {
           "name": "React",
@@ -121,16 +148,24 @@
       ],
       "screenshots":[
         {
-          "image_url":""
+          "image_url":"https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen01.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen02.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen03.png?raw=true"
         }
       ]
     },
     {
       "id": 3,
       "title":"Techflix",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/hWvQ0Sq/techflix.png",
       "repository_url":"https://github.com/jairodoni/Techflix",
       "preview_url":"techflixseries.vercel.app",
+      "description":"A Techflix é um projeto inspirado na Netflix, utilizando videos do youtube como fonte de conteudo ou divulgação, podendo assitir os videos do proprio site e cadastrar novos videos e categorias, feito na 'Imersão React Alura'.",
       "technologies": [
         {
           "name": "React",
@@ -155,16 +190,33 @@
       ],
       "screenshots":[
         {
-          "image_url":""
+          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech01.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech02.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech03.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech04.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech05.png?raw=true"
+        },
+        {
+          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech06.png?raw=true"
         }
       ]
     },
     {
       "id": 4,
       "title":"To-do",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/r0nfPN6/todo.png",
       "repository_url":"https://github.com/jairodoni/To.Do",
       "preview_url":"todoawesome.vercel.app",
+      "description":"Um projeto desenvolvido durante o Bootcamp Ignite da Rocketseat, o projeto To Do é um projeto basico de listagem de tarefas que pode tanto ser utilizado em trabalho como com coisas do dia a dia, podendo criar tarefas novas confirmar tarefas concluidas e exclui-las tambem",
       "technologies": [
         {
           "name": "React",
@@ -185,16 +237,18 @@
       ],
       "screenshots":[
         {
-          "image_url":""
+          "image_url":"https://github.com/jairodoni/To.Do/blob/main/.github/screen01.png?raw=true"
         }
       ]
     },
     {
       "id": 5,
       "title":"Digital Watch",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/5W6RNfM/clock.png",
       "repository_url":"https://github.com/jairodoni/relogiodigital",
       "preview_url":"https://jairodoni.github.io/relogiodigital/",
+      "description":"Digital Watch é um projeto simple de um website que mostra as horas usando javascript puro.",
       "technologies": [
         {
           "name": "Javascript"
@@ -208,7 +262,7 @@
       ],
       "screenshots":[
         {
-          "image_url":""
+          "image_url":"https://i.ibb.co/8Mghx1K/clock02.png"
         }
       ]
     }
@@ -217,6 +271,7 @@
     {
       "id": 0,
       "title":"ignews",
+      "status":"Em progresso",
       "image_url":"https://i.ibb.co/kJss4qh/ignews.png",
       "repository_url":"https://github.com/jairodoni/ignews",
       "description":"Ignews é um blog de tecnologia voltado a programação, com serviço pago mensal, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para deselvolvimento de softwares mais eficientes.",
@@ -264,25 +319,26 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen05.png"
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen05.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen03.png"
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen03.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen04.png"
+          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen04.png?raw=true"
         }
       ]
     },
     {
       "id": 1,
       "title":"Podcastr",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/TmH4mzN/podcastr.png",
       "repository_url":"https://github.com/jairodoni/Podcastr",
       "description":"Podcastr é um website para ouvir podcasts que utiliza das principais funções do Next.js, trazendo uma otima performance para a aplicação e uma otima experiencia para o usuario, o Podcastr foi um projeto desenvolvido durante o evento semana NLW#5(Next Level Week 5) com conteudo produzido pela Rocketseat.",
@@ -310,16 +366,17 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen02.png?raw=true"
         }
       ]
     },
     {
       "id": 2,
       "title":"dtmoney",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/XZjhWkH/dtmoney.png",
       "repository_url":"https://github.com/jairodoni/dtmoney",
       "description":"dtmoney é uma aplicação para ajudar qualquer pessoa com um pouco de conhecimento financeiro a registrar o dinheiro que entra e o que sai, calculando seus investimentos e lucros.",
@@ -347,16 +404,17 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen02.png?raw=true"
         }
       ]
     },
     {
       "id": 3,
       "title":"Moveit",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/VJwq6gv/moveit.png",
       "repository_url":"https://github.com/jairodoni/Moveit",
       "description":"Um projeto desenvolvido durante o event NLW04 da Rocketseat.O projeto Moveit tem o intuito de utilizar a tecnica de pomodoro e incentivar as pessoas tirarem um tempo para se alongar durante o trabalho, mantendo a saude e o bem estar do usuario com exercício basicos.",
@@ -380,19 +438,20 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen03.png"
+          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen03.png?raw=true"
         }
       ]
     },
     {
       "id": 4,
       "title":"dashgo",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/T4dtMVk/dashgo.png",
       "repository_url":"https://github.com/jairodoni/dashgo",
       "description":"Dashgo é um template de dashboard com tecnologias avançadas do frontend, com tela de login, tela com graficos, tabela de usuários e tela de cadastro de usuários.",
@@ -424,19 +483,20 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen03.png"
+          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen03.png?raw=true"
         }
       ]
     },
     {
       "id": 5,
       "title":"DoWhile",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/C0ZD2V0/dowhile.png",
       "repository_url":"https://github.com/jairodoni/DoWhile",
       "description":"DoWhile foi um projeto desenvolvido durante o evento NLW Heat com aulas produzidas pela Rocketseat. DoWhile é uma plataforma para as pessoas interagirem e comentarem sobre o que esperam do evento DoWhile 2021, o mesmo permite fazer login social com github para com isso criar uma conta e poder interagir com o pessoal.",
@@ -480,16 +540,17 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen02.png?raw=true"
         }
       ]
     },
     {
       "id": 6,
       "title":"UPFI",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/7QcM3Zy/upfi.png",
       "repository_url":"https://github.com/jairodoni/upfi",
       "description":"Upfi é uma plataforma de upload de imagens, onde as pessoas podem divulgar imagens como wallpapers de smartphone ou desktop, podendo subir as imagens diretamente no site.",
@@ -525,19 +586,20 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen01.png"
+          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen02.png"
+          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen03.png"
+          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen03.png?raw=true"
         }
       ]
     },
     {
       "id": 7,
       "title":"BeTheHero",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/Gs1wkhn/bethehero.png",
       "repository_url":"https://github.com/jairodoni/BeTheHero",
       "description":"O Be The Hero é um projeto social de ajuda ao animais para encontrar doadores para auxiliarem em situações de necessidade. O projeto foi desenvolvido com base nas aulas da semana Omnistack-11.0, evento criado pela Rocketseat.",
@@ -574,16 +636,17 @@
       ],
       "screenshots":[
         {
-          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasWeb.png"
+          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasWeb.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasMobile.png"
+          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasMobile.png?raw=true"
         }
       ]
     },
     {
       "id": 8,
       "title":"Ecoleta",
+      "status":"Concluido",
       "image_url":"https://i.ibb.co/mTW42Jg/ecoleta.png",
       "repository_url":"https://github.com/jairodoni/Ecoleta",
       "description": "O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente. O projeto foi desenvolvido com base nas aulas da semana NextLevelWeek#1, evento criado pela Rocketseat.",

@@ -10,26 +10,14 @@ export interface User {
   };
 }
 
-export interface Deploy {
+export interface Project {
   id: number;
   title: string;
-  image_url: string;
-  repository_url: string;
-  preview_url: string;
-  technologies?: {
-    name: string;
-    link?: string;
-  }[];
-  screenshots?: {
-    image_url: string;
-  }[];
-}
-export interface Repository {
-  id: number;
-  title: string;
+  status: string;
   image_url: string;
   repository_url: string;
   description: string;
+  preview_url?: string;
   technologies?: {
     name: string;
     link?: string;
@@ -38,7 +26,6 @@ export interface Repository {
     image_url: string;
   }[];
 }
-
 export interface Layout {
   id: number;
   name: string;
