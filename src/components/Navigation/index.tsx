@@ -7,7 +7,9 @@ export function Navigation() {
   function handleActiveMenu() {
     setActiveMenu(!activeMenu)
   }
+
   const active = activeMenu === false ? "" : styles.active;
+  var windowWidth = window.innerWidth;
 
   return (
     <header className={styles.navigation}>
@@ -19,27 +21,27 @@ export function Navigation() {
           <div className={styles.line3}></div>
         </div>
         <ul className={`${styles.navList} ${active}`} >
-          <li onClick={handleActiveMenu}>
+          <li onClick={windowWidth == 900 ? () => { } : handleActiveMenu}>
             <a href="#resume">
               Curriculo
             </a>
           </li>
-          <li onClick={handleActiveMenu}>
+          <li onClick={windowWidth <= 900 ? handleActiveMenu : () => { }}>
             <a href="#softwares">
               Softwares
             </a>
           </li>
-          <li onClick={handleActiveMenu}>
+          <li onClick={windowWidth <= 900 ? handleActiveMenu : () => { }}>
             <a href="#repositories">
               Repositorios
             </a>
           </li>
-          <li onClick={handleActiveMenu}>
+          <li onClick={windowWidth <= 900 ? handleActiveMenu : () => { }}>
             <a href="#layouts">
               Prototipos
             </a>
           </li>
-          <li onClick={handleActiveMenu}>
+          <li onClick={windowWidth <= 900 ? handleActiveMenu : () => { }}>
             <a href="#contacts">
               Contatos
             </a>

@@ -7,8 +7,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "emailjs": "^3.6.0",
+    "emailjs-com": "^3.2.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-hot-toast": "^2.1.1",
     "react-icons": "^4.3.1",
     "react-modal": "^3.14.3",
     "sass": "^1.43.4"
