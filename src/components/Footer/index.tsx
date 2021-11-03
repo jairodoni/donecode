@@ -11,7 +11,7 @@ export function Footer() {
 
 
   return (
-    <footer className={styles.footer}>
+    <footer id="contacts" className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.contacts}>
           <h3>Contatos:</h3>

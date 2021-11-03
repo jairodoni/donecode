@@ -5,7 +5,7 @@ export function LayoutPrototypes() {
   const { layouts } = useProfile();
 
   return (
-    <div className={styles.container}>
+    <div id="layouts" className={styles.container}>
       <h3>Prototipos de Figma e Adobe XD </h3>
       <div className={styles.cardList}>
 

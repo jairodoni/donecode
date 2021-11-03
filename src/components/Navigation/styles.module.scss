@@ -3,15 +3,12 @@
 .navigation {
   height: 5rem;
   width: 100%;
+  padding: 1rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
   position: fixed;
   z-index: 1;
 
-  background: rgba($black, 0.85);
+  background: rgba($black, 0.9);
   color: $white;
   box-shadow: 0 10px 28px rgba($black, 0.8);
 
@@ -20,17 +17,117 @@
     font-weight: 400;
   }
 
+  nav,
   ul {
     display: flex;
-    flex-direction: row;
+  }
+
+  nav {
+    align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+    .navList {
+      flex-direction: row;
+      justify-content: space-between;
 
-    list-style-type: none;
-    font-size: 1.4rem;
+      list-style: none;
+      font-size: 1.4rem;
 
-    li {
-      height: 100%;
-      margin: 16px;
+      li {
+        height: 100%;
+        margin: 16px;
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+      }
     }
+  }
+  .mobileMenu {
+    display: none;
+    cursor: pointer;
+    div {
+      width: 32px;
+      height: 2px;
+      background: #fff;
+      margin: 8px;
+    }
+  }
+}
+
+/*Tablet e Mobile*/
+
+@media (max-width: 830px) {
+  .navigation {
+    .mobileMenu {
+      display: block;
+    }
+    nav {
+      .navList {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background: rgba($black, 0.9);
+        flex-direction: column;
+        align-items: center;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+
+        li {
+          width: 100%;
+          margin: 0;
+
+          cursor: pointer;
+          border: 1px solid rgba($gray-500, 0.2);
+
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        a {
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+      }
+      .navList.active {
+        transform: translateX(0);
+      }
+    }
+    .mobileMenu.active {
+      .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+    }
+    .mobileMenu.active {
+      .line2 {
+        opacity: 0;
+      }
+    }
+    .mobileMenu.active {
+      .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+    }
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
