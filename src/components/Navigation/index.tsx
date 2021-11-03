@@ -12,7 +12,7 @@ export function Navigation() {
   return (
     <header className={styles.navigation}>
       <nav >
-        <h1>JairoDoni.com</h1>
+        <h1>MyProfile</h1>
         <div className={`${styles.mobileMenu} ` + `${active}`} onClick={handleActiveMenu}>
           <div className={styles.line1}></div>
           <div className={styles.line2}></div>
