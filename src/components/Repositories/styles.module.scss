@@ -12,61 +12,11 @@
   border-bottom: 8px solid $black;
 
   h3 {
-    font-size: 2.8rem;
-    text-align: center;
-    font-family: 'Futura LT', sans-serif;
+    font-size: 2.9rem;
     font-weight: 400;
+    text-align: center;
 
-    margin: 1rem 0 3rem;
-  }
-
-  .cardList {
-    max-width: 980px;
-    margin: 1rem auto 2rem;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 3rem;
-
-    .card {
-      width: 100%;
-      padding-top: 56.25%;
-      border-radius: 24px;
-
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
-
-      transition: all 0.3s ease 0s;
-
-      img {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -18px;
-      }
-      button {
-        width: 100%;
-        height: 38px;
-        position: relative;
-
-        background: $gray-800;
-        color: $white;
-        border-top: 1px solid $purple-500;
-
-        font-size: 1.3rem;
-        font-weight: 700;
-
-        transition: filter 0.2s;
-      }
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      filter: brightness(0.7);
-    }
+    margin: 1rem 0 2.2rem;
   }
 
   .buttonSeeMore {

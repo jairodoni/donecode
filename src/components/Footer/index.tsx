@@ -7,15 +7,15 @@ import { useProfile } from "../../hooks/useProfile";
 
 import styles from './styles.module.scss';
 
-const SERVICE_ID = import.meta.env.VITE_APP_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_APP_TEMPLATE_ID;
-const USER_ID = import.meta.env.VITE_APP_USER_ID;
+const SERVICE_ID = `${import.meta.env.VITE_APP_SERVICE_ID}`;
+const TEMPLATE_ID = `${import.meta.env.VITE_APP_TEMPLATE_ID}`;
+const USER_ID = `${import.meta.env.VITE_APP_USER_ID}`;
 
 export function Footer() {
   const { user } = useProfile()
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const filterContactGithub = user.contacts.github.split('https://www.');
   const filterContactLinkedin = user.contacts.linkedin.split('https://www.');
@@ -23,13 +23,21 @@ export function Footer() {
   function sendEmail(event: FormEvent) {
     event.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, event.target, USER_ID)
-      .then((result: any) => {
+    if (!name || !email || !message) {
+      toast.error('É preciso preencher todos os campos.');
+    } else {
+      const target = event.target as HTMLFormElement;
+
+      try {
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, target, USER_ID);
         toast.success('Mensagem enviada!!! 👏');
-      }, (error: any) => {
+      } catch {
         toast.error('Não foi possivel enviar sua mensagem.');
-      });
-    clearForm()
+      }
+
+      target.reset();
+      clearForm();
+    }
     return;
   }
 
@@ -38,6 +46,7 @@ export function Footer() {
     setEmail("");
     setMessage("");
   }
+
   return (
     <footer id="contacts" className={styles.footer}>
       <Toaster position="top-center" reverseOrder={true} />
@@ -45,15 +54,26 @@ export function Footer() {
         <div className={styles.contacts}>
           <h3>Contatos:</h3>
 
-          <a style={{ background: "#0A66C2" }}>
+          <a
+            href={user.contacts.linkedin}
+            target="_blank"
+            style={{ background: "#0A66C2" }}
+          >
             <ImLinkedin size={28} />
             {filterContactLinkedin}
           </a>
-          <a style={{ background: "#616161" }}>
+          <a
+            href={user.contacts.github}
+            target="_blank"
+            style={{ background: "#616161" }}>
             <SiGithub size={30} />
             {filterContactGithub}
           </a>
-          <a style={{ background: "#C14438" }}>
+          <a
+            href={`mailto:${user.contacts.email}`}
+            target="_blank"
+            style={{ background: "#C14438" }}
+          >
             <SiGmail size={28} />
             {user.contacts.email}
           </a>
@@ -63,7 +83,6 @@ export function Footer() {
           <label htmlFor="name">Nome:</label>
           <input
             type="text"
-            required
             name="name"
             value={name}
             onChange={event => setName(event.target.value)}
@@ -71,7 +90,6 @@ export function Footer() {
           <label htmlFor="email">Email:</label>
           <input
             type="email"
-            required
             name="email"
             value={email}
             onChange={event => setEmail(event.target.value)}
@@ -79,7 +97,6 @@ export function Footer() {
           <label htmlFor="mensagem">Mensagem:</label>
           <textarea
             name="message"
-            required
             value={message}
             onChange={event => setMessage(event.target.value)}
           />

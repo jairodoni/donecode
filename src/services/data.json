@@ -125,7 +125,7 @@
       "title":"Mais Um Quiz",
       "status":"Concluido",
       "image_url":"https://i.ibb.co/0f9g4Zz/maisumquiz.png",
-      "repository_url":"https://github.com/jairodoni/MaisUmQuiz-1.0",
+      "repository_url":"https://quiz-react-jairodoni.vercel.app",
       "preview_url":"quiz-react.jairodoni.vercel.app",
       "description":"O Mais Um Quiz é com o simples proposito de divertir as pessoas e passar um tempo criado desafios, nesta versão é somente um quiz de react, mas futuramente tera a opção de criar outros quizzes e se desafiar com eles, é um projeto feito na 'Imersão React #2' da Alura e que tera continuidade com aprimoramentos futuros.",
       "technologies": [
@@ -376,7 +376,7 @@
     {
       "id": 2,
       "title":"dtmoney",
-      "status":"Concluido",
+      "status":"Em processo",
       "image_url":"https://i.ibb.co/XZjhWkH/dtmoney.png",
       "repository_url":"https://github.com/jairodoni/dtmoney",
       "description":"dtmoney é uma aplicação para ajudar qualquer pessoa com um pouco de conhecimento financeiro a registrar o dinheiro que entra e o que sai, calculando seus investimentos e lucros.",

@@ -33,3 +33,11 @@ export interface Layout {
   image_url: string;
   layout_url: string;
 }
+
+export interface RepositoryGithub {
+  id: number;
+  name: string;
+  html_url: string;
+  description: string;
+  language: string;
+}

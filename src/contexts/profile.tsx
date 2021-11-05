@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useState } from 'react';
-import { User, Project, Layout } from '../types/profileContextTypes'
-import profile from '../services/data.json'
+import { User, Project, Layout } from '../types/profileContextTypes';
+import profile from '../services/data.json';
 
 interface ProfileContextData {
   user: User;
@@ -44,10 +44,10 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
         deploys,
         repositories,
         layouts,
-        showProject,
-        handleOpenCloseModal,
         projectSelected,
-        getProject
+        showProject,
+        getProject,
+        handleOpenCloseModal,
       }}
     >
       {children}

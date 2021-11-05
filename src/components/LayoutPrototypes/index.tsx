@@ -5,7 +5,7 @@ export function LayoutPrototypes() {
   const { layouts } = useProfile();
 
   return (
-    <div id="layouts" className={styles.container}>
+    <section id="layouts" className={styles.container}>
       <h3>Prototipos de Figma e Adobe XD </h3>
       <div className={styles.cardList}>
 
@@ -18,6 +18,6 @@ export function LayoutPrototypes() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

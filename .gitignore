@@ -6,3 +6,5 @@ dist-ssr
 *.development.local
 *.test.local
 *.production.local
+
+.vercel

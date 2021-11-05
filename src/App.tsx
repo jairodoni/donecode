@@ -1,46 +1,25 @@
-import { Navigation } from "./components/Navigation";
+import { useEffect } from 'react';
 import Modal from 'react-modal';
-import { Resume } from "./components/Resume";
-import { MyServices } from "./components/MyServices/intex";
-import { SoftwaresOnline } from "./components/SoftwaresOnline";
-import { Repositories } from "./components/Repositories";
-import { LayoutPrototypes } from "./components/LayoutPrototypes";
-import { Footer } from "./components/Footer";
+import { Routes } from './routes';
+import { ProfileProvider } from './contexts/profile';
+import ReactGA from 'react-ga';
 
-import developer from './assets/images/developer.svg'
-import waves from './assets/images/waves.svg'
-import styles from './styles/app.module.scss';
-import { ProjectModal } from "./components/ProjectModal";
-import { useState } from "react";
-import { useProfile } from "./hooks/useProfile";
-
-Modal.setAppElement('#root')
+Modal.setAppElement('#root');
 
 export default function App() {
-  const { showProject, handleOpenCloseModal } = useProfile()
+  async function initializeGAnalytics() {
+    await ReactGA.initialize(`${import.meta.env.VITE_ANALYTICS_ID}`);
+    await ReactGA.pageview("/");
+  }
+
+  useEffect(() => {
+    initializeGAnalytics();
+  }, []);
+
   return (
-    <>
-      <main className={styles.main_container}>
-        <ProjectModal
-          isOpen={showProject}
-          onRequestClose={handleOpenCloseModal}
 
-        />
-        <Navigation />
-        <section className={styles.front_cover}>
-
-          <img className={styles.developer} src={developer} alt="developer" />
-
-          <img className={styles.waves} src={waves} alt="waves" />
-        </section>
-        <Resume />
-        <MyServices />
-        <SoftwaresOnline />
-        <Repositories />
-        <LayoutPrototypes />
-        <Footer />
-
-      </main>
-    </>
+    <ProfileProvider>
+      <Routes />
+    </ProfileProvider>
   );
 }

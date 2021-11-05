@@ -59,6 +59,7 @@
       .info {
         display: flex;
         justify-content: flex-start;
+        flex-wrap: wrap;
         span,
         a {
           font-size: 0.9rem;

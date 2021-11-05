@@ -1,9 +1,15 @@
-import styles from './styles.module.scss';
-import { useProfile } from '../../hooks/useProfile';
 import { useState } from 'react';
+import Modal from 'react-modal';
+import { BiSearchAlt } from 'react-icons/bi'
+import { useProfile } from '../../hooks/useProfile';
+
+import styles from './styles.module.scss';
+import { CardList } from '../CardList';
+
+Modal.setAppElement('#root')
 
 export function Repositories() {
-  const { repositories, getProject } = useProfile()
+  const { repositories, getProject, } = useProfile()
   const [seeMore, setSeeMore] = useState(false);
   const repositoriesLimited = repositories.slice(0, 6);
 
@@ -12,29 +18,13 @@ export function Repositories() {
   };
 
   return (
-    <div id="repositories" className={styles.container}>
+    <section id="repositories" className={styles.container}>
       <h3>Repositorios Github</h3>
-      <div className={styles.cardList}>
-        {seeMore === true ? repositories.map(project => (
-          <div
-            key={project.id}
-            onClick={() => getProject(project)}
-            className={styles.card}>
-            <img src={project.image_url} alt={project.title} />
-            <button type="button">Ver detalhes</button>
-          </div>
-        )) :
-          repositoriesLimited.map(project => (
-            <div
-              key={project.id}
-              onClick={() => getProject(project)}
-              className={styles.card}>
-              <img src={project.image_url} alt={project.title} />
-              <button type="button" >Ver detalhes</button>
-            </div>
-          ))
-        }
-      </div>
+      <CardList
+        projects={repositories}
+        projectsLimited={repositoriesLimited}
+        seeMore={seeMore}
+      />
 
       <div className={styles.buttonSeeMore}>
         {!seeMore ?
@@ -55,6 +45,6 @@ export function Repositories() {
           </button>
         }
       </div>
-    </div>
+    </section>
   );
 }

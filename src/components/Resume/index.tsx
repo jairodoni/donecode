@@ -1,21 +1,12 @@
-import { useState } from 'react'
 import { useProfile } from '../../hooks/useProfile'
-import data from '../../services/data.json'
 import { Perfil } from './Perfil'
 import styles from './styles.module.scss'
-
-interface User {
-  name: string;
-  avatar: string;
-  office: string;
-  description: string;
-}
 
 export function Resume() {
   const { user } = useProfile()
 
   return (
-    <div id="resume" className={styles.container}>
+    <section id="resume" className={styles.container}>
       <div className={styles.info}>
         <Perfil
           name={user.name}
@@ -33,6 +24,7 @@ export function Resume() {
           <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&&logo=typescript&logoColor=white" alt="typescript" />
           <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&&logo=react&logoColor=61DAFB" alt="react" />
           <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="react native" />
+          <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="next.js" />
           <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="node" />
           <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" />
           <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" />
@@ -60,8 +52,14 @@ export function Resume() {
           <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" alt="bootstrap" />
 
         </div>
-        <a className={styles.button} href="#">Ver Curriculo Completo</a>
+        <a
+          className={styles.button}
+          href="https://drive.google.com/drive/folders/174tOuHsoRAFZyL8cwk_V9paXYP6xefBR?usp=sharing"
+          target="_blank"
+        >
+          Ver Curriculo Completo
+        </a>
       </div>
-    </div>
+    </section>
   )
 }

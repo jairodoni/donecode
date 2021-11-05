@@ -5,7 +5,6 @@ import { BiLink } from 'react-icons/bi'
 import { FaRegImages } from 'react-icons/fa'
 import { RiCloseLine } from 'react-icons/ri'
 import { useProfile } from '../../hooks/useProfile';
-import closeImg from '../../assets/images/close.svg';
 
 import styles from './styles.module.scss';
 
@@ -17,7 +16,7 @@ interface ProjectModalProps {
 export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
   const { projectSelected } = useProfile()
 
-  const statusColor = projectSelected?.status === "Concluido" ? "#00d63c" : "#DBCA2F"
+  const statusColor = projectSelected?.status === "Concluido" ? "#00c237" : "#DBCA2F"
 
   return (
     <Modal
@@ -117,7 +116,11 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
             </label>
             <br />
             {projectSelected?.screenshots?.map(screenshot => (
-              <img key={screenshot.image_url} src={screenshot.image_url} alt="screenshot" />
+              <img
+                key={screenshot.image_url}
+                src={screenshot.image_url}
+                alt="screenshot"
+              />
             ))}
           </div>
         </div>

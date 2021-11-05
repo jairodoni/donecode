@@ -6,8 +6,8 @@ import styles from './styles.module.scss';
 
 export function MyServices() {
   return (
-    <div className={styles.container}>
-      <div className={styles.diamont}>
+    <section className={styles.container}>
+      <div id="servicos" className={styles.diamont}>
 
         <h3>Meus Serviços</h3>
 
@@ -17,6 +17,6 @@ export function MyServices() {
           <img src={work03} alt="Prototipagem de Design" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
