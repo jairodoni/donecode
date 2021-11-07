@@ -4,7 +4,7 @@ import { Resume } from "../components/Resume";
 import { MyServices } from "../components/MyServices/intex";
 import { SoftwaresOnline } from "../components/SoftwaresOnline";
 import { Repositories } from "../components/Repositories";
-import { LayoutPrototypes } from "../components/LayoutPrototypes";
+import { PrototypesUI } from "../components/PrototypesUI";
 import { Footer } from "../components/Footer";
 import { ProjectModal } from "../components/ProjectModal";
 
@@ -31,7 +31,7 @@ export default function Home() {
         <MyServices />
         <SoftwaresOnline />
         <Repositories />
-        <LayoutPrototypes />
+        <PrototypesUI />
         <Footer />
 
         <ProjectModal

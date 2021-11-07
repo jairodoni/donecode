@@ -6,7 +6,7 @@ export function Resume() {
   const { user } = useProfile()
 
   return (
-    <section id="resume" className={styles.container}>
+    <section id="about_me" className={styles.container}>
       <div className={styles.info}>
         <Perfil
           name={user.name}

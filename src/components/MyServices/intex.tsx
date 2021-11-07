@@ -1,6 +1,6 @@
-import work01 from '../../assets/images/skill01.png'
-import work02 from '../../assets/images/skill02.png'
-import work03 from '../../assets/images/skill03.png'
+import service01 from '../../assets/images/service01.png';
+import service02 from '../../assets/images/service02.png';
+import service03 from '../../assets/images/service03.png';
 
 import styles from './styles.module.scss';
 
@@ -12,9 +12,9 @@ export function MyServices() {
         <h3>Meus Serviços</h3>
 
         <div className={styles.work}>
-          <img src={work01} alt="Web Designer" />
-          <img src={work02} alt="Desenvolvedor Frontend" />
-          <img src={work03} alt="Prototipagem de Design" />
+          <img src={service01} alt="Web Design" />
+          <img src={service02} alt="Desenvolvedor Frontend" />
+          <img src={service03} alt="UI Desig" />
         </div>
       </div>
     </section>

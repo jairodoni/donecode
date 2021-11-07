@@ -28,13 +28,15 @@
     flex-direction: row;
 
     h1 {
-      font-size: 1.8rem;
-      font-weight: 400;
+      font-size: 2.3rem;
+      font-weight: 600;
       a {
         color: $gray-50;
         text-decoration: none;
       }
-
+      span {
+        font-size: 2.8rem;
+      }
       transition: filter 0.3s ease;
 
       &:hover {
@@ -58,7 +60,7 @@
         justify-content: center;
         align-items: center;
 
-        color: $white;
+        color: $gray-50;
         text-decoration: none;
 
         transition: background 0.2s ease-in;
@@ -80,7 +82,7 @@
       width: 32px;
       height: 2px;
       border-radius: 8px;
-      background: #fff;
+      background: #f5f5f5;
       margin: 8px;
     }
   }
@@ -88,7 +90,7 @@
 
 /*Tablet e Mobile*/
 
-@media (max-width: 830px) {
+@media (max-width: 990px) {
   .navigation {
     padding: 0 1.1rem;
     .mobileMenu {
