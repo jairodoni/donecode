@@ -1,6 +1,6 @@
 import { useProfile } from "../hooks/useProfile";
 import { Navigation } from "../components/Navigation";
-import { Resume } from "../components/Resume";
+import { AboutMe } from "../components/AboutMe";
 import { MyServices } from "../components/MyServices/intex";
 import { SoftwaresOnline } from "../components/SoftwaresOnline";
 import { Repositories } from "../components/Repositories";
@@ -27,7 +27,7 @@ export default function Home() {
           <img className={styles.waves} src={waves} alt="waves" />
         </section>
 
-        <Resume />
+        <AboutMe />
         <MyServices />
         <SoftwaresOnline />
         <Repositories />

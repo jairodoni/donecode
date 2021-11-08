@@ -68,7 +68,7 @@ export function Navigation() {
           <ul className={`${styles.navList} ${active}`} >
             <li onClick={mobileMenu}>
               <a href="#about_me">
-                Curriculo
+                Sobre mim
               </a>
             </li>
             <li onClick={mobileMenu}>

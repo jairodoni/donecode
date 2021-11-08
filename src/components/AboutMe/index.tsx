@@ -2,7 +2,7 @@ import { useProfile } from '../../hooks/useProfile'
 import { Perfil } from './Perfil'
 import styles from './styles.module.scss'
 
-export function Resume() {
+export function AboutMe() {
   const { user } = useProfile()
 
   return (

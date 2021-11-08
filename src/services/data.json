@@ -3,7 +3,7 @@
     "name":"Jairo Doni",
     "office":"Desenvolvedor Frontend",
     "avatar":"https://github.com/jairodoni.png",
-    "description":"Sou Programador Frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Ganhei muito conhecimento durante meu tempo na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr), fiz muitas amizades que mantenho até hoje. Procuro trabalhar no desenvolvimento de softwares a fim de me aprimorar profissionalmente e procurar desenvolver soluções inovadoras.",
+    "description":"Ola sou Jairo, Programador Frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Alem disso sou focado, gosto de aprender e gosto de trabalhar em equipe. Ganhei muito conhecimento durante meu tempo na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr). Procuro trabalhar no desenvolvimento de softwares a fim de me aprimorar profissionalmente e procurar desenvolver soluções inovadoras.",
     "contacts":{
       "email":"jairo.doni97@gmail.com",
       "linkedin":"https://www.linkedin.com/in/jairodoni",
@@ -95,7 +95,7 @@
           "link": "https://www.typescriptlang.org"
         },
         {
-          "name": "sass",
+          "name": "Sass",
           "link": "https://sass-lang.com"
         },
         {
@@ -125,8 +125,8 @@
       "title":"Mais Um Quiz",
       "status":"Concluido",
       "image_url":"https://i.ibb.co/0f9g4Zz/maisumquiz.png",
-      "repository_url":"https://quiz-react-jairodoni.vercel.app",
-      "preview_url":"quiz-react.jairodoni.vercel.app",
+      "repository_url":"https://github.com/jairodoni/MaisUmQuiz-1.0",
+      "preview_url":"https://quiz-react.jairodoni.vercel.app",
       "description":"O Mais Um Quiz é com o simples proposito de divertir as pessoas e passar um tempo criado desafios, nesta versão é somente um quiz de react, mas futuramente tera a opção de criar outros quizzes e se desafiar com eles, é um projeto feito na 'Imersão React #2' da Alura e que tera continuidade com aprimoramentos futuros.",
       "technologies": [
         {
@@ -164,7 +164,7 @@
       "status":"Concluido",
       "image_url":"https://i.ibb.co/hWvQ0Sq/techflix.png",
       "repository_url":"https://github.com/jairodoni/Techflix",
-      "preview_url":"techflixseries.vercel.app",
+      "preview_url":"https://techflixseries.vercel.app",
       "description":"A Techflix é um projeto inspirado na Netflix, utilizando videos do youtube como fonte de conteudo ou divulgação, podendo assitir os videos do proprio site e cadastrar novos videos e categorias, feito na 'Imersão React Alura'.",
       "technologies": [
         {
@@ -215,7 +215,7 @@
       "status":"Concluido",
       "image_url":"https://i.ibb.co/r0nfPN6/todo.png",
       "repository_url":"https://github.com/jairodoni/To.Do",
-      "preview_url":"todoawesome.vercel.app",
+      "preview_url":"https://todoawesome.vercel.app",
       "description":"Um projeto desenvolvido durante o Bootcamp Ignite da Rocketseat, o projeto To Do é um projeto basico de listagem de tarefas que pode tanto ser utilizado em trabalho como com coisas do dia a dia, podendo criar tarefas novas confirmar tarefas concluidas e exclui-las tambem",
       "technologies": [
         {
@@ -310,7 +310,7 @@
         },
         {
           "name": "Stripe",
-          "link": "https://fauna.com"
+          "link": "https://stripe.com/en-br"
         },
         {
           "name": "Jest",
@@ -694,7 +694,7 @@
   "layouts":[
     {
       "id":0,
-      "name":"My Profile",
+      "name":"Donicode",
       "tool":"Figma",
       "image_url":"https://i.ibb.co/9bwbmTT/myprofile02.png",
       "layout_url":"https://www.figma.com/file/thTK2wiUOn3e3MwpKvGcus/MyProfile?node-id=0%3A1"

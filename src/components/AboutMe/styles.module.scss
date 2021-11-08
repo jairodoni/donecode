@@ -75,14 +75,15 @@
   display: flex;
   align-items: center;
 
+  padding: 16px 0;
+
   div:last-child {
     display: inline;
-    margin-left: 10px;
+    margin-left: 15px;
 
     h1,
     h2 {
       font-family: 'Montserrat';
-      margin: 16px 0;
     }
 
     h1 {
@@ -91,6 +92,7 @@
     }
 
     h2 {
+      margin-top: 14px;
       font-weight: 400;
       font-size: 1.5rem;
     }
@@ -102,23 +104,11 @@
     line-height: 0;
 
     background: $gray-50;
-    background: rgb(134, 131, 181);
-    background: -moz-linear-gradient(
-      122deg,
-      rgba(134, 131, 181, 1) 0%,
-      rgba(55, 49, 129, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      122deg,
-      rgba(134, 131, 181, 1) 0%,
-      rgba(55, 49, 129, 1) 100%
-    );
-    background: linear-gradient(
-      122deg,
-      rgba(134, 131, 181, 1) 0%,
-      rgba(55, 49, 129, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8683b5",endColorstr="#373181",GradientType=1);
+    background: #9e96f2;
+    background: -moz-linear-gradient(122deg, #9e96f2 0%, #393197 100%);
+    background: -webkit-linear-gradient(122deg, #9e96f2 0%, #393197 100%);
+    background: linear-gradient(122deg, #9e96f2 0%, #393197 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9E96F2",endColorstr="#393197",GradientType=1);
 
     img {
       width: 94px;
@@ -130,6 +120,13 @@
   }
 }
 
+@media (max-width: 720px) {
+  .perfil {
+    div:last-child {
+      margin-left: 10px;
+    }
+  }
+}
 @media (max-width: 480px) {
   .container {
     .info {

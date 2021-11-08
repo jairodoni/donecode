@@ -66,3 +66,15 @@
     }
   }
 }
+
+@media (max-width: 680px) {
+  .container {
+    .cardList {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      .card {
+        border-radius: 18px;
+      }
+    }
+  }
+}

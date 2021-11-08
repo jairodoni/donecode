@@ -62,8 +62,8 @@ button {
 .react-modal-content {
   height: 95%;
   width: 90%;
-  max-width: 650px;
-  max-height: 700px;
+  max-width: 750px;
+  max-height: 850px;
   background: $gray-100;
 
   position: fixed;
@@ -90,7 +90,7 @@ button {
   }
 }
 
-/* width */
+/* width scrollbar */
 ::-webkit-scrollbar {
   width: 0;
   height: 0;

@@ -49,3 +49,13 @@
     filter: brightness(0.7);
   }
 }
+
+@media (max-width: 680px) {
+  .cardList {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    .card {
+      border-radius: 18px;
+    }
+  }
+}
