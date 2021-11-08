@@ -54,7 +54,7 @@ export function AboutMe() {
         </div>
         <a
           className={styles.button}
-          href="https://drive.google.com/drive/folders/174tOuHsoRAFZyL8cwk_V9paXYP6xefBR?usp=sharing"
+          href={user.resume}
           target="_blank"
         >
           Ver Curriculo Completo

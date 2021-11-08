@@ -3,6 +3,7 @@ export interface User {
   office: string;
   avatar: string;
   description: string;
+  resume: string;
   contacts: {
     email: string;
     linkedin: string;
