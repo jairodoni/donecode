@@ -57,6 +57,10 @@ button {
   align-items: center;
   justify-content: center;
   z-index: 2;
+
+  -webkit-animation: react-modal-overlay 1.2s
+    cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: react-modal-overlay 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 .react-modal-content {
@@ -67,8 +71,12 @@ button {
   background: $gray-100;
 
   position: fixed;
-  border-radius: 2rem;
+  border-radius: 2.5rem 2.5rem 2rem 2rem;
   z-index: 2;
+
+  -webkit-animation: react-modal-content 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: react-modal-content 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .react-modal-close {
@@ -94,4 +102,49 @@ button {
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+@-webkit-keyframes react-modal-content {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    filter: blur(6px);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes react-modal-content {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    filter: blur(6px);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes react-modal-overlay {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes react-modal-overlay {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }

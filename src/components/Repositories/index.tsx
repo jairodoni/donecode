@@ -1,15 +1,11 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
-import { BiSearchAlt } from 'react-icons/bi'
 import { useProfile } from '../../hooks/useProfile';
-
-import styles from './styles.module.scss';
 import { CardList } from '../CardList';
 
-Modal.setAppElement('#root')
+import styles from './styles.module.scss';
 
 export function Repositories() {
-  const { repositories, getProject, } = useProfile()
+  const { repositories } = useProfile()
   const [seeMore, setSeeMore] = useState(false);
   const repositoriesLimited = repositories.slice(0, 6);
 

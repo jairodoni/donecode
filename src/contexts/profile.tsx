@@ -36,7 +36,6 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
     handleOpenCloseModal();
   }
 
-
   return (
     <ProfileContext.Provider
       value={{

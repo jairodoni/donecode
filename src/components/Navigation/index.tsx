@@ -1,65 +1,141 @@
 import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router';
+import { motion } from "framer-motion";
+
 import styles from './styles.module.scss';
 
 export function Navigation() {
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(window.innerWidth <= 980 ? false : true);
+
+  const windowWidth = window.innerWidth;
+
+  const container = {
+    hidden: { opacity: 1, scale: 1 },
+    open: {
+      opacity: 1,
+      x: 0,
+
+      transition: {
+        delayChildren: windowWidth <= 980 ? 0.3 : 0.2,
+        staggerChildren: windowWidth <= 980 ? 0.2 : 0.1
+      }
+    },
+    closed: { opacity: 0, x: "100%" },
+  };
+
+  const item = {
+    hidden: { x: 16, opacity: 0 },
+    open: {
+      x: 0,
+      opacity: 1
+    }
+  };
 
   function handleActiveMenu() {
     setActiveMenu(!activeMenu)
   }
 
-  var windowWidth = window.innerWidth;
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (window.innerWidth > 980) {
+        setActiveMenu(true)
+      }
+    }, 2000);
+
+    return () => clearInterval(timer);
+  }, [])
+
   const mobileMenu = windowWidth <= 900 ? handleActiveMenu : () => { };
   const active = activeMenu === false ? "" : styles.active;
 
-
   return (
     <header className={styles.navigation} >
-      <nav >
-        <h1 onClick={activeMenu === true ? mobileMenu : () => { }}>
-          <a href="#start">
+      <nav>
+        <motion.h1
+          variants={container}
+          initial="hidden"
+          animate="open"
+          onClick={activeMenu ? mobileMenu : () => { }}
+        >
+          <motion.a href="#start" className="item" variants={item} >
             donicode
             <span style={{ color: "#7064fb" }}>.</span>
-          </a>
-        </h1>
-        <div className={`${styles.mobileMenu} ` + `${active}`} onClick={handleActiveMenu}>
+          </motion.a>
+        </motion.h1>
+        <div className={`${styles.mobileMenu} ${active}`} onClick={handleActiveMenu}>
           <div className={styles.line1}></div>
           <div className={styles.line2}></div>
           <div className={styles.line3}></div>
         </div>
-        <ul className={`${styles.navList} ${active}`} >
+        <motion.ul
+          className={`${styles.navList} ${active}`}
+          variants={container}
+          initial="hidden"
+          animate={activeMenu ? "open" : "closed"}
+        >
           <li onClick={mobileMenu}>
-            <a href="#about_me">
-              Sobre mim
-            </a>
+            <motion.a
+              href="#start"
+              className="item"
+              variants={item}
+            >
+              Início
+            </motion.a>
           </li>
           <li onClick={mobileMenu}>
-            <a href="#servicos">
+            <motion.a
+              href="#about_me"
+              className="item"
+              variants={item}
+            >
+              Sobre
+            </motion.a>
+          </li>
+          <li onClick={mobileMenu}>
+            <motion.a
+              href="#services"
+              className="item"
+              variants={item}
+            >
               Serviços
-            </a>
+            </motion.a>
           </li>
           <li onClick={mobileMenu}>
-            <a href="#softwares">
+            <motion.a
+              href="#softwares"
+              className="item"
+              variants={item}
+            >
               Softwares
-            </a>
+            </motion.a>
           </li>
           <li onClick={mobileMenu}>
-            <a href="#repositories">
+            <motion.a
+              href="#repositories"
+              className="item"
+              variants={item}
+            >
               Repositorios
-            </a>
+            </motion.a>
           </li>
           <li onClick={mobileMenu}>
-            <a href="#layouts">
+            <motion.a
+              href="#layouts"
+              className="item"
+              variants={item}
+            >
               Prototipos UI
-            </a>
+            </motion.a>
           </li>
           <li onClick={mobileMenu}>
-            <a href="#contacts">
+            <motion.a
+              href="#contacts"
+              className="item"
+              variants={item}
+            >
               Contatos
-            </a>
+            </motion.a>
           </li>
-        </ul>
+        </motion.ul>
       </nav>
     </header >
   )
