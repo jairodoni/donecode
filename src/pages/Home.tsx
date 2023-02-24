@@ -12,10 +12,12 @@ import developer from '../assets/images/developer.svg'
 import waves from '../assets/images/waves.svg'
 
 import styles from '../styles/Home.module.scss';
+import { Contributions } from "../components/Contributions";
+import { ProjectModalApp } from "../components/ProjectModalApp";
 
 
 export default function Home() {
-  const { showProject, handleOpenCloseModal } = useProfile();
+  const { showProject, handleOpenCloseModal, showContribution, handleOpenCloseModalApp } = useProfile();
 
   return (
     <>
@@ -29,14 +31,19 @@ export default function Home() {
 
         <AboutMe />
         <MyServices />
-        <SoftwaresOnline />
+        <Contributions />
         <Repositories />
-        <PrototypesUI />
+        <SoftwaresOnline />
+        {/* <PrototypesUI /> */}
         <Footer />
 
         <ProjectModal
           isOpen={showProject}
           onRequestClose={handleOpenCloseModal}
+        />
+        <ProjectModalApp
+          isOpen={showContribution}
+          onRequestClose={handleOpenCloseModalApp}
         />
       </main>
     </>

@@ -1,0 +1,72 @@
+@import '../../styles/colors.scss';
+
+.cardList {
+  max-width: 1060px;
+  margin: 6rem auto 2rem;
+
+  display: grid;
+  
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
+  
+
+  .containerApp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+      margin-top: 80px;
+      margin-bottom: 5rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      text-shadow:
+      -2px 0px 0px #333,
+      2px 0px 0px #333,
+      0px -2px 0px #333,
+      0px 2px 0px #333;
+      color: #eee;
+      
+      font-size: 45px;
+      font-weight: 900;
+      flex-wrap: wrap;
+
+      
+    }
+    
+    .card {
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+
+      transition: all 0.3s ease 0s;
+
+      img {
+        width: 100%;
+      }
+    }
+    .card:hover {
+      filter: brightness(0.7);
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .cardList {
+    gap: 1.5rem;
+    .card {
+      border-radius: 18px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .cardList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

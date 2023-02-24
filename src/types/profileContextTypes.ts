@@ -10,7 +10,33 @@ export interface User {
     github: string;
   };
 }
-
+export interface Contribution {
+  id: number;
+  name: string;
+  logo: string;
+  logo_large: string;
+  description: string;
+  status: string;
+  play_store: string;
+  apple_store: string;
+  data_apple_store: {
+    rating: string,
+    number_rating: string,
+    number_downloads: string | null 
+  },
+  data_play_store: {
+    rating: string,
+    number_rating: string,
+    number_downloads: string | null 
+  },
+  technologies?: {
+    name: string;
+    link?: string;
+  }[];
+  screenshots?: {
+    image_url: string;
+  }[];
+}
 export interface Project {
   id: number;
   title: string;

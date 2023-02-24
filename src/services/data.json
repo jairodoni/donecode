@@ -3,7 +3,7 @@
     "name":"Jairo Doni",
     "office":"Desenvolvedor Frontend",
     "avatar":"https://i.ibb.co/8brKLrv/avatar.jpg",
-    "description":"Ola sou Jairo, programador frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Alem disso tenho foco no que eu faço, gosto de aprender e gosto de trabalhar em equipe. Ganhei muito conhecimento durante meu tempo na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr). Procuro trabalhar no desenvolvimento de softwares a fim de me aprimorar profissionalmente e procurar desenvolver soluções inovadoras.",
+    "description":"Ola sou Jairo, sou Programador Frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Aprendi muito na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr). Na Scale System aprimorei meu conhecimento em desenvolvendo de Aplicações Web como aplicativos e sites. Pretendo desenvolver minha carreira como programador aprendendo a lidar com situações diferentes e desafios no dia a dia.",
     "resume":"https://drive.google.com/file/d/1A3NUYCGpzp-4-j_D5gzSgwnGZs0j3rXH/view",
     "contacts":{
       "email":"jairo.doni97@gmail.com",
@@ -11,6 +11,198 @@
       "github":"https://www.github.com/jairodoni"
     }
   },
+  "contributions": [
+    {
+      "id": 0,
+      "name":"Cinesystem",
+      "logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK9NVgiQVUSprpIzL61j2gKMz8oJOMESuX9S0f0yyIASUf4WS0wuZUIzVlrNegvb0gepc&usqp=CAU",
+      "logo_large":"https://pbs.twimg.com/media/EPAAalhXsAAfwgs?format=jpg&name=medium",
+      "description":"Aplicativo para consultar informações de filmes em estreia nos cinemas e demais filmes já lançados, além de poder ver os horários dos cinemas Cinesystem e promoções relacionadas em várias localidades.",
+      "status": "Ativo",
+      "play_store":"https://play.google.com/store/apps/details?id=am4.cinesystem&hl=pt_BR&gl=US",
+      "apple_store":"https://apps.apple.com/br/app/cinesystem-cinemas/id659629749",
+      "data_apple_store": {
+        "rating": "4,5 avaliação geral",
+        "number_rating": "1,2 mil avaliações",
+        "number_downloads": null
+      },
+      "data_play_store": {
+        "rating": "3,2 avaliação geral",
+        "number_rating": "7,55 mil avaliações",
+        "number_downloads": "500 mil+ Downloads"
+      },
+      "technologies": [
+        {
+          "name": "Javascript",
+          "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        },
+        {
+          "name": "React Native",
+          "link": "https://reactnative.dev/"
+        },
+        {
+          "name": "Redux",
+          "link": "https://redux.js.org/"
+        },
+        {
+          "name": "Redux Saga",
+          "link": "https://redux-saga.js.org/"
+        },
+        {
+          "name": "Native Base",
+          "link": "https://nativebase.io/"
+        },
+        {
+          "name": "CSS",
+          "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://play-lh.googleusercontent.com/IglWkNBQB5jcnDobVFzTCHgl5gzPZ8Na2RNFAMO4lGENiKtzUW4Mhl7as74xEJeK7Q=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/mWYsxeQDftuquPpootbOWZ6hthwfWvlDw-oTB1V1il71CCS4UvkwbBnIn-gLFgrW0Vw=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/VUVZ5aoIBcJGrPKj0boI3-jDT6iOylibCvVOhw39LRPJJSEMLGIG2EOw5u8iowADXeU=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/dW4JaDauJMG1_MIIafui6VHQAU5H6ZOtyfhZFO8bM8ERjdYUOjM3PGCyOxg_6BfBc2c=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/11RoEEGBPB37SsaCxHc4i3s7X3vjIOTaQiDIeuaTpX8AuxT2Z87l8mnVDjPFnyv06dQk=w2560-h1440"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name":"Kinoplex",
+      "logo":"https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/245801268_5114218188592630_805299112951462099_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mqZxPhc50a0AX8Cqwn7&_nc_oc=AQmBKJt8BkNiqYjC47Tv4YwW8f6xINl2SgdRWbKgWxuyoDd02txYAtREbavNqZWMhqY&_nc_ht=scontent-gru2-1.xx&oh=00_AfDCV8UXlyrM1NzW79Om5y1wMl1Y_IgfelqeI4s9ZZnTEg&oe=63FE629A",
+      "logo_large":"https://souleblon.com.br/wp-content/uploads/2016/02/kinoplex-leblon-logo.jpg",
+      "description":"Aplicativo para consultar informações de filmes em estreia nos cinemas e demais filmes já lançados, além de poder ver os horários dos cinemas Kinoplex e promoções relacionadas em várias localidades.",
+      "status": "Ativo",
+      "play_store":"https://play.google.com/store/apps/details?id=com.scale.kinoplex&hl=pt_BR&gl=US",
+      "apple_store":"https://apps.apple.com/br/app/kinoplex/id1166999530",
+      "data_apple_store": {
+        "rating": "4,8 avaliação geral",
+        "number_rating": "3,5 mil avaliações",
+        "number_downloads": null
+      },
+      "data_play_store": {
+        "rating": "4,4 avaliação geral",
+        "number_rating": "3 mil avaliações",
+        "number_downloads": "100 mil+ Downloads"
+      },
+      "technologies": [
+        {
+          "name": "Javascript",
+          "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        },
+        {
+          "name": "React Native",
+          "link": "https://reactnative.dev/"
+        },
+        {
+          "name": "Redux",
+          "link": "https://redux.js.org/"
+        },
+        {
+          "name": "Redux Saga",
+          "link": "https://redux-saga.js.org/"
+        },
+        {
+          "name": "Native Base",
+          "link": "https://nativebase.io/"
+        },
+        {
+          "name": "Framer Motion",
+          "link": "https://nativebase.io/"
+        },
+        {
+          "name": "CSS",
+          "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://play-lh.googleusercontent.com/JqoiUqjsJzJ45wRHNLSbVwQdH9MU0RvN0BUQf54z-O_f95NPCRu56O7ZXz0Vo2rf6w=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/oZmNL-fOxPkiM7AmgOt1jRW8U3wFd4vaflJfV5hBehD5wtwAtBllzCo_eQeqUjNIIRE=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/wfiMeUAmXv5KpWyH7hMrXXEXW95q3G7SS5VxLXQGv-iiu8zEnfCDK7Ql2Ib-G6ouYg=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/E--ZhwLhlsHXHJPUTZBvxsy3z1PG6-WSTouksJrlcyZi_t8FnM8PoG2l-LA4VOP0tg=w2560-h1440"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name":"Target Trading",
+      "logo":"data:image/png;base64,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",
+      "logo_large":"data:image/png;base64,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",
+      "description":"App usado para verificar informações de processos de importação, impostos, cotação de dólar e euro podendo ver informações de acordo com os clientes cadastrados na conta.",
+      "status": "Ativo",
+      "play_store":"https://play.google.com/store/apps/details?id=com.targettradingapp&hl=pt",
+      "apple_store":"https://apps.apple.com/br/app/target-trading-app/id1474846175",
+      "data_apple_store": {
+        "rating": "Sem avaliação geral",
+        "number_rating": "Sem avaliações",
+        "number_downloads": null
+      },
+      "data_play_store": {
+        "rating": "Sem avaliações",
+        "number_rating": "Sem avaliações",
+        "number_downloads": "5 Downloads"
+      },
+      "technologies": [
+        {
+          "name": "Javascript",
+          "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        },
+        {
+          "name": "React Native",
+          "link": "https://reactnative.dev/"
+        },
+        {
+          "name": "Redux",
+          "link": "https://redux.js.org/"
+        },
+        {
+          "name": "Redux Saga",
+          "link": "https://redux-saga.js.org/"
+        },
+        {
+          "name": "Native Base",
+          "link": "https://nativebase.io/"
+        },
+        {
+          "name": "CSS",
+          "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+        }
+      ],
+      "screenshots":[
+        {
+          "image_url":"https://play-lh.googleusercontent.com/BgqgXAN8V171ogWVsnZ7Jxe-UV2Hp8bcCskSMkf72djCjBaqjFZOAC878qmOaVBDq7k=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/l51gABTouU39elDbBtCXzvjCjPw3PRM6heK37gyRgrPPypzL0MltCUHMiXaAxM75gdw=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/wkAapCzHhqRf_D2-ESQeM-1aIJ3tediv76OfxVevQoISni2sp2Nkmk59Nqy2fo3ZbeI=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/6AYhXMKKUKv-ayI65yURxvgAbidW5eu6HRbiePM08mSj3a6NMdh1JjPU-X3xZmYkkQA=w2560-h1440"
+        },
+        {
+          "image_url":"https://play-lh.googleusercontent.com/kaFwu3i3CfC2bCkd0wT5QWJxSR9otA6flA3IoCcWhsxfdJ5SmKRWGt7WEsfrKBES3js=w2560-h1440"
+        }
+      ]
+    }
+  ],
   "deploys":[
     {
       "id": 0,
@@ -695,7 +887,7 @@
   "layouts":[
     {
       "id":0,
-      "name":"Donicode",
+      "name":"Donecode",
       "tool":"Figma",
       "image_url":"https://i.ibb.co/Y8JwDrH/meta-tag.png",
       "layout_url":"https://www.figma.com/file/thTK2wiUOn3e3MwpKvGcus/MyProfile?node-id=0%3A1"

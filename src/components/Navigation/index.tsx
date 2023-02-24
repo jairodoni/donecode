@@ -57,7 +57,7 @@ export function Navigation() {
           onClick={activeMenu ? mobileMenu : () => { }}
         >
           <motion.a href="#start" className="item" variants={item} >
-            donicode
+            donecode
             <span style={{ color: "#7064fb" }}>.</span>
           </motion.a>
         </motion.h1>
@@ -101,6 +101,15 @@ export function Navigation() {
           </li>
           <li onClick={mobileMenu}>
             <motion.a
+              href="#apps"
+              className="item"
+              variants={item}
+            >
+              Contribuições
+            </motion.a>
+          </li>
+          <li onClick={mobileMenu}>
+            <motion.a
               href="#softwares"
               className="item"
               variants={item}
@@ -117,7 +126,7 @@ export function Navigation() {
               Repositorios
             </motion.a>
           </li>
-          <li onClick={mobileMenu}>
+          {/* <li onClick={mobileMenu}>
             <motion.a
               href="#layouts"
               className="item"
@@ -125,7 +134,7 @@ export function Navigation() {
             >
               Prototipos UI
             </motion.a>
-          </li>
+          </li> */}
           <li onClick={mobileMenu}>
             <motion.a
               href="#contacts"
