@@ -7,8 +7,17 @@ import { BiLink } from 'react-icons/bi'
 import { FaRegImages } from 'react-icons/fa'
 import { RiCloseLine } from 'react-icons/ri'
 import { useProfile } from '../../hooks/useProfile';
+import {
+  CinesystemSmallImage, 
+  KinoplexSmallImage,
+  TargetSmallImage,
+  CinesystemLargeImage,
+  KinoplexLargeImage,
+  TargetLargeImage
+} from "./imageImports";
 
 import styles from './styles.module.scss';
+import { useEffect, useState } from 'react';
 
 interface ProjectModalAppProps {
   isOpen: boolean;
@@ -16,7 +25,7 @@ interface ProjectModalAppProps {
 }
 
 export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps) {
-  const { contributionSelected } = useProfile()
+  const { contributionSelected } = useProfile();
   const playStore = contributionSelected?.data_play_store;
   const appleStore = contributionSelected?.data_apple_store;
 
@@ -34,17 +43,47 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
         <div className={styles.headerModal}>
           <div className={styles.logo}>
             <div>
+            {contributionSelected?.logo === "cinesystem" && (
               <img 
-                src={contributionSelected?.logo}
+                src={CinesystemSmallImage}
                 alt={contributionSelected?.name}
               />
+            )}
+            {contributionSelected?.logo === "kinoplex" && (
+              <img 
+                src={KinoplexSmallImage}
+                alt={contributionSelected?.name}
+              />
+            )}
+            {contributionSelected?.logo === "target" && (
+              <img 
+                src={TargetSmallImage}
+                alt={contributionSelected?.name}
+              />
+            )}
             </div>
           </div>
-          <img 
-            className={styles.logo_large}
-            src={contributionSelected?.logo_large}
-            alt={contributionSelected?.name} 
-          />
+          {contributionSelected?.logo === "cinesystem" && (
+              <img 
+                className={styles.logo_large}
+                src={CinesystemLargeImage}
+                alt={contributionSelected?.name} 
+              />
+          )}
+          {contributionSelected?.logo === "kinoplex" && (
+              <img 
+                className={styles.logo_large}
+                src={KinoplexLargeImage}
+                alt={contributionSelected?.name} 
+              />
+          )}
+          {contributionSelected?.logo === "target" && (
+              <img 
+                className={styles.logo_large}
+                src={TargetLargeImage}
+                alt={contributionSelected?.name} 
+              />
+          )}
         </div>
         <button
           type="button"

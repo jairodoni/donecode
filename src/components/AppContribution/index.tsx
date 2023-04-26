@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
 import { useProfile } from '../../hooks/useProfile';
 import { Contribution } from '../../types/profileContextTypes';
-
+import {CinesystemSmallImage, KinoplexSmallImage, TargetSmallImage} from "./imageImports";
 
 import styles from './styles.module.scss';
 
@@ -20,7 +21,21 @@ export function AppContribution({ contributions }: AppContributionProps) {
               onClick={() => getContribution(contribution)}
               className={styles.card}
             >
-              <img src={contribution.logo} alt={contribution.name} />
+              {
+                contribution.logo === "cinesystem" && (
+                  <img src={CinesystemSmallImage} alt={contribution.name} />
+                )
+              }
+              {
+                contribution.logo === "kinoplex" && (
+                  <img src={KinoplexSmallImage} alt={contribution.name} />
+                )
+              }
+              {
+                contribution.logo === "target" && (
+                  <img src={TargetSmallImage} alt={contribution.name} />
+                )
+              }
             </div>
             <h3>{contribution.name}</h3>
           </div>
