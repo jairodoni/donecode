@@ -1,26 +1,26 @@
 {
   "user": {
-    "name":"Jairo Doni",
-    "office":"Desenvolvedor Frontend",
-    "avatar":"https://i.ibb.co/8brKLrv/avatar.jpg",
-    "description":"Ola sou Jairo, sou Programador Frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Aprendi muito na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr). Na Scale System aprimorei meu conhecimento em desenvolvendo de Aplicações Web como aplicativos e sites. Pretendo desenvolver minha carreira como programador aprendendo a lidar com situações diferentes e desafios no dia a dia.",
-    "resume":"https://drive.google.com/file/d/1A3NUYCGpzp-4-j_D5gzSgwnGZs0j3rXH/view",
-    "contacts":{
-      "email":"jairo.doni97@gmail.com",
-      "linkedin":"https://www.linkedin.com/in/jairodoni",
-      "github":"https://www.github.com/jairodoni"
+    "name": "Jairo Doni",
+    "office": "Desenvolvedor Frontend",
+    "avatar": "https://i.ibb.co/8brKLrv/avatar.jpg",
+    "description": "Ola sou Jairo, sou Programador Frontend e estou determinado a aprender cada vez mais para me tornar um profissional exemplar. Aprendi muito na faculdade onde me Graduei em Engenharia de Software, aprendi a trabalhar em equipe no Labsoft (hoje conhecido como SoftJr). Na Scale System aprimorei meu conhecimento em desenvolvendo de Aplicações Web como aplicativos e sites. Pretendo desenvolver minha carreira como programador aprendendo a lidar com situações diferentes e desafios no dia a dia.",
+    "resume": "https://drive.google.com/file/d/1A3NUYCGpzp-4-j_D5gzSgwnGZs0j3rXH/view",
+    "contacts": {
+      "email": "jairo.doni97@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/jairodoni",
+      "github": "https://www.github.com/jairodoni"
     }
   },
   "contributions": [
     {
       "id": 0,
-      "name":"Cinesystem",
-      "logo":"cinesystem",
-      "logo_large":"cinesystem",
-      "description":"Aplicativo para consultar informações de filmes em estreia nos cinemas e demais filmes já lançados, além de poder ver os horários dos cinemas Cinesystem e promoções relacionadas em várias localidades.",
+      "name": "Cinesystem",
+      "logo": "cinesystem",
+      "logo_large": "cinesystem",
+      "description": "Aplicativo para consultar informações de filmes em estreia nos cinemas e demais filmes já lançados, além de poder ver os horários dos cinemas Cinesystem e promoções relacionadas em várias localidades.",
       "status": "Ativo",
-      "play_store":"https://play.google.com/store/apps/details?id=am4.cinesystem&hl=pt_BR&gl=US",
-      "apple_store":"https://apps.apple.com/br/app/cinesystem-cinemas/id659629749",
+      "play_store": "https://play.google.com/store/apps/details?id=am4.cinesystem&hl=pt_BR&gl=US",
+      "apple_store": "https://apps.apple.com/br/app/cinesystem-cinemas/id659629749",
       "data_apple_store": {
         "rating": "4,5 avaliação geral",
         "number_rating": "1,2 mil avaliações",
@@ -57,33 +57,33 @@
           "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://play-lh.googleusercontent.com/IglWkNBQB5jcnDobVFzTCHgl5gzPZ8Na2RNFAMO4lGENiKtzUW4Mhl7as74xEJeK7Q=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/IglWkNBQB5jcnDobVFzTCHgl5gzPZ8Na2RNFAMO4lGENiKtzUW4Mhl7as74xEJeK7Q=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/mWYsxeQDftuquPpootbOWZ6hthwfWvlDw-oTB1V1il71CCS4UvkwbBnIn-gLFgrW0Vw=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/mWYsxeQDftuquPpootbOWZ6hthwfWvlDw-oTB1V1il71CCS4UvkwbBnIn-gLFgrW0Vw=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/VUVZ5aoIBcJGrPKj0boI3-jDT6iOylibCvVOhw39LRPJJSEMLGIG2EOw5u8iowADXeU=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/VUVZ5aoIBcJGrPKj0boI3-jDT6iOylibCvVOhw39LRPJJSEMLGIG2EOw5u8iowADXeU=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/dW4JaDauJMG1_MIIafui6VHQAU5H6ZOtyfhZFO8bM8ERjdYUOjM3PGCyOxg_6BfBc2c=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/dW4JaDauJMG1_MIIafui6VHQAU5H6ZOtyfhZFO8bM8ERjdYUOjM3PGCyOxg_6BfBc2c=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/11RoEEGBPB37SsaCxHc4i3s7X3vjIOTaQiDIeuaTpX8AuxT2Z87l8mnVDjPFnyv06dQk=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/11RoEEGBPB37SsaCxHc4i3s7X3vjIOTaQiDIeuaTpX8AuxT2Z87l8mnVDjPFnyv06dQk=w2560-h1440"
         }
       ]
     },
     {
       "id": 1,
-      "name":"Kinoplex",
-      "logo":"kinoplex",
-      "logo_large":"kinoplex",
-      "description":"Aplicativo para consultar informações de filmes em estreia nos cinemas e demais filmes já lançados, além de poder ver os horários dos cinemas Kinoplex e promoções relacionadas em várias localidades.",
+      "name": "Kinoplex",
+      "logo": "kinoplex",
+      "logo_large": "kinoplex",
+      "description": "Aplicativo para consultar informações de filmes em estreia nos cinemas e demais filmes já lançados, além de poder ver os horários dos cinemas Kinoplex e promoções relacionadas em várias localidades.",
       "status": "Ativo",
-      "play_store":"https://play.google.com/store/apps/details?id=com.scale.kinoplex&hl=pt_BR&gl=US",
-      "apple_store":"https://apps.apple.com/br/app/kinoplex/id1166999530",
+      "play_store": "https://play.google.com/store/apps/details?id=com.scale.kinoplex&hl=pt_BR&gl=US",
+      "apple_store": "https://apps.apple.com/br/app/kinoplex/id1166999530",
       "data_apple_store": {
         "rating": "4,8 avaliação geral",
         "number_rating": "3,5 mil avaliações",
@@ -117,37 +117,37 @@
         },
         {
           "name": "Framer Motion",
-          "link": "https://nativebase.io/"
+          "link": "https://www.framer.com/motion/"
         },
         {
           "name": "CSS",
           "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://play-lh.googleusercontent.com/JqoiUqjsJzJ45wRHNLSbVwQdH9MU0RvN0BUQf54z-O_f95NPCRu56O7ZXz0Vo2rf6w=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/JqoiUqjsJzJ45wRHNLSbVwQdH9MU0RvN0BUQf54z-O_f95NPCRu56O7ZXz0Vo2rf6w=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/oZmNL-fOxPkiM7AmgOt1jRW8U3wFd4vaflJfV5hBehD5wtwAtBllzCo_eQeqUjNIIRE=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/oZmNL-fOxPkiM7AmgOt1jRW8U3wFd4vaflJfV5hBehD5wtwAtBllzCo_eQeqUjNIIRE=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/wfiMeUAmXv5KpWyH7hMrXXEXW95q3G7SS5VxLXQGv-iiu8zEnfCDK7Ql2Ib-G6ouYg=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/wfiMeUAmXv5KpWyH7hMrXXEXW95q3G7SS5VxLXQGv-iiu8zEnfCDK7Ql2Ib-G6ouYg=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/E--ZhwLhlsHXHJPUTZBvxsy3z1PG6-WSTouksJrlcyZi_t8FnM8PoG2l-LA4VOP0tg=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/E--ZhwLhlsHXHJPUTZBvxsy3z1PG6-WSTouksJrlcyZi_t8FnM8PoG2l-LA4VOP0tg=w2560-h1440"
         }
       ]
     },
     {
       "id": 2,
-      "name":"Target Trading",
-      "logo":"target",
-      "logo_large":"target",
-      "description":"App usado para verificar informações de processos de importação, impostos, cotação de dólar e euro podendo ver informações de acordo com os clientes cadastrados na conta.",
+      "name": "Target Trading",
+      "logo": "target",
+      "logo_large": "target",
+      "description": "App usado para verificar informações de processos de importação, impostos, cotação de dólar e euro podendo ver informações de acordo com os clientes cadastrados na conta.",
       "status": "Ativo",
-      "play_store":"https://play.google.com/store/apps/details?id=com.targettradingapp&hl=pt",
-      "apple_store":"https://apps.apple.com/br/app/target-trading-app/id1474846175",
+      "play_store": "https://play.google.com/store/apps/details?id=com.targettradingapp&hl=pt",
+      "apple_store": "https://apps.apple.com/br/app/target-trading-app/id1474846175",
       "data_apple_store": {
         "rating": "Sem avaliação geral",
         "number_rating": "Sem avaliações",
@@ -184,46 +184,46 @@
           "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://play-lh.googleusercontent.com/BgqgXAN8V171ogWVsnZ7Jxe-UV2Hp8bcCskSMkf72djCjBaqjFZOAC878qmOaVBDq7k=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/BgqgXAN8V171ogWVsnZ7Jxe-UV2Hp8bcCskSMkf72djCjBaqjFZOAC878qmOaVBDq7k=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/l51gABTouU39elDbBtCXzvjCjPw3PRM6heK37gyRgrPPypzL0MltCUHMiXaAxM75gdw=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/l51gABTouU39elDbBtCXzvjCjPw3PRM6heK37gyRgrPPypzL0MltCUHMiXaAxM75gdw=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/wkAapCzHhqRf_D2-ESQeM-1aIJ3tediv76OfxVevQoISni2sp2Nkmk59Nqy2fo3ZbeI=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/wkAapCzHhqRf_D2-ESQeM-1aIJ3tediv76OfxVevQoISni2sp2Nkmk59Nqy2fo3ZbeI=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/6AYhXMKKUKv-ayI65yURxvgAbidW5eu6HRbiePM08mSj3a6NMdh1JjPU-X3xZmYkkQA=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/6AYhXMKKUKv-ayI65yURxvgAbidW5eu6HRbiePM08mSj3a6NMdh1JjPU-X3xZmYkkQA=w2560-h1440"
         },
         {
-          "image_url":"https://play-lh.googleusercontent.com/kaFwu3i3CfC2bCkd0wT5QWJxSR9otA6flA3IoCcWhsxfdJ5SmKRWGt7WEsfrKBES3js=w2560-h1440"
+          "image_url": "https://play-lh.googleusercontent.com/kaFwu3i3CfC2bCkd0wT5QWJxSR9otA6flA3IoCcWhsxfdJ5SmKRWGt7WEsfrKBES3js=w2560-h1440"
         }
       ]
     }
   ],
-  "deploys":[
+  "deploys": [
     {
       "id": 0,
-      "title":"Letmeask",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/bzQsjB3/letmeask.png",
-      "repository_url":"https://github.com/jairodoni/Letmeask",
-      "preview_url":"https://letmeask-7a0d1.web.app",
-      "description":"Letmeask é um site que auxilia seus stremmers favoritos ou qualquer pessoa que precise de uma plataforma de gerenciamento de perguntas interagindo com seu publico de forma mais organizada. Letmeask permite criar salas de perguntas onde você pode reunir seu publico para tirar duvidas em tempo real.",
+      "title": "Skyfall Tecnology",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/H4CYWKg/skyfall.png",
+      "repository_url": "CODIGO PRIVADO",
+      "preview_url": "https://www.skyfalltecnology.com",
+      "description": "Skyfall é um site que provê serviços e divulga notícias. Skyfall é um grupo com freelancers unidos para prover serviços de manutenção em hardware e software.",
       "technologies": [
         {
           "name": "React",
           "link": "https://pt-br.reactjs.org"
         },
         {
-          "name": "Firebase",
-          "link": "https://firebase.google.com"
+          "name": "Prismic CMS",
+          "link": "https://prismic.io"
         },
         {
-          "name": "Typescript",
-          "link": "https://www.typescriptlang.org"
+          "name": "Framer Motion",
+          "link": "https://www.framer.com/motion/"
         },
         {
           "name": "Sass",
@@ -242,43 +242,103 @@
           "link": "https://github.com/reactjs/react-modal"
         }
       ],
-      "screenshots":[
+      "screenshots": []
+    },
+    {
+      "id": 1,
+      "title": "Ignite Shop",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/k0rRzH2/ignite-shop.png",
+      "repository_url": "https://github.com/jairodoni/ignite-shop",
+      "preview_url": "https://ignite-shopp.vercel.app",
+      "description": "O projeto Ignite Shop 2.0 é uma aplicação web/e-commerce para compras de múltiplos produtos originais da Rocketseat. Esse projeto é um dos desafios da trilha de React do Ignite.",
+      "technologies": [
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen01.png?raw=true"
+          "name": "Next",
+          "link": "https://pt-br.reactjs.org"
         },
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen02.png?raw=true"
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
         },
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen04.png?raw=true"
+          "name": "Stripe",
+          "link": "https://stripe.com/en-br"
         },
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen03.png?raw=true"
+          "name": "Stitches",
+          "link": "https://stitches.dev"
         },
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen05.png?raw=true"
+          "name": "ESLint",
+          "link": "https://eslint.org"
+        }
+      ],
+      "screenshots": [
+        {
+          "image_url": "https://github.com/jairodoni/ignite-shop/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen06.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignite-shop/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Letmeask/blob/master/.github/screen07.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignite-shop/blob/master/.github/screen03.png?raw=true"
         }
       ]
     },
     {
-      "id": 1,
-      "title":"Space Traveling",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/26X4CQN/spacetraveling.png",
-      "repository_url":"https://github.com/jairodoni/space-traveling",
-      "preview_url":"https://space-traveling-jairodoni.vercel.app",
-      "description":"Space Traveling é um blog de tecnologia voltado a programação, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para desenvolvimento de softwares mais eficientes.",
+      "id": 2,
+      "title": "Ignite UI (Design System)",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/dtkdDVJ/ignite-ui.png",
+      "repository_url": "https://github.com/jairodoni/design-system-ignite",
+      "preview_url": "https://jairodoni.github.io/design-system-ignite/?path=/docs/home--docs",
+      "description": "Ignite UI é uma feature de componentes semiprontos desenvolvido durante o bootcamp Ignite. O projeto usa dos padrões de design system vistos no Ignite.",
       "technologies": [
+        {
+          "name": "Storybook",
+          "link": "https://storybook.js.org"
+        },
         {
           "name": "React",
           "link": "https://pt-br.reactjs.org"
         },
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "Stitches",
+          "link": "https://stitches.dev"
+        },
+        {
+          "name": "Radix UI",
+          "link": "https://www.radix-ui.com"
+        },
+        {
+          "name": "Turbo Repo",
+          "link": "https://turbo.build"
+        },
+        {
+          "name": "Changesets",
+          "link": "https://github.com/changesets/changesets/tree/main"
+        },
+        {
+          "name": "ESLint",
+          "link": "https://eslint.org"
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 3,
+      "title": "Space Traveling",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/26X4CQN/spacetraveling.png",
+      "repository_url": "https://github.com/jairodoni/space-traveling",
+      "preview_url": "https://space-traveling-jairodoni.vercel.app",
+      "description": "Space Traveling é um blog de tecnologia voltado a programação, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para desenvolvimento de softwares mais eficientes.",
+      "technologies": [
         {
           "name": "Next",
           "link": "https://nextjs.org"
@@ -304,23 +364,58 @@
           "link": "https://utteranc.es"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/space-traveling/blob/master/.github/screen01.gif?raw=true"
+          "image_url": "https://github.com/jairodoni/space-traveling/blob/master/.github/screen01.gif?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/space-traveling/blob/master/.github/screen02.gif?raw=true"
+          "image_url": "https://github.com/jairodoni/space-traveling/blob/master/.github/screen02.gif?raw=true"
         }
       ]
     },
     {
-      "id": 2,
-      "title":"Mais Um Quiz",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/0f9g4Zz/maisumquiz.png",
-      "repository_url":"https://github.com/jairodoni/MaisUmQuiz-1.0",
-      "preview_url":"https://quiz-react.jairodoni.vercel.app",
-      "description":"O Mais Um Quiz é com o simples proposito de divertir as pessoas e passar um tempo criado desafios, nesta versão é somente um quiz de react, mas futuramente tera a opção de criar outros quizzes e se desafiar com eles, é um projeto feito na 'Imersão React #2' da Alura e que tera continuidade com aprimoramentos futuros.",
+      "id": 4,
+      "title": "Todo",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/JBbkPmr/todo.png",
+      "repository_url": "https://github.com/jairodoni/todo",
+      "preview_url": "https://todoawesome.vercel.app",
+      "description": "Um projeto desenvolvido durante o Bootcamp Ignite da Rocketseat, o projeto Todo é um projeto básico de listagem de tarefas que pode tanto ser utilizado em trabalho como com coisas do dia a dia, podendo criar tarefas novas, confirmar tarefas concluídas e excluí-las tambem.",
+      "technologies": [
+        {
+          "name": "React",
+          "link": "https://pt-br.reactjs.org"
+        },
+        {
+          "name": "Typescript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "Vite",
+          "link": "https://vitejs.dev"
+        },
+        {
+          "name": "CSS Module",
+          "link": "https://github.com/css-modules/css-modules"
+        }
+      ],
+      "screenshots": [
+        {
+          "image_url": "https://raw.githubusercontent.com/jairodoni/todo/master/.github/screen01.png"
+        },
+        {
+          "image_url": "https://raw.githubusercontent.com/jairodoni/todo/master/.github/screen02.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Mais Um Quiz",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/0f9g4Zz/maisumquiz.png",
+      "repository_url": "https://github.com/jairodoni/MaisUmQuiz-1.0",
+      "preview_url": "https://quiz-react.jairodoni.vercel.app",
+      "description": "O Mais Um Quiz é com o simples propósito de divertir as pessoas e passar um tempo criado desafios, nesta versão é somente um quiz de react, mas futuramente terá a opção de criar outros quizzes e se desafiar com eles, é um projeto feito na 'Imersão React #2' da Alura e que terá continuidade com aprimoramentos futuros.",
       "technologies": [
         {
           "name": "React",
@@ -339,143 +434,31 @@
           "link": "https://www.framer.com/motion/"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen03.png?raw=true"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title":"Techflix",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/hWvQ0Sq/techflix.png",
-      "repository_url":"https://github.com/jairodoni/Techflix",
-      "preview_url":"https://techflixseries.vercel.app",
-      "description":"A Techflix é um projeto inspirado na Netflix, utilizando videos do youtube como fonte de conteudo ou divulgação, podendo assitir os videos do proprio site e cadastrar novos videos e categorias, feito na 'Imersão React Alura'.",
-      "technologies": [
-        {
-          "name": "React",
-          "link": "https://pt-br.reactjs.org"
-        },
-        {
-          "name": "React Router Dom",
-          "link": "https://github.com/remix-run/react-router/tree/main/packages/react-router-dom"
-        },
-        {
-          "name": "Material UI",
-          "link": "https://material-ui.com/pt/"
-        },
-        {
-          "name": "Styled Components",
-          "link": "https://styled-components.com"
-        },
-        {
-          "name": "Concurrently",
-          "link": "https://github.com/open-cli-tools/concurrently"
-        }
-      ],
-      "screenshots":[
-        {
-          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech01.png?raw=true"
-        },
-        {
-          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech02.png?raw=true"
-        },
-        {
-          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech03.png?raw=true"
-        },
-        {
-          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech04.png?raw=true"
-        },
-        {
-          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech05.png?raw=true"
-        },
-        {
-          "image_url":"https://github.com/jairodoni/Techflix/blob/master/.github/tech06.png?raw=true"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title":"To-do",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/r0nfPN6/todo.png",
-      "repository_url":"https://github.com/jairodoni/To.Do",
-      "preview_url":"https://todoawesome.vercel.app",
-      "description":"Um projeto desenvolvido durante o Bootcamp Ignite da Rocketseat, o projeto To Do é um projeto basico de listagem de tarefas que pode tanto ser utilizado em trabalho como com coisas do dia a dia, podendo criar tarefas novas confirmar tarefas concluidas e exclui-las tambem",
-      "technologies": [
-        {
-          "name": "React",
-          "link": "https://pt-br.reactjs.org"
-        },
-        {
-          "name": "Typescript",
-          "link": "https://www.typescriptlang.org"
-        },
-        {
-          "name": "Webpack",
-          "link": "https://webpack.js.org"
-        },
-        {
-          "name": "Sass",
-          "link": "https://sass-lang.com"
-        }
-      ],
-      "screenshots":[
-        {
-          "image_url":"https://github.com/jairodoni/To.Do/blob/main/.github/screen01.png?raw=true"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title":"Digital Watch",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/5W6RNfM/clock.png",
-      "repository_url":"https://github.com/jairodoni/relogiodigital",
-      "preview_url":"https://jairodoni.github.io/relogiodigital/",
-      "description":"Digital Watch é um projeto simple de um website que mostra as horas usando javascript puro.",
-      "technologies": [
-        {
-          "name": "Javascript"
-        },
-        {
-          "name": "CSS"
-        },
-        {
-          "name": "HTML"
-        }
-      ],
-      "screenshots":[
-        {
-          "image_url":"https://i.ibb.co/8Mghx1K/clock02.png"
+          "image_url": "https://github.com/jairodoni/MaisUmQuiz-1.0/blob/main/.github/quizScreen03.png?raw=true"
         }
       ]
     }
   ],
-  "repositories":[
+  "repositories": [
     {
       "id": 0,
-      "title":"ignews",
-      "status":"Em progresso",
-      "image_url":"https://i.ibb.co/kJss4qh/ignews.png",
-      "repository_url":"https://github.com/jairodoni/ignews",
-      "description":"Ignews é um blog de tecnologia voltado a programação, com serviço pago mensal, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para deselvolvimento de softwares mais eficientes.",
+      "title": "ignews",
+      "status": "Em progresso",
+      "image_url": "https://i.ibb.co/kJss4qh/ignews.png",
+      "repository_url": "https://github.com/jairodoni/ignews",
+      "description": "Ignews é um blog de tecnologia voltado a programação, com serviço pago mensal, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para deselvolvimento de softwares mais eficientes.",
       "technologies": [
         {
           "name": "Typescript",
           "link": "https://www.typescriptlang.org"
-        },
-        {
-          "name": "React",
-          "link": "https://pt-br.reactjs.org"
         },
         {
           "name": "Next",
@@ -510,31 +493,31 @@
           "link": "https://jestjs.io/pt-BR/"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignews/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignews/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen05.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignews/blob/master/.github/screen05.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen03.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignews/blob/master/.github/screen03.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/ignews/blob/master/.github/screen04.png?raw=true"
+          "image_url": "https://github.com/jairodoni/ignews/blob/master/.github/screen04.png?raw=true"
         }
       ]
     },
     {
       "id": 1,
-      "title":"Podcastr",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/TmH4mzN/podcastr.png",
-      "repository_url":"https://github.com/jairodoni/Podcastr",
-      "description":"Podcastr é um website para ouvir podcasts que utiliza das principais funções do Next.js, trazendo uma otima performance para a aplicação e uma otima experiencia para o usuario, o Podcastr foi um projeto desenvolvido durante o evento semana NLW#5(Next Level Week 5) com conteudo produzido pela Rocketseat.",
+      "title": "Podcastr",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/TmH4mzN/podcastr.png",
+      "repository_url": "https://github.com/jairodoni/Podcastr",
+      "description": "Podcastr é um website para ouvir podcasts que utiliza das principais funções do Next.js, trazendo uma otima performance para a aplicação e uma otima experiencia para o usuario, o Podcastr foi um projeto desenvolvido durante o evento semana NLW#5(Next Level Week 5) com conteudo produzido pela Rocketseat.",
       "technologies": [
         {
           "name": "Typescript",
@@ -557,22 +540,22 @@
           "link": "https://github.com/typicode/json-server"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/Podcastr/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Podcastr/blob/master/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/Podcastr/blob/master/.github/screen02.png?raw=true"
         }
       ]
     },
     {
       "id": 2,
-      "title":"dtmoney",
-      "status":"Em progresso",
-      "image_url":"https://i.ibb.co/XZjhWkH/dtmoney.png",
-      "repository_url":"https://github.com/jairodoni/dtmoney",
-      "description":"dtmoney é uma aplicação para ajudar qualquer pessoa com um pouco de conhecimento financeiro a registrar o dinheiro que entra e o que sai, calculando seus investimentos e lucros.",
+      "title": "dtmoney",
+      "status": "Em progresso",
+      "image_url": "https://i.ibb.co/XZjhWkH/dtmoney.png",
+      "repository_url": "https://github.com/jairodoni/dtmoney",
+      "description": "dtmoney é uma aplicação para ajudar qualquer pessoa com um pouco de conhecimento financeiro a registrar o dinheiro que entra e o que sai, calculando seus investimentos e lucros.",
       "technologies": [
         {
           "name": "Typescript",
@@ -595,22 +578,22 @@
           "link": "https://github.com/reactjs/react-modal"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/dtmoney/blob/main/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/dtmoney/blob/main/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/dtmoney/blob/main/.github/screen02.png?raw=true"
         }
       ]
     },
     {
       "id": 3,
-      "title":"Moveit",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/VJwq6gv/moveit.png",
-      "repository_url":"https://github.com/jairodoni/Moveit",
-      "description":"Um projeto desenvolvido durante o event NLW04 da Rocketseat.O projeto Moveit tem o intuito de utilizar a tecnica de pomodoro e incentivar as pessoas tirarem um tempo para se alongar durante o trabalho, mantendo a saude e o bem estar do usuario com exercício basicos.",
+      "title": "Moveit",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/VJwq6gv/moveit.png",
+      "repository_url": "https://github.com/jairodoni/Moveit",
+      "description": "Um projeto desenvolvido durante o event NLW04 da Rocketseat.O projeto Moveit tem o intuito de utilizar a tecnica de pomodoro e incentivar as pessoas tirarem um tempo para se alongar durante o trabalho, mantendo a saude e o bem estar do usuario com exercício basicos.",
       "technologies": [
         {
           "name": "Typescript",
@@ -629,25 +612,25 @@
           "link": "https://github.com/css-modules/css-modules"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/Moveit/blob/main/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/Moveit/blob/main/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/Moveit/blob/main/.github/screen03.png?raw=true"
+          "image_url": "https://github.com/jairodoni/Moveit/blob/main/.github/screen03.png?raw=true"
         }
       ]
     },
     {
       "id": 4,
-      "title":"dashgo",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/T4dtMVk/dashgo.png",
-      "repository_url":"https://github.com/jairodoni/dashgo",
-      "description":"Dashgo é um template de dashboard com tecnologias avançadas do frontend, com tela de login, tela com graficos, tabela de usuários e tela de cadastro de usuários.",
+      "title": "dashgo",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/T4dtMVk/dashgo.png",
+      "repository_url": "https://github.com/jairodoni/dashgo",
+      "description": "Dashgo é um template de dashboard com tecnologias avançadas do frontend, com tela de login, tela com graficos, tabela de usuários e tela de cadastro de usuários.",
       "technologies": [
         {
           "name": "Typescript",
@@ -674,25 +657,25 @@
           "link": "https://apexcharts.com"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/dashgo/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/dashgo/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/dashgo/blob/master/.github/screen03.png?raw=true"
+          "image_url": "https://github.com/jairodoni/dashgo/blob/master/.github/screen03.png?raw=true"
         }
       ]
     },
     {
       "id": 5,
-      "title":"DoWhile",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/C0ZD2V0/dowhile.png",
-      "repository_url":"https://github.com/jairodoni/DoWhile",
-      "description":"DoWhile foi um projeto desenvolvido durante o evento NLW Heat com aulas produzidas pela Rocketseat. DoWhile é uma plataforma para as pessoas interagirem e comentarem sobre o que esperam do evento DoWhile 2021, o mesmo permite fazer login social com github para com isso criar uma conta e poder interagir com o pessoal.",
+      "title": "DoWhile",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/C0ZD2V0/dowhile.png",
+      "repository_url": "https://github.com/jairodoni/DoWhile",
+      "description": "DoWhile foi um projeto desenvolvido durante o evento NLW Heat com aulas produzidas pela Rocketseat. DoWhile é uma plataforma para as pessoas interagirem e comentarem sobre o que esperam do evento DoWhile 2021, o mesmo permite fazer login social com github para com isso criar uma conta e poder interagir com o pessoal.",
       "technologies": [
         {
           "name": "Typescript",
@@ -731,22 +714,22 @@
           "link": "https://jwt.io"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/DoWhile/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/DoWhile/blob/master/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/DoWhile/blob/master/.github/screen02.png?raw=true"
         }
       ]
     },
     {
       "id": 6,
-      "title":"UPFI",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/7QcM3Zy/upfi.png",
-      "repository_url":"https://github.com/jairodoni/upfi",
-      "description":"Upfi é uma plataforma de upload de imagens, onde as pessoas podem divulgar imagens como wallpapers de smartphone ou desktop, podendo subir as imagens diretamente no site.",
+      "title": "UPFI",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/7QcM3Zy/upfi.png",
+      "repository_url": "https://github.com/jairodoni/upfi",
+      "description": "Upfi é uma plataforma de upload de imagens, onde as pessoas podem divulgar imagens como wallpapers de smartphone ou desktop, podendo subir as imagens diretamente no site.",
       "technologies": [
         {
           "name": "Typescript",
@@ -777,25 +760,25 @@
           "link": "https://pt-br.imgbb.com"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen01.png?raw=true"
+          "image_url": "https://github.com/jairodoni/upfi/blob/master/.github/screen01.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen02.png?raw=true"
+          "image_url": "https://github.com/jairodoni/upfi/blob/master/.github/screen02.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/upfi/blob/master/.github/screen03.png?raw=true"
+          "image_url": "https://github.com/jairodoni/upfi/blob/master/.github/screen03.png?raw=true"
         }
       ]
     },
     {
       "id": 7,
-      "title":"BeTheHero",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/Gs1wkhn/bethehero.png",
-      "repository_url":"https://github.com/jairodoni/BeTheHero",
-      "description":"O Be The Hero é um projeto social de ajuda ao animais para encontrar doadores para auxiliarem em situações de necessidade. O projeto foi desenvolvido com base nas aulas da semana Omnistack-11.0, evento criado pela Rocketseat.",
+      "title": "BeTheHero",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/Gs1wkhn/bethehero.png",
+      "repository_url": "https://github.com/jairodoni/BeTheHero",
+      "description": "O Be The Hero é um projeto social de ajuda ao animais para encontrar doadores para auxiliarem em situações de necessidade. O projeto foi desenvolvido com base nas aulas da semana Omnistack-11.0, evento criado pela Rocketseat.",
       "technologies": [
         {
           "name": "React",
@@ -825,23 +808,22 @@
           "name": "Jest",
           "link": "https://jestjs.io"
         }
-
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasWeb.png?raw=true"
+          "image_url": "https://github.com/jairodoni/BeTheHero/blob/master/.github/telasWeb.png?raw=true"
         },
         {
-          "image_url":"https://github.com/jairodoni/BeTheHero/blob/master/.github/telasMobile.png?raw=true"
+          "image_url": "https://github.com/jairodoni/BeTheHero/blob/master/.github/telasMobile.png?raw=true"
         }
       ]
     },
     {
       "id": 8,
-      "title":"Ecoleta",
-      "status":"Concluido",
-      "image_url":"https://i.ibb.co/mTW42Jg/ecoleta.png",
-      "repository_url":"https://github.com/jairodoni/Ecoleta",
+      "title": "Ecoleta",
+      "status": "Concluido",
+      "image_url": "https://i.ibb.co/mTW42Jg/ecoleta.png",
+      "repository_url": "https://github.com/jairodoni/Ecoleta",
       "description": "O Ecoleta é um marketplace que ajuda pessoas a encontrarem pontos de coleta de resíduos de forma eficiente. O projeto foi desenvolvido com base nas aulas da semana NextLevelWeek#1, evento criado pela Rocketseat.",
       "technologies": [
         {
@@ -877,41 +859,41 @@
           "link": "https://github.com/mapbox/node-sqlite3"
         }
       ],
-      "screenshots":[
+      "screenshots": [
         {
-          "image_url":"https://github.com/jairodoni/Ecoleta/blob/master/.github/ecoleta.png?raw=true"
+          "image_url": "https://github.com/jairodoni/Ecoleta/blob/master/.github/ecoleta.png?raw=true"
         }
       ]
     }
   ],
-  "layouts":[
+  "layouts": [
     {
-      "id":0,
-      "name":"Donecode",
-      "tool":"Figma",
-      "image_url":"https://i.ibb.co/Y8JwDrH/meta-tag.png",
-      "layout_url":"https://www.figma.com/file/thTK2wiUOn3e3MwpKvGcus/MyProfile?node-id=0%3A1"
+      "id": 0,
+      "name": "Donecode",
+      "tool": "Figma",
+      "image_url": "https://i.ibb.co/Y8JwDrH/meta-tag.png",
+      "layout_url": "https://www.figma.com/file/thTK2wiUOn3e3MwpKvGcus/MyProfile?node-id=0%3A1"
     },
     {
-      "id":1,
-      "name":"Semana da engenharia",
-      "tool":"Figma",
-      "image_url":"https://i.ibb.co/WPN4dQj/semanadaengenharia.png",
-      "layout_url":"https://www.figma.com/file/f1saEFhn9b5ZghznTPq0R0/UNIFAE---Semana-da-Engenharia?node-id=0%3A1"
+      "id": 1,
+      "name": "Semana da engenharia",
+      "tool": "Figma",
+      "image_url": "https://i.ibb.co/WPN4dQj/semanadaengenharia.png",
+      "layout_url": "https://www.figma.com/file/f1saEFhn9b5ZghznTPq0R0/UNIFAE---Semana-da-Engenharia?node-id=0%3A1"
     },
     {
-      "id":2,
-      "name":"Feira de Profissoes",
-      "tool":"Adobe XD",
-      "image_url":"https://i.ibb.co/wBvzyKK/feiradeprofiss-es.png",
-      "layout_url":"https://xd.adobe.com/view/07d63913-e487-4fa5-9ca0-15fe91342eb6-5285/"
+      "id": 2,
+      "name": "Feira de Profissoes",
+      "tool": "Adobe XD",
+      "image_url": "https://i.ibb.co/wBvzyKK/feiradeprofiss-es.png",
+      "layout_url": "https://xd.adobe.com/view/07d63913-e487-4fa5-9ca0-15fe91342eb6-5285/"
     },
     {
-      "id":3,
-      "name":"Petlify",
-      "tool":"Adobe XD",
-      "image_url":"https://i.ibb.co/02mS71Q/petlify01.png",
-      "layout_url":"https://xd.adobe.com/view/48ef2590-3c91-4105-55e8-80b674affac4-3ede/flow"
+      "id": 3,
+      "name": "Petlify",
+      "tool": "Adobe XD",
+      "image_url": "https://i.ibb.co/02mS71Q/petlify01.png",
+      "layout_url": "https://xd.adobe.com/view/48ef2590-3c91-4105-55e8-80b674affac4-3ede/flow"
     }
   ]
 }
