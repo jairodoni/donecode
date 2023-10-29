@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import './theme/defaultColors.scss';
 
 .main_container {
   width: 100%;
@@ -23,13 +23,15 @@
 
     .developer {
       max-width: 350px;
-      display: block;
       width: 100%;
+      display: block;
     }
 
     .waves {
-      width: 100%;
+      height: auto;
+      width: 100vw;
       display: block;
+      object-fit: contain;
       position: absolute;
       bottom: 0;
     }

@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import '../../styles/theme/defaultColors.scss';
 
 .container {
   border-radius: 2rem;
@@ -29,7 +29,7 @@
 
   label {
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: medium;
 
     display: flex;
     align-content: center;
@@ -70,7 +70,7 @@
         }
         a {
           background: $gray-300;
-          font-weight: 500;
+          font-weight: medium;
           cursor: pointer;
         }
       }

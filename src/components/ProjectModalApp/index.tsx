@@ -1,35 +1,40 @@
-import Modal from 'react-modal';
+'use client'
+import Modal from 'react-modal'
 import { HiOutlineExclamationCircle } from 'react-icons/hi'
 import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
 import { FiStar } from 'react-icons/fi'
-import { FaGooglePlay, FaApple, FaStar } from 'react-icons/fa'
+import { FaGooglePlay, FaApple, FaStar, FaRegImages } from 'react-icons/fa'
 import { BiLink } from 'react-icons/bi'
-import { FaRegImages } from 'react-icons/fa'
 import { RiCloseLine } from 'react-icons/ri'
-import { useProfile } from '../../hooks/useProfile';
+import { useProfile } from '../../hooks/useProfile'
 import {
-  CinesystemSmallImage, 
+  CinesystemSmallImage,
   KinoplexSmallImage,
   TargetSmallImage,
   CinesystemLargeImage,
   KinoplexLargeImage,
-  TargetLargeImage
-} from "./imageImports";
+  TargetLargeImage,
+} from './imageImports'
 
-import styles from './styles.module.scss';
-import { useEffect, useState } from 'react';
+import styles from './styles.module.scss'
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 interface ProjectModalAppProps {
-  isOpen: boolean;
+  isOpen: boolean
   onRequestClose: () => void
 }
 
-export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps) {
-  const { contributionSelected } = useProfile();
-  const playStore = contributionSelected?.data_play_store;
-  const appleStore = contributionSelected?.data_apple_store;
+export function ProjectModalApp({
+  isOpen,
+  onRequestClose,
+}: ProjectModalAppProps) {
+  const { contributionSelected } = useProfile()
+  const playStore = contributionSelected?.data_play_store
+  const appleStore = contributionSelected?.data_apple_store
 
-  const statusColor = contributionSelected?.status === "Ativo" ? "#00c237" : "#DBCA2F"
+  const statusColor =
+    contributionSelected?.status === 'Ativo' ? '#00c237' : '#DBCA2F'
 
   return (
     <Modal
@@ -38,51 +43,50 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
     >
-
       <div className={styles.container}>
         <div className={styles.headerModal}>
           <div className={styles.logo}>
             <div>
-            {contributionSelected?.logo === "cinesystem" && (
-              <img 
-                src={CinesystemSmallImage}
-                alt={contributionSelected?.name}
-              />
-            )}
-            {contributionSelected?.logo === "kinoplex" && (
-              <img 
-                src={KinoplexSmallImage}
-                alt={contributionSelected?.name}
-              />
-            )}
-            {contributionSelected?.logo === "target" && (
-              <img 
-                src={TargetSmallImage}
-                alt={contributionSelected?.name}
-              />
-            )}
+              {contributionSelected?.logo === 'cinesystem' && (
+                <Image
+                  src={CinesystemSmallImage}
+                  alt={contributionSelected?.name}
+                />
+              )}
+              {contributionSelected?.logo === 'kinoplex' && (
+                <Image
+                  src={KinoplexSmallImage}
+                  alt={contributionSelected?.name}
+                />
+              )}
+              {contributionSelected?.logo === 'target' && (
+                <Image
+                  src={TargetSmallImage}
+                  alt={contributionSelected?.name}
+                />
+              )}
             </div>
           </div>
-          {contributionSelected?.logo === "cinesystem" && (
-              <img 
-                className={styles.logo_large}
-                src={CinesystemLargeImage}
-                alt={contributionSelected?.name} 
-              />
+          {contributionSelected?.logo === 'cinesystem' && (
+            <Image
+              className={styles.logo_large}
+              src={CinesystemLargeImage}
+              alt={contributionSelected?.name}
+            />
           )}
-          {contributionSelected?.logo === "kinoplex" && (
-              <img 
-                className={styles.logo_large}
-                src={KinoplexLargeImage}
-                alt={contributionSelected?.name} 
-              />
+          {contributionSelected?.logo === 'kinoplex' && (
+            <Image
+              className={styles.logo_large}
+              src={KinoplexLargeImage}
+              alt={contributionSelected?.name}
+            />
           )}
-          {contributionSelected?.logo === "target" && (
-              <img 
-                className={styles.logo_large}
-                src={TargetLargeImage}
-                alt={contributionSelected?.name} 
-              />
+          {contributionSelected?.logo === 'target' && (
+            <Image
+              className={styles.logo_large}
+              src={TargetLargeImage}
+              alt={contributionSelected?.name}
+            />
           )}
         </div>
         <button
@@ -93,7 +97,6 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
           <RiCloseLine size={32} />
         </button>
         <div className={styles.content}>
-
           <h3>{contributionSelected?.name}</h3>
 
           <div className={styles.infomations}>
@@ -111,10 +114,7 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
                 <BiLink size={24} />
                 Play Store:
               </label>
-              <a
-                href={contributionSelected?.play_store}
-                target="_blank"
-              >
+              <a href={contributionSelected?.play_store} target="_blank">
                 {contributionSelected?.play_store}
               </a>
             </div>
@@ -123,10 +123,7 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
                 <BiLink size={24} />
                 Apple Store:
               </label>
-              <a
-                href={contributionSelected?.apple_store}
-                target="_blank"
-              >
+              <a href={contributionSelected?.apple_store} target="_blank">
                 {contributionSelected?.apple_store}
               </a>
             </div>
@@ -137,9 +134,8 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
                   Dados Play Store:
                 </label>
                 <div>
-                  
                   <strong>
-                    <FaStar size={11} color="#333"/>
+                    <FaStar size={11} color="#333" />
                     {playStore?.rating}
                   </strong>
                   <strong>{playStore?.number_rating}</strong>
@@ -152,9 +148,8 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
                   Dados Apple Store:
                 </label>
                 <div>
-                  
                   <strong>
-                    <FaStar size={11} color="#333"/>
+                    <FaStar size={11} color="#333" />
                     {appleStore?.rating}
                   </strong>
                   <strong>{appleStore?.number_rating}</strong>
@@ -167,9 +162,7 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
             <MdOutlineDescription size={24} />
             Descrição:
           </label>
-          <p>
-            {contributionSelected?.description}
-          </p>
+          <p>{contributionSelected?.description}</p>
 
           {contributionSelected?.technologies && (
             <div className={styles.techs}>
@@ -178,18 +171,13 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
                 Tecnologias:
               </label>
               <ul>
-                {
-                  contributionSelected?.technologies.map(tech => (
-                    <li key={tech.name}>
-                      <a
-                        href={tech?.link}
-                        target="_blank"
-                      >
-                        {tech.name}
-                      </a>
-                    </li>
-                  ))
-                }
+                {contributionSelected?.technologies.map((tech) => (
+                  <li key={tech.name}>
+                    <a href={tech?.link} target="_blank">
+                      {tech.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           )}
@@ -200,15 +188,17 @@ export function ProjectModalApp({ isOpen, onRequestClose }: ProjectModalAppProps
               Screenshots:
             </label>
             <br />
-            {contributionSelected?.screenshots?.map(screenshot => (
-                <img
-                  src={screenshot.image_url}
-                  alt="screenshot"
-                />
+            {contributionSelected?.screenshots?.map((screenshot) => (
+              <Image
+                className={styles.screenshotImg}
+                key={screenshot.image_url}
+                src={screenshot.image_url}
+                alt="screenshot"
+              />
             ))}
           </div>
         </div>
       </div>
-    </Modal >
-  );
+    </Modal>
+  )
 }

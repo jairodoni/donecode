@@ -1,22 +1,25 @@
-import Modal from 'react-modal';
+'use client'
+import Modal from 'react-modal'
 import { HiOutlineExclamationCircle } from 'react-icons/hi'
 import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
 import { BiLink } from 'react-icons/bi'
 import { FaRegImages } from 'react-icons/fa'
 import { RiCloseLine } from 'react-icons/ri'
-import { useProfile } from '../../hooks/useProfile';
+import { useProfile } from '../../hooks/useProfile'
 
-import styles from './styles.module.scss';
+import styles from './styles.module.scss'
+import Image from 'next/image'
 
 interface ProjectModalProps {
-  isOpen: boolean;
+  isOpen: boolean
   onRequestClose: () => void
 }
 
 export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
   const { projectSelected } = useProfile()
 
-  const statusColor = projectSelected?.status === "Concluido" ? "#00c237" : "#DBCA2F"
+  const statusColor =
+    projectSelected?.status === 'Concluido' ? '#00c237' : '#DBCA2F'
 
   return (
     <Modal
@@ -25,9 +28,11 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
     >
-
       <div className={styles.container}>
-        <img src={projectSelected?.image_url} alt={projectSelected?.title} />
+        <Image
+          src={projectSelected ? projectSelected.image_url : ''}
+          alt={projectSelected ? projectSelected?.title : ''}
+        />
         <button
           type="button"
           onClick={onRequestClose}
@@ -36,7 +41,6 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
           <RiCloseLine size={32} />
         </button>
         <div className={styles.content}>
-
           <h3>{projectSelected?.title}</h3>
 
           <div className={styles.infomations}>
@@ -54,10 +58,7 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
                 <BiLink size={24} />
                 Repositorio:
               </label>
-              <a
-                href={projectSelected?.repository_url}
-                target="_blank"
-              >
+              <a href={projectSelected?.repository_url} target="_blank">
                 {projectSelected?.repository_url}
               </a>
             </div>
@@ -67,24 +68,18 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
                   <BiLink size={24} />
                   Preview:
                 </label>
-                <a
-                  href={projectSelected.preview_url}
-                  target="_blank"
-                >
+                <a href={projectSelected.preview_url} target="_blank">
                   {projectSelected.preview_url}
                 </a>
               </div>
             )}
-
           </div>
 
           <label htmlFor="descrição">
             <MdOutlineDescription size={24} />
             Descrição:
           </label>
-          <p>
-            {projectSelected?.description}
-          </p>
+          <p>{projectSelected?.description}</p>
 
           {projectSelected?.technologies && (
             <div className={styles.techs}>
@@ -93,18 +88,13 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
                 Tecnologias:
               </label>
               <ul>
-                {
-                  projectSelected?.technologies.map(tech => (
-                    <li key={tech.name}>
-                      <a
-                        href={tech?.link}
-                        target="_blank"
-                      >
-                        {tech.name}
-                      </a>
-                    </li>
-                  ))
-                }
+                {projectSelected?.technologies.map((tech) => (
+                  <li key={tech.name}>
+                    <a href={tech?.link} target="_blank">
+                      {tech.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           )}
@@ -115,8 +105,8 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
               Screenshots:
             </label>
             <br />
-            {projectSelected?.screenshots?.map(screenshot => (
-              <img
+            {projectSelected?.screenshots?.map((screenshot) => (
+              <Image
                 key={screenshot.image_url}
                 src={screenshot.image_url}
                 alt="screenshot"
@@ -125,6 +115,6 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
           </div>
         </div>
       </div>
-    </Modal >
-  );
+    </Modal>
+  )
 }

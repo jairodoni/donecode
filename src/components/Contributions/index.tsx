@@ -1,11 +1,11 @@
-import styles from './styles.module.scss';
-import { useProfile } from '../../hooks/useProfile';
-import { CardList } from '../CardList';
-import { AppContribution } from '../AppContribution';
-import triangleImg from "../../assets/images/triangle-default.png"
+import styles from './styles.module.scss'
+import { useProfile } from '../../hooks/useProfile'
+import { CardList } from '../CardList'
+import { AppContribution } from '../AppContribution'
+import triangleImg from '@/assets/images/triangle-default.png'
 
 export function Contributions() {
-  const { contributions } = useProfile();
+  const { contributions } = useProfile()
 
   return (
     <div id="apps" className={styles.container}>
@@ -14,5 +14,5 @@ export function Contributions() {
         <AppContribution contributions={contributions} />
       </div>
     </div>
-  );
+  )
 }

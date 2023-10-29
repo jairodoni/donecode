@@ -1,34 +1,35 @@
 {
-  "name": "my-profile",
-  "version": "0.0.0",
+  "name": "donecode",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "emailjs": "^3.6.0",
-    "emailjs-com": "^3.2.0",
-    "framer-motion": "^5.2.1",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "react-ga": "^3.3.0",
-    "react-hot-toast": "^2.1.1",
-    "react-icons": "^4.3.1",
-    "react-intersection-observer": "^8.32.2",
-    "react-modal": "^3.14.3",
-    "react-router-dom": "^5.3.0",
-    "sass": "^1.43.4"
+    "@emailjs/browser": "^3.11.0",
+    "emailjs": "^3.8.1",
+    "framer-motion": "^5.6.0",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-ga": "^3.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0",
+    "react-intersection-observer": "^8.34.0",
+    "react-modal": "^3.16.1",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
-    "@types/node": "^16.11.6",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "@types/react-modal": "^3.13.1",
-    "@types/react-router-dom": "^5.3.2",
-    "@vitejs/plugin-react": "^1.0.0",
-    "prettier": "^2.4.1",
-    "typescript": "^4.3.2",
-    "vite": "^2.6.4"
+    "eslint": "^8",
+    "eslint-config-next": "14.0.0",
+    "typescript": "^5"
   }
 }

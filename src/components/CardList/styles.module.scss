@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import '../../styles/theme/defaultColors.scss';
 
 .cardList {
   max-width: 1060px;
@@ -10,6 +10,8 @@
   grid-column-gap: 3rem;
 
   .card {
+    max-height: 250px;
+    max-width: 400px;
     width: 100%;
     padding-top: 56.25%;
     border-radius: 24px;
@@ -21,12 +23,17 @@
     transition: all 0.3s ease 0s;
 
     img {
+      max-height: 250px;
+      max-width: 400px;
+      height: 100%;
       width: 100%;
+      object-fit: cover;
+      margin-top: -18px;
+
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      margin-top: -18px;
     }
 
     button {

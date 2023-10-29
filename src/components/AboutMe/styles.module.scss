@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import '../../styles/theme/defaultColors.scss';
 
 .container {
   max-width: 1366px;
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
 
     padding: 1.5rem;
-    font-family: 'Inter';
+    font-family: 'Ubuntu', sans-serif;
     color: $gray-900;
 
     hr {
@@ -23,7 +23,7 @@
     h3 {
       margin: 1.4rem 0;
       font-size: 1.8rem;
-      font-weight: 400;
+      font-weight: normal;
     }
     p + h3 {
       margin-top: 2rem;
@@ -53,10 +53,11 @@
       padding: 1rem;
       margin-top: 3rem;
       border-radius: 10px;
-
+      
+      font-family: 'Lexend', sans-serif;
       text-align: center;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 600;
 
       background: $purple-500;
@@ -81,13 +82,10 @@
     display: inline;
     margin-left: 15px;
 
-    h1,
-    h2 {
-      font-family: 'Montserrat';
-    }
-
+    
     h1 {
-      font-weight: 700;
+      font-family: 'Montserrat', "Inter";
+      font-weight: bold;
       font-size: 3.2rem;
     }
 
@@ -95,6 +93,7 @@
       margin-top: 14px;
       font-weight: 400;
       font-size: 1.5rem;
+      font-family: 'Montserrat', "Inter";
     }
   }
 

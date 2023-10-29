@@ -1,16 +1,16 @@
-import styles from './styles.module.scss';
-import { useProfile } from '../../hooks/useProfile';
-import { CardList } from '../CardList';
-import { useState } from 'react';
+import styles from './styles.module.scss'
+import { useProfile } from '../../hooks/useProfile'
+import { CardList } from '../CardList'
+import { useState } from 'react'
 
 export function SoftwaresOnline() {
   const { repositories } = useProfile()
-  const [seeMore, setSeeMore] = useState(false);
-  const repositoriesLimited = repositories.slice(0, 6);
+  const [seeMore, setSeeMore] = useState(false)
+  const repositoriesLimited = repositories.slice(0, 6)
 
   function handleSeeMore() {
-    setSeeMore(!seeMore);
-  };
+    setSeeMore(!seeMore)
+  }
 
   return (
     <div id="repositories" className={styles.container}>
@@ -21,7 +21,7 @@ export function SoftwaresOnline() {
         seeMore={seeMore}
       />
       <div className={styles.buttonSeeMore}>
-        {!seeMore ?
+        {!seeMore ? (
           <button
             type="button"
             className={styles.buttonSeeMore}
@@ -29,7 +29,7 @@ export function SoftwaresOnline() {
           >
             Ver mais
           </button>
-          :
+        ) : (
           <button
             type="button"
             className={styles.buttonSeeMore}
@@ -37,8 +37,8 @@ export function SoftwaresOnline() {
           >
             Ver menos
           </button>
-        }
+        )}
       </div>
     </div>
-  );
+  )
 }

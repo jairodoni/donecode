@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import '../../styles/theme/defaultColors.scss';
 
 .container {
   width: 80%;
@@ -9,8 +9,8 @@
   color: $gray-900;
 
   h3 {
-    font-size: 2.9rem;
-    font-weight: 400;
+    font-size: 2.875rem;
+    font-weight: medium;
     text-align: center;
 
     margin: 1rem 0 3.8rem;
@@ -32,7 +32,7 @@
       background: $purple-500;
       color: $white;
 
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       font-size: 1rem;
       font-weight: 600;
 

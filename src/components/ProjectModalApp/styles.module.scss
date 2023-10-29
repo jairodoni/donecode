@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@import '../../styles/theme/defaultColors.scss';
 
 .container {
   border-radius: 2rem;
@@ -16,7 +16,6 @@
     position: relative;
   }
   .logo_large {
-    
     max-height: 200px;
     width: 100%;
     height: 100%;
@@ -58,7 +57,7 @@
 
   label {
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: medium;
 
     display: flex;
     align-content: center;
@@ -102,7 +101,7 @@
           width: 400px;
 
           background: $gray-300;
-          font-weight: 500;
+          font-weight: medium;
           cursor: pointer;
 
           text-overflow: ellipsis;
@@ -173,14 +172,15 @@
     }
     .screenshots {
       margin-top: 1.5rem;
-
       display: grid;
       
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-row-gap: 2rem;
       grid-column-gap: 2rem;
 
-      img {
+      .screenshotImg {
+        max-width: 200px;
+        height: 100%;
         width: 100%;
       }
     }
