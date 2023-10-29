@@ -1,28 +1,14 @@
 import { useProfile } from '../../hooks/useProfile'
 import { Perfil } from './Perfil'
-import { Montserrat, Ubuntu, Poppins, Nunito } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import styles from './styles.module.scss'
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['300', '400', '500', '700'],
-})
-const ubuntu = Ubuntu({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['300', '400', '500', '700'],
-})
 
 export function AboutMe() {
   const { user } = useProfile()
 
   return (
-    <section
-      id="about_me"
-      className={`${styles.container} ${montserrat.className}`}
-    >
-      <div className={`${styles.info} ${ubuntu.className}`}>
+    <section id="about_me" className={styles.container}>
+      <div className={`${styles.info}`}>
         <Perfil name={user.name} office={user.office} avatar={user.avatar} />
         <hr />
         <h3>Sobre Mim</h3>

@@ -50,7 +50,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
         text-decoration: none;
         font-weight: 800;
         color: $gray-50;
@@ -139,7 +141,7 @@
         max-width: 100%;
         width: 100%;
         a {
-          width: 100%;
+          height: 4rem;
           margin: 15px 0;
           justify-content: center;
         }
@@ -161,6 +163,7 @@
     .container {
       .contacts {
         a {
+          font-size: 1.5rem;
           justify-content: space-between;
         }
       }

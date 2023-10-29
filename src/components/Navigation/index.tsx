@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 import styles from './styles.module.scss'
-import { Inter } from 'next/font/google'
+import { Lexend } from 'next/font/google'
 
-const inter = Inter({
+const lexend = Lexend({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500', '600', '700', '800', '900'],
@@ -56,7 +56,7 @@ export function Navigation() {
   const active = activeMenu === false ? '' : styles.active
 
   return (
-    <header className={`${styles.navigation} ${inter.className}`}>
+    <header className={`${styles.navigation} ${lexend.className}`}>
       <nav>
         <motion.h1
           variants={container}

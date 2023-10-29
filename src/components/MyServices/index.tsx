@@ -61,7 +61,7 @@ export function MyServices() {
             <motion.div
               animate={inView ? 'visible' : 'hidden'}
               variants={variants}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
               ref={ref}
             >
               <Image
@@ -74,7 +74,7 @@ export function MyServices() {
             <motion.div
               animate={inView ? 'visible' : 'hidden'}
               variants={variants}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
+              transition={{ duration: 1, ease: 'easeOut' }}
               ref={ref}
             >
               <Image src={service03} alt="UI Desig" width={200} height={200} />

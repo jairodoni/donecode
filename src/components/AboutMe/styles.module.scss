@@ -57,7 +57,7 @@
       font-family: 'Lexend', sans-serif;
       text-align: center;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
 
       background: $purple-500;
@@ -81,11 +81,12 @@
   div:last-child {
     display: inline;
     margin-left: 15px;
+    font-family: 'Ubuntu', sans-serif;
 
     
     h1 {
-      font-family: 'Montserrat', "Inter";
       font-weight: bold;
+      font-weight: 700;
       font-size: 3.2rem;
     }
 
@@ -93,7 +94,6 @@
       margin-top: 14px;
       font-weight: 400;
       font-size: 1.5rem;
-      font-family: 'Montserrat', "Inter";
     }
   }
 
