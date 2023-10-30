@@ -20,7 +20,8 @@
     "react-icons": "^4.11.0",
     "react-intersection-observer": "^8.34.0",
     "react-modal": "^3.16.1",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",

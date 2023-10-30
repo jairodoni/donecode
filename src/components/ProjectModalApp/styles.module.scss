@@ -15,6 +15,7 @@
     
     position: relative;
   }
+
   .logo_large {
     max-height: 200px;
     width: 100%;
@@ -24,11 +25,12 @@
     object-fit: cover;
     box-shadow: 0 10px 2px $gray-200;
   }
-  .logo{
+
+  .logo {
     z-index: 1;
     position: absolute;
     
-    div{
+    div {
       height: 160px;
       width: 160px; 
       border-radius: 50%;
@@ -38,14 +40,13 @@
       align-items: center;
     
       background: #FFF;
-      img{
+      > img {
         width: 140px;
         height: 140px;
         display: block;
         border-radius: 50%;
       }
     }
-    
   }
 
 
@@ -75,6 +76,7 @@
     margin-top: 5px;
     margin-left: 1.2rem;
   }
+  
   .content {
     padding: 2rem 3rem;
 
@@ -171,15 +173,15 @@
       }
     }
     .screenshots {
-      margin-top: 1.5rem;
-      display: grid;
       
+      display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-row-gap: 2rem;
       grid-column-gap: 2rem;
 
+      margin-top: 1.5rem;
+
       .screenshotImg {
-        max-width: 200px;
         height: 100%;
         width: 100%;
       }

@@ -36,8 +36,8 @@
     }
     
     .card {
-      width: 16rem;
-      height: 16rem;
+      max-width: 16rem;
+      max-height: 16rem;
       border-radius: 50%;
       overflow: hidden;
       position: relative;

@@ -1,3 +1,4 @@
+'use client'
 import { useState } from 'react'
 import { useProfile } from '../../hooks/useProfile'
 import { CardList } from '../CardList'

@@ -1,11 +1,14 @@
+'use client'
 import { FormEvent, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import emailjs from '@emailjs/browser'
 import { ImLinkedin } from 'react-icons/im'
 import { SiGithub, SiGmail } from 'react-icons/si'
 import { useProfile } from '../../hooks/useProfile'
-
+import Modal from 'react-modal'
 import styles from './styles.module.scss'
+
+Modal.setAppElement('#body')
 
 const SERVICE_ID = `${process.env.VITE_APP_SERVICE_ID}`
 const TEMPLATE_ID = `${process.env.VITE_APP_TEMPLATE_ID}`

@@ -20,15 +20,9 @@ import styles from './styles.module.scss'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-interface ProjectModalAppProps {
-  isOpen: boolean
-  onRequestClose: () => void
-}
+export function ProjectModalApp() {
+  const { showContribution, handleOpenCloseModalApp } = useProfile()
 
-export function ProjectModalApp({
-  isOpen,
-  onRequestClose,
-}: ProjectModalAppProps) {
   const { contributionSelected } = useProfile()
   const playStore = contributionSelected?.data_play_store
   const appleStore = contributionSelected?.data_apple_store
@@ -38,8 +32,8 @@ export function ProjectModalApp({
 
   return (
     <Modal
-      isOpen={isOpen}
-      onRequestClose={onRequestClose}
+      isOpen={showContribution}
+      onRequestClose={handleOpenCloseModalApp}
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
     >
@@ -51,18 +45,21 @@ export function ProjectModalApp({
                 <Image
                   src={CinesystemSmallImage}
                   alt={contributionSelected?.name}
+                  quality={90}
                 />
               )}
               {contributionSelected?.logo === 'kinoplex' && (
                 <Image
                   src={KinoplexSmallImage}
                   alt={contributionSelected?.name}
+                  quality={90}
                 />
               )}
               {contributionSelected?.logo === 'target' && (
                 <Image
                   src={TargetSmallImage}
                   alt={contributionSelected?.name}
+                  quality={90}
                 />
               )}
             </div>
@@ -72,6 +69,7 @@ export function ProjectModalApp({
               className={styles.logo_large}
               src={CinesystemLargeImage}
               alt={contributionSelected?.name}
+              quality={90}
             />
           )}
           {contributionSelected?.logo === 'kinoplex' && (
@@ -79,6 +77,7 @@ export function ProjectModalApp({
               className={styles.logo_large}
               src={KinoplexLargeImage}
               alt={contributionSelected?.name}
+              quality={90}
             />
           )}
           {contributionSelected?.logo === 'target' && (
@@ -86,12 +85,13 @@ export function ProjectModalApp({
               className={styles.logo_large}
               src={TargetLargeImage}
               alt={contributionSelected?.name}
+              quality={90}
             />
           )}
         </div>
         <button
           type="button"
-          onClick={onRequestClose}
+          onClick={handleOpenCloseModalApp}
           className="react-modal-close"
         >
           <RiCloseLine size={32} />
@@ -194,6 +194,9 @@ export function ProjectModalApp({
                 key={screenshot.image_url}
                 src={screenshot.image_url}
                 alt="screenshot"
+                quality={90}
+                height={858}
+                width={484}
               />
             ))}
           </div>

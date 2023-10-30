@@ -1,3 +1,4 @@
+'use client'
 import { useProfile } from '../../hooks/useProfile'
 import { Perfil } from './Perfil'
 import { Montserrat } from 'next/font/google'

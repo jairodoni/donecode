@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+'use client'
 import { useProfile } from '../../hooks/useProfile'
 import { Contribution } from '../../types/profileContextTypes'
 import {

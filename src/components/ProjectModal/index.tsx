@@ -15,16 +15,15 @@ interface ProjectModalProps {
   onRequestClose: () => void
 }
 
-export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
-  const { projectSelected } = useProfile()
-
+export function ProjectModal() {
+  const { showProject, handleOpenCloseModal, projectSelected } = useProfile()
   const statusColor =
     projectSelected?.status === 'Concluido' ? '#00c237' : '#DBCA2F'
 
   return (
     <Modal
-      isOpen={isOpen}
-      onRequestClose={onRequestClose}
+      isOpen={showProject}
+      onRequestClose={handleOpenCloseModal}
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
     >
@@ -32,10 +31,13 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
         <Image
           src={projectSelected ? projectSelected.image_url : ''}
           alt={projectSelected ? projectSelected?.title : ''}
+          quality={90}
+          width={1920}
+          height={1080}
         />
         <button
           type="button"
-          onClick={onRequestClose}
+          onClick={handleOpenCloseModal}
           className="react-modal-close"
         >
           <RiCloseLine size={32} />
@@ -110,6 +112,9 @@ export function ProjectModal({ isOpen, onRequestClose }: ProjectModalProps) {
                 key={screenshot.image_url}
                 src={screenshot.image_url}
                 alt="screenshot"
+                quality={90}
+                width={1920}
+                height={1080}
               />
             ))}
           </div>
