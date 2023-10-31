@@ -64,6 +64,7 @@ export function Footer() {
             <ImLinkedin size={28} />
             {filterContactLinkedin}
           </a>
+
           <a
             href={user.contacts.github}
             target="_blank"

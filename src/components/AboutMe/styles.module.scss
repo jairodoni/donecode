@@ -5,59 +5,86 @@
   margin: 0 auto;
 
   display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 1rem;
 
   .info {
+    max-width: 600px;
+    width: 100%;
+    margin-left: 4rem;
+
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
 
-    padding: 1.5rem;
+    padding: 0.5rem;
     font-family: 'Ubuntu', sans-serif;
-    color: $gray-900;
+    color: $gray-50;
 
-    hr {
-      height: 4px;
-      background-color: $gray-900;
+    span {
+      font-size: 1.25rem;
+      color: #9e96f2;
+      font-weight: 500;
     }
-
-    h3 {
-      margin: 1.4rem 0;
-      font-size: 1.8rem;
-      font-weight: normal;
-    }
-    p + h3 {
-      margin-top: 2rem;
-    }
-
-    label {
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
+    
+      h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
+      
+      h2 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
 
     p {
-      font-size: 1.4rem;
-      color: $gray-500;
+      font-size: 1rem;
+      color: $gray-50;
+      
     }
-
-    div {
-      margin: 5px 0;
-    }
-    .skills {
-      img {
-        margin: 5px;
-        border-radius: 4px;
+    
+    .redesSociais {
+      display: flex;
+      flex-direction: row;
+      gap: 0.875rem;
+      margin: 1rem 0;
+      
+      .linkedin {
+        background: $blue-300;
+      }
+      
+      .github {
+        background: $gray-800;
+      }
+      
+      .gmail {
+        background: $red-400;
+      }
+      
+      .linkedin, .github, .gmail{
+        color: $gray-50;
+        padding: 0.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
       }
     }
+
     .button {
-      max-width: 280px;
+      max-width: 248px;
       padding: 1rem;
-      margin-top: 3rem;
+      
       border-radius: 10px;
       
       font-family: 'Lexend', sans-serif;
       text-align: center;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 600;
 
       background: $purple-400;
@@ -74,32 +101,19 @@
 
 .perfil {
   display: flex;
-  align-items: center;
+  align-items: space-between;
 
-  padding: 16px 0;
-
-  div:last-child {
-    display: inline;
-    margin-left: 15px;
-    font-family: 'Ubuntu', sans-serif;
-
-    
-    h1 {
-      font-weight: bold;
-      font-weight: 700;
-      font-size: 3.2rem;
-    }
-
-    h2 {
-      margin-top: 14px;
-      font-weight: 400;
-      font-size: 1.5rem;
-    }
-  }
+  padding: 2rem 0;
 
   .userImage {
-    padding: 4px;
-    border-radius: 50%;
+    max-width: 286px;
+    max-height: 386px;
+    
+    width: fit-content;
+    height: fit-content;
+    
+    padding: 0.5rem;
+    border-radius: 8px;
     line-height: 0;
 
     background: $gray-50;
@@ -110,23 +124,66 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9E96F2",endColorstr="#393197",GradientType=1);
 
     img {
-      width: 94px;
-      height: 94px;
-      transform: scaleX(-1);
-      border-radius: 50%;
-      border: 2px solid $gray-50;
+      width: 100%;
+      height: 100%;
+
+      object-fit: scale-down;
+      border-radius: 4px;
     }
+  }
+}
+
+.timeline {
+  margin: 7rem 0;
+}
+
+
+@media (min-width: 900px) {
+  .timeline {
+    display: flex;
+    width: 100%;
   }
 }
 
 @media (max-width: 720px) {
   .perfil {
+    .info {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
     div:last-child {
       margin-left: 10px;
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 720px) {
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+
+    .info {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    div:last-child {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
   .container {
     .info {
       .button {

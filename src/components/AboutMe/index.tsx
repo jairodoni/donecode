@@ -1,110 +1,89 @@
 'use client'
+import { ImLinkedin } from 'react-icons/im'
 import { useProfile } from '../../hooks/useProfile'
-import { Perfil } from './Perfil'
-import { Montserrat } from 'next/font/google'
+
 import styles from './styles.module.scss'
+import Image from 'next/image'
+import { SiGithub, SiGmail } from 'react-icons/si'
+import { Timeline } from './Timeline'
+
+const mock = [
+  {
+    title: '2016',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    title: '2017',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    title: '2020',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+  {
+    title: '2022',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  },
+]
 
 export function AboutMe() {
   const { user } = useProfile()
 
   return (
     <section id="about_me" className={styles.container}>
-      <div className={`${styles.info}`}>
-        <Perfil name={user.name} office={user.office} avatar={user.avatar} />
-        <hr />
-        <h3>Sobre Mim</h3>
-        <p>{user.description}</p>
-        <h3>Experiencia com:</h3>
-        <label>Linguagens:</label>
-
-        <div className={styles.skills}>
-          <img
-            src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&&logo=typescript&logoColor=white"
-            alt="typescript"
-          />
-          <img
-            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-            alt="javascript"
-          />
-          <img
-            src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-            alt="html5"
-          />
-          <img
-            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-            alt="css3"
-          />
+      <div className={styles.perfil}>
+        <div className={styles.userImage}>
+          <Image src={user.avatar} alt={user.name} width={386} height={486} />
         </div>
+        <div className={styles.info}>
+          <span>Quem sou</span>
+          <h1>{user.name}</h1>
+          <h2>{user.office}</h2>
+          <p>{user.description}</p>
 
-        <label>Frameworks e recursos:</label>
-        <div className={styles.skills}>
-          <img
-            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&&logo=react&logoColor=61DAFB"
-            alt="react"
-          />
-          <img
-            src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-            alt="react native"
-          />
-          <img
-            src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
-            alt="next.js"
-          />
-          <img
-            src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-            alt="sass"
-          />
-          <img
-            src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
-            alt="styled component"
-          />
-          <img
-            src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"
-            alt="material"
-          />
-          <img
-            src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-            alt="bootstrap"
-          />
-          <img
-            src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
-            alt="node"
-          />
+          <div className={styles.redesSociais}>
+            <a
+              className={styles.linkedin}
+              href={user.contacts.linkedin}
+              target="_blank"
+            >
+              <ImLinkedin size={28} />
+            </a>
+            <a
+              className={styles.github}
+              href={user.contacts.github}
+              target="_blank"
+            >
+              <SiGithub size={30} />
+            </a>
+            <a
+              className={styles.gmail}
+              href={`mailto:${user.contacts.email}`}
+              target="_blank"
+            >
+              <SiGmail size={28} />
+            </a>
+          </div>
+          <a className={styles.button} href={user.resume} target="_blank">
+            Ver Curriculo Completo
+          </a>
         </div>
+      </div>
 
-        {/* <label>Bancos de Dados:</label>
-        <div className={styles.skills}>
-        <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" />
-        <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="sqlite" />
-        <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql" />
-      </div> */}
-
-        <label>Ferramentas:</label>
-        <div className={styles.skills}>
-          <img
-            src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
-            alt="git"
+      <div className={styles.timeline}>
+        {mock.map((point, index) => (
+          <Timeline
+            key={point.title}
+            title={point.title}
+            description={point.description}
+            position={index + 1}
+            last={index === mock.length - 1}
           />
-          <img
-            src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"
-            alt="visual studio code"
-          />
-          <img
-            src="https://img.shields.io/badge/App_Center-DC2D68?style=for-the-badge&logoColor=white"
-            alt="appcenter"
-          />
-          <img
-            src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
-            alt="jira"
-          />
-
-          {/* <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="bootstrap" /> */}
-          {/* <img src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" alt="bootstrap" /> */}
-          {/* <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" alt="bootstrap" /> */}
-        </div>
-        <a className={styles.button} href={user.resume} target="_blank">
-          Ver Curriculo Completo
-        </a>
+        ))}
       </div>
     </section>
   )
