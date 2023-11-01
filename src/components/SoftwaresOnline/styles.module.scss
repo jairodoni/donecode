@@ -1,12 +1,15 @@
 @import '../../styles/theme/defaultColors.scss';
 
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 1rem 0 3rem;
+  padding: 1rem 10% 2rem;
 
-  background: $gray-100;
-  color: $gray-900;
+  background: $gray-900;
+  color: $white;
+
+  border-top: 8px solid $black;
+  border-bottom: 8px solid $black;
 
   h3 {
     font-size: 2.875rem;
@@ -14,33 +17,5 @@
     text-align: center;
 
     margin: 1rem 0 3.8rem;
-  }
-
-  .buttonSeeMore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    button {
-      height: 40px;
-
-      margin-top: 1rem;
-      padding: 10px 24px;
-      border-radius: 24px;
-
-      border: unset;
-      background: $purple-400;
-      color: $white;
-
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-
-      transition: filter 0.2s;
-
-      &:hover {
-        filter: brightness(0.7);
-      }
-    }
   }
 }

@@ -11,7 +11,7 @@ export function Contributions() {
   return (
     <div id="apps" className={styles.container}>
       <div className={styles.triangle}>
-        <h3>Contribuições</h3>
+        <h3>Aplicativos</h3>
         <AppContribution contributions={contributions} />
       </div>
     </div>

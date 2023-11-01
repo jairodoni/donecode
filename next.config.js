@@ -5,7 +5,29 @@ const path = require('path')
 
 const nextConfig = {
   images: {
-    domains: ['i.ibb.co', 'github.com', 'raw.githubusercontent.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/jairodoni/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+        port: '',
+      },
+    ],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

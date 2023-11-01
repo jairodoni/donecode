@@ -110,10 +110,15 @@ export function Navigation() {
             </motion.a>
           </li>
           <li onClick={mobileMenu}>
+            <motion.a href="#stacks" className="item" variants={item}>
+              Conhecimentos
+            </motion.a>
+          </li>
+          {/* <li onClick={mobileMenu}>
             <motion.a href="#repositories" className="item" variants={item}>
               Repositorios
             </motion.a>
-          </li>
+          </li> */}
           {/* <li onClick={mobileMenu}>
             <motion.a
               href="#layouts"

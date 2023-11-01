@@ -14,6 +14,7 @@ import { ProjectModalApp } from '@/components/ProjectModalApp'
 import styles from '@/styles/Home.module.scss'
 import { ReactNode } from 'react'
 import { Start } from '@/components/Start'
+import { Knowledge } from '@/components/Knowledge'
 
 export const metadata: Metadata = {
   title: 'Donecode',
@@ -30,8 +31,9 @@ export default function Home() {
         <AboutMe />
         <MyServices />
         <Contributions />
-        <Repositories />
         <SoftwaresOnline />
+        <Knowledge />
+        {/* <Repositories /> */}
         <Footer />
         <ProjectModal />
         <ProjectModalApp />
