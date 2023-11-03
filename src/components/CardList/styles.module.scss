@@ -147,6 +147,6 @@
 @media (max-width: 520px) {
   .cardList {
     grid-template-columns:  1fr;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 360px));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
   }
 }

@@ -1,4 +1,5 @@
 'use client'
+import { PiGearSixFill } from 'react-icons/pi'
 import { useProfile } from '../../hooks/useProfile'
 import { Contribution } from '../../types/profileContextTypes'
 import {
@@ -19,23 +20,55 @@ export function AppContribution({ contributions }: AppContributionProps) {
 
   return (
     <div className={styles.cardList}>
-      {contributions.map((contribution) => (
-        <div key={contribution.id} className={styles.containerApp}>
-          <div
-            onClick={() => getContribution(contribution)}
-            className={styles.card}
-          >
-            {contribution.logo === 'cinesystem' && (
-              <Image src={CinesystemSmallImage} alt={contribution.name} />
+      {contributions?.map((project) => (
+        <div
+          key={project.id}
+          className={styles.card}
+          onClick={() => getContribution(project)}
+        >
+          <div className={styles.imageCard}>
+            {project.logo === 'cinesystem' && (
+              <Image
+                src={CinesystemSmallImage}
+                alt={project.name}
+                quality={80}
+                width={400}
+                height={200}
+              />
             )}
-            {contribution.logo === 'kinoplex' && (
-              <Image src={KinoplexSmallImage} alt={contribution.name} />
+            {project.logo === 'kinoplex' && (
+              <Image
+                src={KinoplexSmallImage}
+                alt={project.name}
+                quality={80}
+                width={400}
+                height={200}
+              />
             )}
-            {contribution.logo === 'target' && (
-              <Image src={TargetSmallImage} alt={contribution.name} />
+            {project.logo === 'target' && (
+              <Image
+                src={TargetSmallImage}
+                alt={project.name}
+                quality={80}
+                width={400}
+                height={200}
+              />
             )}
           </div>
-          <h3>{contribution.name}</h3>
+          <div className={styles.info}>
+            <div>
+              <h4>{project.name}</h4>
+              <p>{project.description}</p>
+            </div>
+            <div className={styles.stackList}>
+              {project.technologies?.slice(0, 5).map((tech) => (
+                <div key={tech.name} className={styles.stack}>
+                  <PiGearSixFill size={16} />
+                  <span>{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       ))}
     </div>

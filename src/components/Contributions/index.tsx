@@ -2,6 +2,7 @@
 import styles from './styles.module.scss'
 import { useProfile } from '../../hooks/useProfile'
 import { AppContribution } from '../AppContribution'
+import { CardList } from '../CardList'
 
 export function Contributions() {
   const { contributions } = useProfile()

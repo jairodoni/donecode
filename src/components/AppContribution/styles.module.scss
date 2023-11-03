@@ -2,71 +2,183 @@
 
 .cardList {
   max-width: 1060px;
-  margin: 6rem auto 2rem;
+  margin: 1rem auto 2rem;
+  padding: 3rem;
 
   display: grid;
-  
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(360px, 460px));
   grid-row-gap: 2rem;
   grid-column-gap: 3rem;
-  
 
-  .containerApp{
+  font-family: "Lexend", sans-serif;
+
+  .card {
+    background: $purple-500;
+    max-height: 480px;
+    max-width: 400px;
+    width: 100%;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: space-between;
     flex-direction: column;
 
-    h3 {
-      margin-top: 80px;
-      margin-bottom: 5rem;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      text-shadow:
-      -2px 0px 0px #333,
-      2px 0px 0px #333,
-      0px -2px 0px #333,
-      0px 2px 0px #333;
-      color: #eee;
-      
-      font-family: "Lexend", sans-serif;
-      font-size: 2.875rem;
-      font-weight: 900;
-      flex-wrap: wrap;
-    }
-    
-    .card {
-      max-width: 16rem;
-      max-height: 16rem;
-      border-radius: 50%;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 
-      transition: all 0.3s ease 0s;
+    border-radius: 24px;
+    
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    
+    transition: all 0.3s ease 0s;
+    
+    .imageCard {
+      padding-top: 56.25%;
+      position: relative;
+      border-bottom: 2px solid $gray-100;
 
       img {
+        max-height: 250px;
+        max-width: 400px;
         height: 100%;
         width: 100%;
+        
+        object-fit: cover;
+        
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
-    .card:hover {
-      filter: brightness(0.7);
+
+    .info {
+      height: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+      padding: 1rem 1rem 1.5rem;
+      color: $gray-50;
+
+      > div:first-child {
+        width: fit-content;
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin-bottom: 0.5rem;
+        }
+        
+        p {
+          font-size: 0.9rem;
+          font-weight: 300;
+          margin-bottom: 0.5rem;
+          line-height: 1.4;
+          word-break: break-all;
+          text-wrap: wrap;
+        }
+      }
+
+      .stackList {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .stack {
+          height: 1.5rem;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          background: $purple-200;
+          border-radius: 9999px;
+          padding: 0 6px;
+          margin-top: 10px;
+          
+          span {
+            margin-left: 4px;
+            font-family: "Lexend", sans-serif;
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: normal;
+          }
+          
+          @media (max-width: 550px) {
+            padding: 0 8px;
+
+            svg {
+              opacity: 0;
+              width: 0;
+              font-size: 0;
+            }
+
+            span {
+              margin: 0 auto;
+            }
+          }
+        }
+        
+        .stack + .stack {
+          margin-left: 12px;
+        }
+      }
     }
+  }
+  .card:nth-child(1) {
+    width: 100%;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    filter: brightness(0.7);
   }
 }
 
+
+
+@media (max-width: 850px) {
+  .cardList {
+    .card:nth-child(3) {
+      width: 50%;
+      grid-column: -3 / -1;
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+}
 @media (max-width: 680px) {
   .cardList {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 440px));
     gap: 1.5rem;
+    grid-column: 1;
     .card {
       border-radius: 18px;
     }
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 520px) {
+  // .cardList {
+  //   .card:nth-child(3) {
+  //     grid-template-columns:  1fr;
+  //     grid-column: 1;
+  //   }
+  // }
   .cardList {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    .card:nth-child(3) {
+      margin: 0;
+      grid-column: 1;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .cardList {
+    grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
   }
 }

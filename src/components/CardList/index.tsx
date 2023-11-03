@@ -41,10 +41,11 @@ export function CardList({
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
               </div>
-              {project.technologies?.map((stack) => (
-                <span key={stack.name} className={styles.stack}>
-                  {stack.name}
-                </span>
+              {project.technologies?.slice(0, 5).map((tech) => (
+                <div key={tech.name} className={styles.stack}>
+                  <PiGearSixFill size={16} />
+                  <span>{tech.name}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -71,10 +72,10 @@ export function CardList({
                 <p>{project.description}</p>
               </div>
               <div className={styles.stackList}>
-                {project.technologies?.slice(0, 5).map((stack) => (
-                  <div key={stack.name} className={styles.stack}>
+                {project.technologies?.slice(0, 5).map((tech) => (
+                  <div key={tech.name} className={styles.stack}>
                     <PiGearSixFill size={16} />
-                    <span>{stack.name}</span>
+                    <span>{tech.name}</span>
                   </div>
                 ))}
               </div>
