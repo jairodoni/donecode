@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useProfile } from '../../hooks/useProfile'
 import { Project } from '../../types/profileContextTypes'
+import { PiGearSixFill } from 'react-icons/pi'
 import styles from './styles.module.scss'
 
 interface CardListProps {
@@ -26,14 +27,26 @@ export function CardList({
             onClick={() => getProject(project)}
             className={styles.card}
           >
-            <Image
-              src={project.image_url}
-              alt={project.title}
-              quality={80}
-              width={400}
-              height={200}
-            />
-            <button type="button">Ver detalhes</button>
+            <div className={styles.imageCard}>
+              <Image
+                src={project.image_url}
+                alt={project.title}
+                quality={80}
+                width={400}
+                height={200}
+              />
+            </div>
+            <div className={styles.info}>
+              <div>
+                <h4>{project.title}</h4>
+                <p>{project.description}</p>
+              </div>
+              {project.technologies?.map((stack) => (
+                <span key={stack.name} className={styles.stack}>
+                  {stack.name}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       {seeMore &&
@@ -43,14 +56,29 @@ export function CardList({
             onClick={() => getProject(project)}
             className={styles.card}
           >
-            <Image
-              src={project.image_url}
-              alt={project.title}
-              quality={80}
-              width={400}
-              height={200}
-            />
-            <button type="button">Ver detalhes</button>
+            <div className={styles.imageCard}>
+              <Image
+                src={project.image_url}
+                alt={project.title}
+                quality={80}
+                width={400}
+                height={200}
+              />
+            </div>
+            <div className={styles.info}>
+              <div>
+                <h4>{project.title}</h4>
+                <p>{project.description}</p>
+              </div>
+              <div className={styles.stackList}>
+                {project.technologies?.slice(0, 5).map((stack) => (
+                  <div key={stack.name} className={styles.stack}>
+                    <PiGearSixFill size={16} />
+                    <span>{stack.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         ))}
     </div>

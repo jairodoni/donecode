@@ -15,7 +15,6 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'github.com',
         port: '',
-        pathname: '/jairodoni/**',
       },
       {
         protocol: 'https',
@@ -28,6 +27,7 @@ const nextConfig = {
         port: '',
       },
     ],
+    domains: ['github.com', 'raw.githubusercontent.com'],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

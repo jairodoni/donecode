@@ -9,7 +9,7 @@ export function SoftwaresOnline() {
 
   return (
     <section id="softwares" className={styles.container}>
-      <h3>Websites Online</h3>
+      <h3>Websites</h3>
       <CardList projects={deploys} />
     </section>
   )

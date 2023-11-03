@@ -9,6 +9,7 @@ import { useProfile } from '../../hooks/useProfile'
 
 import styles from './styles.module.scss'
 import Image from 'next/image'
+import { PiGearSixFill } from 'react-icons/pi'
 
 interface ProjectModalProps {
   isOpen: boolean
@@ -18,7 +19,7 @@ interface ProjectModalProps {
 export function ProjectModal() {
   const { showProject, handleOpenCloseModal, projectSelected } = useProfile()
   const statusColor =
-    projectSelected?.status === 'Concluido' ? '#00c237' : '#DBCA2F'
+    projectSelected?.status === 'Concluído' ? '#00c237' : '#DBCA2F'
 
   return (
     <Modal
@@ -43,38 +44,30 @@ export function ProjectModal() {
           <RiCloseLine size={32} />
         </button>
         <div className={styles.content}>
-          <h3>{projectSelected?.title}</h3>
-
+          <div className={styles.title}>
+            <h3>{projectSelected?.title}</h3>
+            <div style={{ background: statusColor }}>
+              <span>{projectSelected?.status}</span>
+            </div>
+          </div>
+          <div className="dividerHorizontal" />
           <div className={styles.infomations}>
-            <div className={styles.info}>
-              <label htmlFor="status">
-                <HiOutlineExclamationCircle size={24} />
-                Status:
-              </label>
-              <span style={{ background: statusColor }}>
-                {projectSelected?.status}
-              </span>
-            </div>
-            <div className={styles.info}>
-              <label htmlFor="repositorio">
-                <BiLink size={24} />
-                Repositorio:
-              </label>
-              <a href={projectSelected?.repository_url} target="_blank">
-                {projectSelected?.repository_url}
-              </a>
-            </div>
             {projectSelected?.preview_url && (
-              <div className={styles.info}>
-                <label htmlFor="preview">
-                  <BiLink size={24} />
-                  Preview:
-                </label>
-                <a href={projectSelected.preview_url} target="_blank">
-                  {projectSelected.preview_url}
-                </a>
-              </div>
+              <a
+                href={projectSelected?.preview_url}
+                className={styles.exportLink}
+                target="_blank"
+              >
+                Ver Website
+              </a>
             )}
+            <a
+              href={projectSelected?.repository_url}
+              className={styles.exportLink}
+              target="_blank"
+            >
+              Ver Código
+            </a>
           </div>
 
           <label htmlFor="descrição">
@@ -92,20 +85,28 @@ export function ProjectModal() {
               <ul>
                 {projectSelected?.technologies.map((tech) => (
                   <li key={tech.name}>
-                    <a href={tech?.link} target="_blank">
-                      {tech.name}
+                    <a
+                      key={tech.name}
+                      href={tech?.link}
+                      className={styles.stack}
+                      target="_blank"
+                    >
+                      <PiGearSixFill size={18} />
+                      <span>{tech.name}</span>
                     </a>
                   </li>
                 ))}
               </ul>
             </div>
           )}
-
           <div className={styles.screenshots}>
-            <label htmlFor="screenshots">
-              <FaRegImages size={24} />
-              Screenshots:
-            </label>
+            {!!projectSelected?.screenshots?.length &&
+              projectSelected?.screenshots?.length > 0 && (
+                <label htmlFor="screenshots">
+                  <FaRegImages size={24} />
+                  Screenshots:
+                </label>
+              )}
             <br />
             {projectSelected?.screenshots?.map((screenshot) => (
               <Image

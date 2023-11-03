@@ -207,7 +207,7 @@
     {
       "id": 0,
       "title": "Skyfall Tecnology",
-      "status": "Concluido",
+      "status": "Concluído",
       "image_url": "https://i.ibb.co/H4CYWKg/skyfall.png",
       "repository_url": "CODIGO PRIVADO",
       "preview_url": "https://www.skyfalltecnology.com",
@@ -247,7 +247,7 @@
     {
       "id": 1,
       "title": "Ignite Shop",
-      "status": "Concluido",
+      "status": "Concluído",
       "image_url": "https://i.ibb.co/k0rRzH2/ignite-shop.png",
       "repository_url": "https://github.com/jairodoni/ignite-shop",
       "preview_url": "https://ignite-shopp.vercel.app",
@@ -289,7 +289,7 @@
     {
       "id": 2,
       "title": "Ignite UI (Design System)",
-      "status": "Concluido",
+      "status": "Concluído",
       "image_url": "https://i.ibb.co/dtkdDVJ/ignite-ui.png",
       "repository_url": "https://github.com/jairodoni/design-system-ignite",
       "preview_url": "https://jairodoni.github.io/design-system-ignite/?path=/docs/home--docs",
@@ -333,11 +333,11 @@
     {
       "id": 3,
       "title": "Space Traveling",
-      "status": "Concluido",
+      "status": "Concluído",
       "image_url": "https://i.ibb.co/26X4CQN/spacetraveling.png",
       "repository_url": "https://github.com/jairodoni/space-traveling",
       "preview_url": "https://space-traveling-jairodoni.vercel.app",
-      "description": "Space Traveling é um blog de tecnologia voltado a programação, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente para desenvolvimento de softwares mais eficientes.",
+      "description": "Space Traveling é um blog de tecnologia voltado a programação, com intenção de manter as pessoas antenadas nas atualidades e recursos que temos atualmente.",
       "technologies": [
         {
           "name": "Next",
@@ -376,11 +376,11 @@
     {
       "id": 4,
       "title": "Todo",
-      "status": "Concluido",
+      "status": "Concluído",
       "image_url": "https://i.ibb.co/JBbkPmr/todo.png",
       "repository_url": "https://github.com/jairodoni/todo",
       "preview_url": "https://todoawesome.vercel.app",
-      "description": "Um projeto desenvolvido durante o Bootcamp Ignite da Rocketseat, o projeto Todo é um projeto básico de listagem de tarefas que pode tanto ser utilizado em trabalho como com coisas do dia a dia, podendo criar tarefas novas, confirmar tarefas concluídas e excluí-las tambem.",
+      "description": "O projeto Todo é um projeto básico de listagem de tarefas que pode tanto ser utilizado em trabalho como com coisas do dia a dia, podendo criar tarefas novas, confirmar tarefas concluídas e excluí-las tambem.",
       "technologies": [
         {
           "name": "React",
@@ -411,11 +411,11 @@
     {
       "id": 5,
       "title": "Mais Um Quiz",
-      "status": "Concluido",
+      "status": "Concluído",
       "image_url": "https://i.ibb.co/0f9g4Zz/maisumquiz.png",
       "repository_url": "https://github.com/jairodoni/MaisUmQuiz-1.0",
       "preview_url": "https://quiz-react.jairodoni.vercel.app",
-      "description": "O Mais Um Quiz é com o simples propósito de divertir as pessoas e passar um tempo criado desafios, nesta versão é somente um quiz de react, mas futuramente terá a opção de criar outros quizzes e se desafiar com eles, é um projeto feito na 'Imersão React #2' da Alura e que terá continuidade com aprimoramentos futuros.",
+      "description": "O Mais Um Quiz é com o simples propósito de divertir as pessoas e passar um tempo criado desafios.",
       "technologies": [
         {
           "name": "React",
