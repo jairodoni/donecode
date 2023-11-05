@@ -7,6 +7,7 @@ import { SiGithub, SiGmail } from 'react-icons/si'
 import { useProfile } from '../../hooks/useProfile'
 import Modal from 'react-modal'
 import styles from './styles.module.scss'
+import { Tooltip } from '../Tooltip'
 
 Modal.setAppElement('#body')
 
@@ -55,32 +56,46 @@ export function Footer() {
       <div className={styles.container}>
         <div className={styles.contacts}>
           <h3>Contatos:</h3>
-
-          <a
-            href={user.contacts.linkedin}
-            target="_blank"
-            style={{ background: '#0A66C2' }}
+          <Tooltip
+            content={
+              user.contacts.linkedin ? 'Abrir link' : 'Link indisponivel'
+            }
           >
-            <ImLinkedin size={28} />
-            {filterContactLinkedin}
-          </a>
-
-          <a
-            href={user.contacts.github}
-            target="_blank"
-            style={{ background: '#616161' }}
+            <a
+              href={user.contacts.linkedin}
+              target="_blank"
+              style={{ background: '#0A66C2' }}
+            >
+              <ImLinkedin size={28} />
+              {filterContactLinkedin}
+            </a>
+          </Tooltip>
+          <Tooltip
+            content={user.contacts.github ? 'Abrir link' : 'Link indisponivel'}
           >
-            <SiGithub size={30} />
-            {filterContactGithub}
-          </a>
-          <a
-            href={`mailto:${user.contacts.email}`}
-            target="_blank"
-            style={{ background: '#C14438' }}
+            <a
+              href={user.contacts.github}
+              target="_blank"
+              style={{ background: '#616161' }}
+            >
+              <SiGithub size={30} />
+              {filterContactGithub}
+            </a>
+          </Tooltip>
+          <Tooltip
+            content={
+              user.contacts.email ? 'Escrever e-mail' : 'Email indisponivel'
+            }
           >
-            <SiGmail size={28} />
-            {user.contacts.email}
-          </a>
+            <a
+              href={`mailto:${user.contacts.email}`}
+              target="_blank"
+              style={{ background: '#C14438' }}
+            >
+              <SiGmail size={28} />
+              {user.contacts.email}
+            </a>
+          </Tooltip>
         </div>
         <form className={styles.sendMessageForm} onSubmit={sendEmail}>
           <h3>Entre em contato:</h3>
@@ -104,7 +119,9 @@ export function Footer() {
             value={message}
             onChange={(event) => setMessage(event.target.value)}
           />
-          <button type="submit">Enviar</button>
+          <Tooltip content="Enviar mensagem">
+            <button type="submit">Enviar</button>
+          </Tooltip>
         </form>
       </div>
     </footer>

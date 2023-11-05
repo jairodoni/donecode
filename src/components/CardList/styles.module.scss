@@ -52,15 +52,13 @@
     }
 
     .info {
+      height: 100%;
+
       display: flex;
       justify-content: space-between;
       flex-direction: column;
       flex-wrap: wrap;
-      
-      
-      
-      height: 100%;
-      
+
       padding: 1rem 1rem 1.5rem;
       color: $gray-50;
 
@@ -131,7 +129,20 @@
   }
 }
 
-
+@media (max-width: 850px) {
+  .cardList {
+    .card {
+      .info {
+        > div:first-child {
+          p {
+            font-size: 0.95rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 680px) {
   .cardList {
@@ -148,5 +159,16 @@
   .cardList {
     grid-template-columns:  1fr;
     grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
+
+    .card {
+      .info {
+        > div:first-child {
+          p {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
   }
 }

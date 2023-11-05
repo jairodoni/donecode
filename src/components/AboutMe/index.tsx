@@ -6,6 +6,7 @@ import styles from './styles.module.scss'
 import Image from 'next/image'
 import { SiGithub, SiGmail } from 'react-icons/si'
 import { Timeline } from './Timeline'
+import { Tooltip } from '../Tooltip'
 
 const mock = [
   {
@@ -40,37 +41,58 @@ export function AboutMe() {
           <Image src={user.avatar} alt={user.name} width={386} height={486} />
         </div>
         <div className={styles.info}>
-          <span>Quem sou</span>
-          <h1>{user.name}</h1>
-          <h2>{user.office}</h2>
-          <p>{user.description}</p>
-
-          <div className={styles.redesSociais}>
-            <a
-              className={styles.linkedin}
-              href={user.contacts.linkedin}
-              target="_blank"
-            >
-              <ImLinkedin size={28} />
-            </a>
-            <a
-              className={styles.github}
-              href={user.contacts.github}
-              target="_blank"
-            >
-              <SiGithub size={30} />
-            </a>
-            <a
-              className={styles.gmail}
-              href={`mailto:${user.contacts.email}`}
-              target="_blank"
-            >
-              <SiGmail size={28} />
-            </a>
+          <div>
+            <span>Quem sou</span>
+            <h1>{user.name}</h1>
+            <h2>{user.office}</h2>
+            <p>{user.description}</p>
+            <div className={styles.redesSociais}>
+              <Tooltip
+                content={
+                  user.contacts.linkedin ? 'Abrir link' : 'Link indisponivel'
+                }
+              >
+                <a
+                  className={styles.linkedin}
+                  href={user.contacts.linkedin}
+                  target="_blank"
+                >
+                  <ImLinkedin size={28} />
+                </a>
+              </Tooltip>
+              <Tooltip
+                content={
+                  user.contacts.github ? 'Abrir link' : 'Link indisponivel'
+                }
+              >
+                <a
+                  className={styles.github}
+                  href={user.contacts.github}
+                  target="_blank"
+                >
+                  <SiGithub size={30} />
+                </a>
+              </Tooltip>
+              <Tooltip
+                content={
+                  user.contacts.email ? 'Escrever e-mail' : 'Email indisponivel'
+                }
+              >
+                <a
+                  className={styles.gmail}
+                  href={`mailto:${user.contacts.email}`}
+                  target="_blank"
+                >
+                  <SiGmail size={28} />
+                </a>
+              </Tooltip>
+            </div>
           </div>
-          <a className={styles.button} href={user.resume} target="_blank">
-            Ver Curriculo Completo
-          </a>
+          <Tooltip content={user.resume ? 'Abrir link' : 'Link indisponivel'}>
+            <a className={styles.button} href={user.resume} target="_blank">
+              Ver Curriculo Completo
+            </a>
+          </Tooltip>
         </div>
       </div>
 

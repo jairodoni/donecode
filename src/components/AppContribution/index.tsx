@@ -10,6 +10,7 @@ import {
 
 import styles from './styles.module.scss'
 import Image from 'next/image'
+import { Tooltip } from '../Tooltip'
 
 interface AppContributionProps {
   contributions: Contribution[]

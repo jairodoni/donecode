@@ -19,6 +19,8 @@ import {
 import styles from './styles.module.scss'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { PiGearSixFill } from 'react-icons/pi'
+import { Tooltip } from '../Tooltip'
 
 export function ProjectModalApp() {
   const { showContribution, handleOpenCloseModalApp } = useProfile()
@@ -97,63 +99,72 @@ export function ProjectModalApp() {
           <RiCloseLine size={32} />
         </button>
         <div className={styles.content}>
-          <h3>{contributionSelected?.name}</h3>
-
+          <div className={styles.title}>
+            <h3>{contributionSelected?.name}</h3>
+            <div style={{ background: statusColor }}>
+              <span>{contributionSelected?.status}</span>
+            </div>
+          </div>
+          <div className="dividerHorizontal" />
           <div className={styles.infomations}>
-            <div className={styles.info}>
-              <label htmlFor="status">
-                <HiOutlineExclamationCircle size={24} />
-                Status:
-              </label>
-              <span style={{ background: statusColor }}>
-                {contributionSelected?.status}
-              </span>
-            </div>
+            <Tooltip
+              content={
+                contributionSelected?.play_store
+                  ? 'Abrir link'
+                  : 'Link indisponivel'
+              }
+            >
+              <a
+                href={contributionSelected?.play_store}
+                className={styles.exportLink}
+                target="_blank"
+              >
+                Play Store App
+              </a>
+            </Tooltip>
+            <Tooltip
+              content={
+                contributionSelected?.apple_store
+                  ? 'Abrir link'
+                  : 'Link indisponivel'
+              }
+            >
+              <a
+                href={contributionSelected?.apple_store}
+                className={styles.exportLink}
+                target="_blank"
+              >
+                Apple Store App
+              </a>
+            </Tooltip>
+          </div>
+
+          <div className={styles.store}>
             <div className={styles.info}>
               <label htmlFor="repositorio">
-                <BiLink size={24} />
-                Play Store:
+                <FaGooglePlay size={20} />
+                Dados Play Store:
               </label>
-              <a href={contributionSelected?.play_store} target="_blank">
-                {contributionSelected?.play_store}
-              </a>
-            </div>
-            <div className={styles.info}>
-              <label htmlFor="repositorio">
-                <BiLink size={24} />
-                Apple Store:
-              </label>
-              <a href={contributionSelected?.apple_store} target="_blank">
-                {contributionSelected?.apple_store}
-              </a>
-            </div>
-            <div className={styles.store}>
-              <div className={styles.info}>
-                <label htmlFor="repositorio">
-                  <FaGooglePlay size={20} />
-                  Dados Play Store:
-                </label>
-                <div>
-                  <strong>
-                    <FaStar size={11} color="#333" />
-                    {playStore?.rating}
-                  </strong>
-                  <strong>{playStore?.number_rating}</strong>
-                  <strong>{playStore?.number_downloads}</strong>
-                </div>
+              <div>
+                <strong>
+                  <FaStar size={11} color="#f5f5f5" />
+                  {playStore?.rating}
+                </strong>
+                <strong>{playStore?.number_rating}</strong>
+                <strong>{playStore?.number_downloads}</strong>
               </div>
-              <div className={styles.info}>
-                <label htmlFor="repositorio">
-                  <FaApple size={24} />
-                  Dados Apple Store:
-                </label>
-                <div>
-                  <strong>
-                    <FaStar size={11} color="#333" />
-                    {appleStore?.rating}
-                  </strong>
-                  <strong>{appleStore?.number_rating}</strong>
-                </div>
+            </div>
+            <div className={styles.info}>
+              <label htmlFor="repositorio">
+                <FaApple size={24} />
+                Dados Apple Store:
+              </label>
+              <div>
+                <strong>
+                  <FaStar size={11} color="#f5f5f5" />
+                  {appleStore?.rating}
+                </strong>
+                <strong>{appleStore?.number_rating}</strong>
               </div>
             </div>
           </div>
@@ -173,9 +184,19 @@ export function ProjectModalApp() {
               <ul>
                 {contributionSelected?.technologies.map((tech) => (
                   <li key={tech.name}>
-                    <a href={tech?.link} target="_blank">
-                      {tech.name}
-                    </a>
+                    <Tooltip
+                      content={tech?.link ? 'Abrir link' : 'Link indisponivel'}
+                    >
+                      <a
+                        key={tech.name}
+                        href={tech?.link}
+                        className={styles.stack}
+                        target="_blank"
+                      >
+                        <PiGearSixFill size={18} />
+                        <span>{tech.name}</span>
+                      </a>
+                    </Tooltip>
                   </li>
                 ))}
               </ul>

@@ -5,6 +5,18 @@
     gap: 1.5rem;
     vertical-align: top;
 
+    font-family: "Montserrat", sans-serif;
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 0.875rem;
+    }
+
     > div:first-child {
       display: flex;
       flex-direction: column;
@@ -54,27 +66,34 @@
   .timelineItem{
     flex-direction: column;
     width: 100%;
-  
-
+    
     div:first-child {
       flex-direction: row;
       width: 100%;
-
+      
       .line {
         height: 0.5rem;
         flex: 1;
       }
-
+      
       .lastPoint {
         border-left-color: $purple-400;
         border-top-color: transparent;
         margin-top: 0;
       }
     }
-
+    
     div:last-child {
       width: 80%;
       margin-top: 0.75rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .timelineItem{
+    p {
+      font-size: 1.25rem;
     }
   }
 }

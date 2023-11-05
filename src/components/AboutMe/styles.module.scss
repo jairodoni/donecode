@@ -24,34 +24,40 @@
     font-family: 'Ubuntu', sans-serif;
     color: $gray-50;
 
+    span, h1, h2 {
+      font-family: "Montserrat", sans-serif;
+    }
+
     span {
+      margin-bottom: 0.625rem;
       font-size: 1.25rem;
       color: #9e96f2;
-      font-weight: 500;
+      font-weight: 600;
     }
     
-      h1 {
-        font-weight: bold;
-        font-size: 2.5rem;
-      }
-      
-      h2 {
-        font-weight: 400;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-      }
+    h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
 
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: $gray-50;
-      
+      margin-bottom: 1rem;
+      font-weight: 400;
     }
     
     .redesSociais {
       display: flex;
       flex-direction: row;
       gap: 0.875rem;
-      margin: 1rem 0;
+      margin-bottom: 0.625rem;
       
       .linkedin {
         background: $blue-300;
@@ -65,13 +71,18 @@
         background: $red-400;
       }
       
-      .linkedin, .github, .gmail{
+      a {
         color: $gray-50;
         padding: 0.625rem;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        transition: filter 0.2s ease;
+
+        &:hover {
+          filter: brightness(0.8)
+        }
       }
     }
 
@@ -163,33 +174,45 @@
     }
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 610px) {
   .perfil {
     flex-direction: column;
     align-items: center;
 
     .info {
+      > div {
+        margin: 1rem 0;
+      }
+
+      span {
+        font-size: 1.4rem;
+      }
+
       h1 {
         font-size: 2rem;
       }
+
       h2 {
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
+      }
+      
+      p {
+        font-size: 1.2rem;
+      }
+
+      .redesSociais {
+        margin: 1.4rem 0;
+      }
+
+      .button {
+        max-width: none;
+        font-size: 1.2rem;
       }
     }
     div:last-child {
       margin-left: 10px;
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    .info {
-      .button {
-        max-width: none;
-      }
     }
   }
 }

@@ -4,6 +4,7 @@ import { useProfile } from '../../hooks/useProfile'
 import { Project } from '../../types/profileContextTypes'
 import { PiGearSixFill } from 'react-icons/pi'
 import styles from './styles.module.scss'
+import { Tooltip } from '../Tooltip'
 
 interface CardListProps {
   projects: Project[]

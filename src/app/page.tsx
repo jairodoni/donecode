@@ -19,7 +19,7 @@ import { Knowledge } from '@/components/Knowledge'
 export const metadata: Metadata = {
   title: 'Donecode',
   description:
-    ' - Ajudando empresas e pessoas a criar aplicações digitais de forma moderna e de alta qualidade.',
+    'Ajudando empresas e pessoas a criar aplicações digitais de forma moderna e de alta qualidade.',
 }
 
 export default function Home() {

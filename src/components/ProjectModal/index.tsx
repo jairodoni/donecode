@@ -10,6 +10,7 @@ import { useProfile } from '../../hooks/useProfile'
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import { PiGearSixFill } from 'react-icons/pi'
+import { Tooltip } from '../Tooltip'
 
 interface ProjectModalProps {
   isOpen: boolean
@@ -53,21 +54,39 @@ export function ProjectModal() {
           <div className="dividerHorizontal" />
           <div className={styles.infomations}>
             {projectSelected?.preview_url && (
-              <a
-                href={projectSelected?.preview_url}
-                className={styles.exportLink}
-                target="_blank"
+              <Tooltip
+                content={
+                  projectSelected?.preview_url
+                    ? 'Abrir link'
+                    : 'Website indisponivel'
+                }
               >
-                Ver Website
-              </a>
+                <button
+                  disabled={!projectSelected?.preview_url}
+                  className={styles.exportLink}
+                >
+                  <a href={projectSelected?.preview_url} target="_blank">
+                    Ver Website
+                  </a>
+                </button>
+              </Tooltip>
             )}
-            <a
-              href={projectSelected?.repository_url}
-              className={styles.exportLink}
-              target="_blank"
+            <Tooltip
+              content={
+                projectSelected?.repository_url
+                  ? 'Abrir link'
+                  : 'Código Privado'
+              }
             >
-              Ver Código
-            </a>
+              <button
+                disabled={!projectSelected?.repository_url}
+                className={styles.exportLink}
+              >
+                <a href={projectSelected?.repository_url} target="_blank">
+                  Ver Código
+                </a>
+              </button>
+            </Tooltip>
           </div>
 
           <label htmlFor="descrição">
@@ -85,15 +104,19 @@ export function ProjectModal() {
               <ul>
                 {projectSelected?.technologies.map((tech) => (
                   <li key={tech.name}>
-                    <a
-                      key={tech.name}
-                      href={tech?.link}
-                      className={styles.stack}
-                      target="_blank"
+                    <Tooltip
+                      content={tech?.link ? 'Abrir link' : 'Link indisponivel'}
                     >
-                      <PiGearSixFill size={18} />
-                      <span>{tech.name}</span>
-                    </a>
+                      <a
+                        key={tech.name}
+                        href={tech?.link}
+                        className={styles.stack}
+                        target="_blank"
+                      >
+                        <PiGearSixFill size={18} />
+                        <span>{tech.name}</span>
+                      </a>
+                    </Tooltip>
                   </li>
                 ))}
               </ul>
