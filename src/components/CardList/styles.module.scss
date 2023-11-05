@@ -7,8 +7,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(360px, 460px));
-  grid-row-gap: 2rem;
-  grid-column-gap: 3rem;
+  row-gap: 2rem;
+  column-gap: 3rem;
 
   font-family: "Lexend", sans-serif;
 
@@ -21,7 +21,6 @@
     display: flex;
     align-items: space-between;
     flex-direction: column;
-
 
     border-radius: 24px;
     
@@ -40,9 +39,8 @@
         max-width: 400px;
         height: 100%;
         width: 100%;
-        
+
         object-fit: cover;
-        
 
         position: absolute;
         top: 50%;
@@ -159,6 +157,7 @@
   .cardList {
     grid-template-columns:  1fr;
     grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
+    place-items: center;
 
     .card {
       .info {
@@ -170,5 +169,81 @@
         }
       }
     }
+  }
+}
+
+.seeMore {
+  max-width: 1060px;
+  margin: 0 auto;
+
+  -webkit-animation: seeMore 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: seeMore 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: 0.10s;
+}
+
+@-webkit-keyframes seeMore {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  60% {
+    opacity: 0.1;
+    height: 10%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@keyframes seeMore {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  60% {
+    opacity: 0.1;
+    height: 10%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.seeLess {
+  max-width: 1060px;
+  margin: 0 auto;
+
+  -webkit-animation: seeLess 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: seeLess 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes seeLess {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  60% {
+    opacity: 0.1;
+    height: 10%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes seeLess {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  60% {
+    opacity: 0.1;
+    height: 10%;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
   }
 }

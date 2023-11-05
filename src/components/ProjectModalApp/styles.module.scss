@@ -331,8 +331,8 @@
     .screenshots {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-row-gap: 2rem;
-      grid-column-gap: 2rem;
+      row-gap: 2rem;
+      column-gap: 2rem;
 
       margin-top: 1.5rem;
 

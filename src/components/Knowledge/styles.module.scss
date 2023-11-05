@@ -1,6 +1,7 @@
 @import '../../styles/theme/defaultColors.scss';
 
 .container {
+  z-index: 5;
   width: 100%;
   margin: 0 auto;
   padding: 1rem 10% 2rem;

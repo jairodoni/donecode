@@ -2,14 +2,13 @@
 
 .cardList {
   max-width: 1060px;
-  margin: 1rem auto 2rem;
-  padding: 3rem;
+  margin: 2rem auto 4rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(360px, 460px));
-  grid-row-gap: 2rem;
-  grid-column-gap: 3rem;
+  row-gap: 2rem;
+  column-gap: 3rem;
 
   font-family: "Lexend", sans-serif;
 
@@ -136,8 +135,16 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1080px) {
   .cardList {
+    padding: 1rem 5% 2rem;
+    margin: 2rem auto 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .cardList {
+    padding: 1rem 5% 2rem;
     .card {
       .info {
         > div:first-child {
@@ -158,7 +165,7 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 650px) {
   .cardList {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 440px));
