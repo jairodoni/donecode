@@ -70,7 +70,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 6;
 
   -webkit-animation: react-modal-overlay 1.2s
     cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -88,9 +88,9 @@ button {
   border-radius: 2.5rem 2.5rem 2rem 2rem;
   z-index: 2;
 
-  -webkit-animation: react-modal-content 0.5s
+  -webkit-animation: react-modal-content 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: react-modal-content 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: react-modal-content 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
   &:focus{
     outline: none;
@@ -106,7 +106,7 @@ button {
   position: absolute;
   top: 1.2rem;
   right: 1.2rem;
-  z-index: 3;
+  z-index: 7;
 
   background: transparent;
   color: $gray-100;

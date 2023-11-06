@@ -6,16 +6,22 @@ import { ProfileProvider } from '@/contexts/profile'
 
 const lexend = Lexend({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--lexend',
   weight: ['300', '400', '500', '600', '700', '900'],
 })
 
 const inter = Inter({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--inter',
   weight: ['400', '500', '600', '700', '800', '900'],
 })
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--ubuntu',
   weight: ['300', '400', '500', '700'],
 })
 
@@ -35,11 +41,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body
-        id="body"
-        className={`${lexend.className}  ${inter.className} ${ubuntu.className}`}
-      >
-        <ProfileProvider>{children}</ProfileProvider>
+      <body id="body" className={lexend.className}>
+        <div className={inter.className}>
+          <div className={ubuntu.className}>
+            <StyledRegistry>{children}</StyledRegistry>
+          </div>
+        </div>
       </body>
     </html>
   )

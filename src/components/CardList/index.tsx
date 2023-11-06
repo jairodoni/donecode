@@ -1,12 +1,9 @@
-'use client'
 import Image from 'next/image'
-import { useProfile } from '../../hooks/useProfile'
 import { Project } from '../../types/profileContextTypes'
 import { PiGearSixFill } from 'react-icons/pi'
-import { motion } from 'framer-motion'
+import { CardLayout } from './CardLayout'
+
 import styles from './styles.module.scss'
-import { Tooltip } from '../Tooltip'
-import { useState } from 'react'
 
 interface CardListProps {
   projects: Project[]
@@ -19,19 +16,13 @@ export function CardList({
   projects,
   projectsLimited,
 }: CardListProps) {
-  const { getProject } = useProfile()
-
   const animationSeeMore = seeMore ? styles.seeMore : styles.seeLess
 
   return (
     <>
       <div className={styles.cardList}>
         {projectsLimited?.map((project) => (
-          <div
-            key={project.id}
-            onClick={() => getProject(project)}
-            className={styles.card}
-          >
+          <CardLayout key={project.id} project={project}>
             <div className={styles.imageCard}>
               <Image
                 src={project.image_url}
@@ -55,7 +46,7 @@ export function CardList({
                 ))}
               </div>
             </div>
-          </div>
+          </CardLayout>
         ))}
       </div>
       <div
@@ -64,11 +55,7 @@ export function CardList({
       >
         {seeMore &&
           projects.map((project) => (
-            <div
-              key={project.id}
-              onClick={() => getProject(project)}
-              className={styles.card}
-            >
+            <CardLayout key={project.id} project={project}>
               <div className={styles.imageCard}>
                 <Image
                   src={project.image_url}
@@ -92,7 +79,7 @@ export function CardList({
                   ))}
                 </div>
               </div>
-            </div>
+            </CardLayout>
           ))}
       </div>
     </>

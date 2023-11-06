@@ -1,6 +1,4 @@
-'use client'
 import { PiGearSixFill } from 'react-icons/pi'
-import { useProfile } from '../../hooks/useProfile'
 import { Contribution } from '../../types/profileContextTypes'
 import {
   CinesystemSmallImage,
@@ -8,25 +6,20 @@ import {
   TargetSmallImage,
 } from './imageImports'
 
-import styles from './styles.module.scss'
 import Image from 'next/image'
-import { Tooltip } from '../Tooltip'
+import { CardLayout } from './CardLayout'
+
+import styles from './styles.module.scss'
 
 interface AppContributionProps {
   contributions: Contribution[]
 }
 
 export function AppContribution({ contributions }: AppContributionProps) {
-  const { getContribution } = useProfile()
-
   return (
     <div className={styles.cardList}>
       {contributions?.map((project) => (
-        <div
-          key={project.id}
-          className={styles.card}
-          onClick={() => getContribution(project)}
-        >
+        <CardLayout key={project.id} project={project}>
           <div className={styles.imageCard}>
             {project.logo === 'cinesystem' && (
               <Image
@@ -70,7 +63,7 @@ export function AppContribution({ contributions }: AppContributionProps) {
               ))}
             </div>
           </div>
-        </div>
+        </CardLayout>
       ))}
     </div>
   )

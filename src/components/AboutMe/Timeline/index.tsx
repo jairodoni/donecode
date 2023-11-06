@@ -20,6 +20,7 @@ export function Timeline({
     threshold: 0.2,
     triggerOnce: true,
   })
+
   const variants = {
     visible: { opacity: 1, y: 0 },
     hidden: {

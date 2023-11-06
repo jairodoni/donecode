@@ -10,8 +10,7 @@ import {
   SiStyledcomponents,
   SiTypescript,
 } from 'react-icons/si'
-import { BiLogoSass, BiLogoTypescript, BiLogoJavascript } from 'react-icons/bi'
-import { RiReactjsLine } from 'react-icons/ri'
+import { BiLogoSass } from 'react-icons/bi'
 
 interface StackDescription {
   title: string | null

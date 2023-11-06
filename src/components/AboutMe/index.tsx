@@ -1,38 +1,13 @@
-'use client'
 import { ImLinkedin } from 'react-icons/im'
-import { useProfile } from '../../hooks/useProfile'
-
 import styles from './styles.module.scss'
 import Image from 'next/image'
 import { SiGithub, SiGmail } from 'react-icons/si'
 import { Timeline } from './Timeline'
 import { Tooltip } from '../Tooltip'
-
-const mock = [
-  {
-    title: '2016',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    title: '2017',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    title: '2020',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    title: '2022',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-]
+import profile from '@/services/data.json'
 
 export function AboutMe() {
-  const { user } = useProfile()
+  const { user } = profile
 
   return (
     <section id="about_me" className={styles.container}>
@@ -97,13 +72,13 @@ export function AboutMe() {
       </div>
 
       <div className={styles.timeline}>
-        {mock.map((point, index) => (
+        {user.timeline.map((point, index) => (
           <Timeline
             key={point.title}
             title={point.title}
             description={point.description}
             position={index + 1}
-            last={index === mock.length - 1}
+            last={index === user.timeline.length - 1}
           />
         ))}
       </div>
