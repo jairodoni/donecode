@@ -1,21 +1,15 @@
 'use client'
+import Image from 'next/image'
 import Modal from 'react-modal'
-import { HiOutlineExclamationCircle } from 'react-icons/hi'
 import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
-import { BiLink } from 'react-icons/bi'
 import { FaRegImages } from 'react-icons/fa'
 import { RiCloseLine } from 'react-icons/ri'
-import { useProfile } from '../../hooks/useProfile'
-
-import styles from './styles.module.scss'
-import Image from 'next/image'
 import { PiGearSixFill } from 'react-icons/pi'
+
+import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
 
-interface ProjectModalProps {
-  isOpen: boolean
-  onRequestClose: () => void
-}
+import styles from './styles.module.scss'
 
 export function ProjectModal() {
   const { showProject, handleOpenCloseModal, projectSelected } = useProfile()
@@ -89,7 +83,7 @@ export function ProjectModal() {
             </Tooltip>
           </div>
 
-          <label htmlFor="descrição">
+          <label>
             <MdOutlineDescription size={24} />
             Descrição:
           </label>
@@ -97,7 +91,7 @@ export function ProjectModal() {
 
           {projectSelected?.technologies && (
             <div className={styles.techs}>
-              <label htmlFor="Tecnologias">
+              <label>
                 <MdOutlineComputer size={24} />
                 Tecnologias:
               </label>
@@ -125,7 +119,7 @@ export function ProjectModal() {
           <div className={styles.screenshots}>
             {!!projectSelected?.screenshots?.length &&
               projectSelected?.screenshots?.length > 0 && (
-                <label htmlFor="screenshots">
+                <label>
                   <FaRegImages size={24} />
                   Screenshots:
                 </label>

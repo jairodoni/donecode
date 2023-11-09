@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import Typed from 'typed.js'
+
 import styles from './styles.module.scss'
 
 export function TypedParagraph() {

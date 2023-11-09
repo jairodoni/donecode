@@ -1,8 +1,7 @@
 import { Lexend, Inter, Ubuntu } from 'next/font/google'
+import { ProfileProvider } from '@/contexts/profile'
 
 import '@/styles/global.scss'
-import StyledRegistry from './registry'
-import { ProfileProvider } from '@/contexts/profile'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -33,6 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Favicon */}
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
@@ -44,7 +45,7 @@ export default function RootLayout({
       <body id="body" className={lexend.className}>
         <div className={inter.className}>
           <div className={ubuntu.className}>
-            <StyledRegistry>{children}</StyledRegistry>
+            <ProfileProvider>{children}</ProfileProvider>
           </div>
         </div>
       </body>

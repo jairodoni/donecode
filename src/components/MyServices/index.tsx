@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import service01 from '@/assets/images/service01.png'
@@ -7,7 +8,6 @@ import service02 from '@/assets/images/service02.png'
 import service03 from '@/assets/images/service03.png'
 
 import styles from './styles.module.scss'
-import Image from 'next/image'
 
 export function MyServices() {
   const [scaleImage, setScaleImage] = useState(0)

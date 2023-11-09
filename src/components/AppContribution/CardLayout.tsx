@@ -1,8 +1,9 @@
 'use client'
 import { ReactNode } from 'react'
-import styles from './styles.module.scss'
 import { useProfile } from '@/hooks/useProfile'
 import { Contribution } from '@/types/profileContextTypes'
+
+import styles from './styles.module.scss'
 
 interface AppContribution {
   children: ReactNode

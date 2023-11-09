@@ -27,7 +27,7 @@ const nextConfig = {
         port: '',
       },
     ],
-    domains: ['github.com', 'raw.githubusercontent.com'],
+    // domains: ['github.com', 'raw.githubusercontent.com'],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

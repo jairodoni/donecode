@@ -1,7 +1,8 @@
 'use client'
 import * as TooltipRadix from '@radix-ui/react-tooltip'
-import styles from './styles.module.scss'
 import { ReactNode } from 'react'
+
+import styles from './styles.module.scss'
 
 export interface TooltipProps {
   content: string

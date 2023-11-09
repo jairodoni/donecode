@@ -4,10 +4,12 @@ import toast, { Toaster } from 'react-hot-toast'
 import emailjs from '@emailjs/browser'
 import { ImLinkedin } from 'react-icons/im'
 import { SiGithub, SiGmail } from 'react-icons/si'
-import { useProfile } from '../../hooks/useProfile'
 import Modal from 'react-modal'
-import styles from './styles.module.scss'
+
+import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
+
+import styles from './styles.module.scss'
 
 Modal.setAppElement('#body')
 
@@ -99,21 +101,21 @@ export function Footer() {
         </div>
         <form className={styles.sendMessageForm} onSubmit={sendEmail}>
           <h3>Entre em contato:</h3>
-          <label htmlFor="name">Nome:</label>
+          <label>Nome:</label>
           <input
             type="text"
             name="name"
             value={name}
             onChange={(event) => setName(event.target.value)}
           />
-          <label htmlFor="email">Email:</label>
+          <label>Email:</label>
           <input
             type="email"
             name="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
-          <label htmlFor="mensagem">Mensagem:</label>
+          <label>Mensagem:</label>
           <textarea
             name="message"
             value={message}

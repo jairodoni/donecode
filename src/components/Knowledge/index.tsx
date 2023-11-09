@@ -1,8 +1,6 @@
 'use client'
 import { FaCss3Alt, FaHtml5, FaReact } from 'react-icons/fa6'
 import { IoLogoJavascript } from 'react-icons/io5'
-import { Stack } from './Stack/Stack'
-import styles from './styles.module.scss'
 import { useState } from 'react'
 import {
   SiNextdotjs,
@@ -11,6 +9,10 @@ import {
   SiTypescript,
 } from 'react-icons/si'
 import { BiLogoSass } from 'react-icons/bi'
+
+import { Stack } from './Stack/Stack'
+
+import styles from './styles.module.scss'
 
 interface StackDescription {
   title: string | null

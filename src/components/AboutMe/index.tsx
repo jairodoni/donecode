@@ -1,10 +1,11 @@
 import { ImLinkedin } from 'react-icons/im'
-import styles from './styles.module.scss'
 import Image from 'next/image'
 import { SiGithub, SiGmail } from 'react-icons/si'
 import { Timeline } from './Timeline'
 import { Tooltip } from '../Tooltip'
 import profile from '@/services/data.json'
+
+import styles from './styles.module.scss'
 
 export function AboutMe() {
   const { user } = profile
@@ -13,7 +14,13 @@ export function AboutMe() {
     <section id="about_me" className={styles.container}>
       <div className={styles.perfil}>
         <div className={styles.userImage}>
-          <Image src={user.avatar} alt={user.name} width={386} height={486} />
+          <Image
+            src={user.avatar}
+            alt={user.name}
+            priority
+            width={386}
+            height={486}
+          />
         </div>
         <div className={styles.info}>
           <div>

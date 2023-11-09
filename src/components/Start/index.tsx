@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import styles from './styles.module.scss'
 import waves from '@/assets/images/waves.svg'
 import { TypedParagraph } from './TypedParagraph'
+
+import styles from './styles.module.scss'
 
 export function Start() {
   return (
@@ -16,7 +17,7 @@ export function Start() {
         <TypedParagraph />
       </div>
 
-      <Image className={styles.waves} src={waves} alt="waves" />
+      <Image className={styles.waves} src={waves} priority alt="waves" />
     </section>
   )
 }

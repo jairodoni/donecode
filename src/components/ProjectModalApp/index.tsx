@@ -1,12 +1,10 @@
 'use client'
+import Image from 'next/image'
 import Modal from 'react-modal'
-import { HiOutlineExclamationCircle } from 'react-icons/hi'
-import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
-import { FiStar } from 'react-icons/fi'
-import { FaGooglePlay, FaApple, FaStar, FaRegImages } from 'react-icons/fa'
-import { BiLink } from 'react-icons/bi'
 import { RiCloseLine } from 'react-icons/ri'
-import { useProfile } from '../../hooks/useProfile'
+import { PiGearSixFill } from 'react-icons/pi'
+import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
+import { FaGooglePlay, FaApple, FaStar, FaRegImages } from 'react-icons/fa'
 import {
   CinesystemSmallImage,
   KinoplexSmallImage,
@@ -16,11 +14,10 @@ import {
   TargetLargeImage,
 } from './imageImports'
 
-import styles from './styles.module.scss'
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { PiGearSixFill } from 'react-icons/pi'
+import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
+
+import styles from './styles.module.scss'
 
 export function ProjectModalApp() {
   const { showContribution, handleOpenCloseModalApp } = useProfile()
@@ -141,7 +138,7 @@ export function ProjectModalApp() {
 
           <div className={styles.store}>
             <div className={styles.info}>
-              <label htmlFor="repositorio">
+              <label>
                 <FaGooglePlay size={20} />
                 Dados Play Store:
               </label>
@@ -155,7 +152,7 @@ export function ProjectModalApp() {
               </div>
             </div>
             <div className={styles.info}>
-              <label htmlFor="repositorio">
+              <label>
                 <FaApple size={24} />
                 Dados Apple Store:
               </label>
@@ -169,7 +166,7 @@ export function ProjectModalApp() {
             </div>
           </div>
 
-          <label htmlFor="descrição">
+          <label>
             <MdOutlineDescription size={24} />
             Descrição:
           </label>
@@ -177,7 +174,7 @@ export function ProjectModalApp() {
 
           {contributionSelected?.technologies && (
             <div className={styles.techs}>
-              <label htmlFor="Tecnologias">
+              <label>
                 <MdOutlineComputer size={24} />
                 Tecnologias:
               </label>
@@ -204,7 +201,7 @@ export function ProjectModalApp() {
           )}
 
           <div className={styles.screenshots}>
-            <label htmlFor="screenshots">
+            <label>
               <FaRegImages size={24} />
               Screenshots:
             </label>

@@ -3,14 +3,17 @@ import { ReactNode } from 'react'
 import { useProfile } from '@/hooks/useProfile'
 import { Project } from '@/types/profileContextTypes'
 
-import styles from './styles.module.scss'
+import styles from '../styles.module.scss'
 
-interface AppContribution {
+interface CardActiveModalClientProps {
   children: ReactNode
   project: Project
 }
 
-export function CardLayout({ children, project }: AppContribution) {
+export function CardActiveModalClient({
+  children,
+  project,
+}: CardActiveModalClientProps) {
   const { getProject } = useProfile()
 
   return (

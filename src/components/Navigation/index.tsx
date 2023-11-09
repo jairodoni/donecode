@@ -1,9 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Lexend } from 'next/font/google'
 
 import styles from './styles.module.scss'
-import { Lexend } from 'next/font/google'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -14,7 +14,16 @@ const lexend = Lexend({
 export function Navigation() {
   const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0
 
-  const [activeMenu, setActiveMenu] = useState(!(windowWidth <= 980))
+  const [activeMenu, setActiveMenu] = useState(false)
+
+  useEffect(() => {
+    if (windowWidth <= 980 && !!activeMenu) {
+      setActiveMenu(true)
+    }
+    if (windowWidth > 980 && !activeMenu) {
+      setActiveMenu(false)
+    }
+  }, [windowWidth, activeMenu])
 
   const container = {
     hidden: { opacity: 1, scale: 1 },
@@ -50,10 +59,9 @@ export function Navigation() {
     }, 2000)
 
     return () => clearInterval(timer)
-  }, [])
-  // eslint-disable-next-line @typescript-eslint/no-empty-function, prettier/prettier
-  const mobileMenu = windowWidth <= 900 ? handleActiveMenu : () => { }
-  const active = activeMenu === false ? '' : styles.active
+  }, [windowWidth])
+
+  const active = !activeMenu ? '' : styles.active
 
   return (
     <header className={`${styles.navigation} ${lexend.className}`}>
@@ -63,7 +71,7 @@ export function Navigation() {
           initial="hidden"
           animate="open"
           // eslint-disable-next-line @typescript-eslint/no-empty-function, prettier/prettier
-          onClick={activeMenu ? mobileMenu : () => { }}
+          onClick={handleActiveMenu}
         >
           <motion.a href="#start" className="item" variants={item}>
             donecode
@@ -84,51 +92,37 @@ export function Navigation() {
           initial="hidden"
           animate={activeMenu ? 'open' : 'closed'}
         >
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#start" className="item" variants={item}>
               Início
             </motion.a>
           </li>
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#about_me" className="item" variants={item}>
               Sobre
             </motion.a>
           </li>
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#services" className="item" variants={item}>
               Serviços
             </motion.a>
           </li>
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#apps" className="item" variants={item}>
               Contribuições
             </motion.a>
           </li>
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#softwares" className="item" variants={item}>
               Softwares
             </motion.a>
           </li>
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#stacks" className="item" variants={item}>
               Conhecimentos
             </motion.a>
           </li>
-          {/* <li onClick={mobileMenu}>
-            <motion.a href="#repositories" className="item" variants={item}>
-              Repositorios
-            </motion.a>
-          </li> */}
-          {/* <li onClick={mobileMenu}>
-            <motion.a
-              href="#layouts"
-              className="item"
-              variants={item}
-            >
-              Prototipos UI
-            </motion.a>
-          </li> */}
-          <li onClick={mobileMenu}>
+          <li onClick={handleActiveMenu}>
             <motion.a href="#contacts" className="item" variants={item}>
               Contatos
             </motion.a>

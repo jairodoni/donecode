@@ -15,40 +15,10 @@
 
     margin: 1rem 0 3.8rem;
   }
-
-  .buttonSeeMore {
-    z-index: 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5rem;
-
-    button {
-      height: 40px;
-
-      margin-top: 1rem;
-      padding: 10px 24px;
-      border-radius: 24px;
-
-      border: unset;
-      background: $purple-400;
-      color: $white;
-
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-
-      transition: filter 0.2s;
-
-      &:hover {
-        filter: brightness(0.7);
-      }
-    }
-  }
 }
 
 .borderBlack {
-  z-index: 5;
+  z-index: 2;
   height: 8px;
   background: $black;
 }
