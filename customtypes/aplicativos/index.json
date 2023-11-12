@@ -1,0 +1,170 @@
+{
+  "id": "aplicativos",
+  "label": "Aplicativos",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "App  Id",
+          "placeholder": "Digite o UID"
+        },
+        "type": "UID"
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Nome",
+          "placeholder": "Digite o nome do aplicativo"
+        }
+      },
+      "logo_large": {
+        "type": "Image",
+        "config": {
+          "label": "Logo Grande",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logo_small": {
+        "type": "Image",
+        "config": {
+          "label": "Logo Pequeno",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Digite a descrição"
+        }
+      },
+      "status": {
+        "type": "Select",
+        "config": {
+          "label": "Status",
+          "placeholder": "",
+          "options": ["Ativo", "Desativado"],
+          "default_value": "Ativo"
+        }
+      },
+      "apple_store": {
+        "type": "Link",
+        "config": {
+          "label": "Apple Store",
+          "placeholder": "Digite o link do aplicativo na Apple Store",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "play_store": {
+        "type": "Link",
+        "config": {
+          "label": "Play Store",
+          "placeholder": "Digite o link do aplicativo na Play Store",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "data_apple_store": {
+        "type": "Group",
+        "config": {
+          "label": "Dados do app na Apple Store",
+          "fields": {
+            "rating": {
+              "type": "Text",
+              "config": {
+                "label": "Rating",
+                "placeholder": "Digite a  nota geral"
+              }
+            },
+            "number_rating": {
+              "type": "Text",
+              "config": {
+                "label": "Number Rating",
+                "placeholder": "Digite o número de avaliações"
+              }
+            },
+            "number_downloads": {
+              "type": "Text",
+              "config": {
+                "label": "Number Downloads",
+                "placeholder": "Digite o número de downloads"
+              }
+            }
+          }
+        }
+      },
+      "data_play_store": {
+        "type": "Group",
+        "config": {
+          "label": "Dados do app na Play Store",
+          "fields": {
+            "rating": {
+              "type": "Text",
+              "config": {
+                "label": "Rating",
+                "placeholder": "Digite a  nota geral"
+              }
+            },
+            "number_rating": {
+              "type": "Text",
+              "config": {
+                "label": "Number Rating",
+                "placeholder": "Digite o número de avaliações"
+              }
+            },
+            "number_downloads": {
+              "type": "Text",
+              "config": {
+                "label": "Number Downloads",
+                "placeholder": "Digite o número de downloads"
+              }
+            }
+          }
+        }
+      },
+      "technologies": {
+        "type": "Group",
+        "config": {
+          "label": "Technologies",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": "Digite a tecnologia"
+              }
+            },
+            "link": {
+              "type": "Text",
+              "config": {
+                "label": "Link",
+                "placeholder": "Digite o link da feature"
+              }
+            }
+          }
+        }
+      },
+      "screenshots": {
+        "type": "Group",
+        "config": {
+          "label": "Screenshots",
+          "fields": {
+            "image_url": {
+              "type": "Text",
+              "config": {
+                "label": "Image Url",
+                "placeholder": "Digite o link das screenshots"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

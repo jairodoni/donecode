@@ -13,6 +13,11 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'images.prismic.io',
+        port: '',
+      },
+      {
+        protocol: 'https',
         hostname: 'github.com',
         port: '',
       },

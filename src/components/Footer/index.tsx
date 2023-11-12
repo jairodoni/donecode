@@ -10,6 +10,7 @@ import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
 
 import styles from './styles.module.scss'
+import { LinkPrismic } from '@/types/profileContextTypes'
 
 Modal.setAppElement('#body')
 
@@ -17,14 +18,21 @@ const SERVICE_ID = `${process.env.VITE_APP_SERVICE_ID}`
 const TEMPLATE_ID = `${process.env.VITE_APP_TEMPLATE_ID}`
 const USER_ID = `${process.env.VITE_APP_USER_ID}`
 
-export function Footer() {
-  const { user } = useProfile()
+interface FooterProps {
+  contacts: {
+    email: string
+    linkedin: LinkPrismic
+    github: LinkPrismic
+  }
+}
+
+export function Footer({ contacts }: FooterProps) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const filterContactGithub = user.contacts.github.split('https://www.')
-  const filterContactLinkedin = user.contacts.linkedin.split('https://www.')
+  const filterContactGithub = contacts.github.url.split('https://www.')
+  const filterContactLinkedin = contacts.linkedin.url.split('https://www.')
 
   function sendEmail(event: FormEvent) {
     event.preventDefault()
@@ -59,12 +67,10 @@ export function Footer() {
         <div className={styles.contacts}>
           <h3>Contatos:</h3>
           <Tooltip
-            content={
-              user.contacts.linkedin ? 'Abrir link' : 'Link indisponivel'
-            }
+            content={contacts.linkedin ? 'Abrir link' : 'Link indisponivel'}
           >
             <a
-              href={user.contacts.linkedin}
+              href={contacts.linkedin.url}
               target="_blank"
               style={{ background: '#0A66C2' }}
             >
@@ -73,10 +79,10 @@ export function Footer() {
             </a>
           </Tooltip>
           <Tooltip
-            content={user.contacts.github ? 'Abrir link' : 'Link indisponivel'}
+            content={contacts?.github ? 'Abrir link' : 'Link indisponivel'}
           >
             <a
-              href={user.contacts.github}
+              href={contacts.github.url}
               target="_blank"
               style={{ background: '#616161' }}
             >
@@ -85,17 +91,15 @@ export function Footer() {
             </a>
           </Tooltip>
           <Tooltip
-            content={
-              user.contacts.email ? 'Escrever e-mail' : 'Email indisponivel'
-            }
+            content={contacts.email ? 'Escrever e-mail' : 'Email indisponivel'}
           >
             <a
-              href={`mailto:${user.contacts.email}`}
+              href={`mailto:${contacts.email}`}
               target="_blank"
               style={{ background: '#C14438' }}
             >
               <SiGmail size={28} />
-              {user.contacts.email}
+              {contacts.email}
             </a>
           </Tooltip>
         </div>

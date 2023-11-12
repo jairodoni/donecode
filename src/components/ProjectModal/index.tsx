@@ -14,7 +14,7 @@ import styles from './styles.module.scss'
 export function ProjectModal() {
   const { showProject, handleOpenCloseModal, projectSelected } = useProfile()
   const statusColor =
-    projectSelected?.status === 'Concluído' ? '#00c237' : '#DBCA2F'
+    projectSelected?.data?.status === 'Concluído' ? '#00c237' : '#DBCA2F'
 
   return (
     <Modal
@@ -25,11 +25,11 @@ export function ProjectModal() {
     >
       <div className={styles.container}>
         <Image
-          src={projectSelected ? projectSelected.image_url : ''}
-          alt={projectSelected ? projectSelected?.title : ''}
+          src={String(projectSelected?.data?.image_url?.url)}
+          alt=""
           quality={90}
-          width={1920}
-          height={1080}
+          width={projectSelected?.data.image_url.dimensions.width}
+          height={projectSelected?.data.image_url.dimensions.height}
         />
         <button
           type="button"
@@ -40,26 +40,29 @@ export function ProjectModal() {
         </button>
         <div className={styles.content}>
           <div className={styles.title}>
-            <h3>{projectSelected?.title}</h3>
+            <h3>{projectSelected?.data?.name}</h3>
             <div style={{ background: statusColor }}>
-              <span>{projectSelected?.status}</span>
+              <span>{projectSelected?.data.status}</span>
             </div>
           </div>
           <div className="dividerHorizontal" />
           <div className={styles.infomations}>
-            {projectSelected?.preview_url && (
+            {projectSelected?.data?.preview_url?.url && (
               <Tooltip
                 content={
-                  projectSelected?.preview_url
+                  projectSelected?.data?.preview_url?.url
                     ? 'Abrir link'
                     : 'Website indisponivel'
                 }
               >
                 <button
-                  disabled={!projectSelected?.preview_url}
+                  disabled={!projectSelected?.data?.preview_url?.url}
                   className={styles.exportLink}
                 >
-                  <a href={projectSelected?.preview_url} target="_blank">
+                  <a
+                    href={projectSelected?.data?.preview_url?.url}
+                    target="_blank"
+                  >
                     Ver Website
                   </a>
                 </button>
@@ -67,16 +70,16 @@ export function ProjectModal() {
             )}
             <Tooltip
               content={
-                projectSelected?.repository_url
+                projectSelected?.data?.repository_url
                   ? 'Abrir link'
                   : 'Código Privado'
               }
             >
               <button
-                disabled={!projectSelected?.repository_url}
+                disabled={!projectSelected?.data?.repository_url}
                 className={styles.exportLink}
               >
-                <a href={projectSelected?.repository_url} target="_blank">
+                <a href={projectSelected?.data?.repository_url} target="_blank">
                   Ver Código
                 </a>
               </button>
@@ -87,52 +90,55 @@ export function ProjectModal() {
             <MdOutlineDescription size={24} />
             Descrição:
           </label>
-          <p>{projectSelected?.description}</p>
+          <p>{projectSelected?.data?.description}</p>
 
-          {projectSelected?.technologies && (
+          {projectSelected?.data?.technologies && (
             <div className={styles.techs}>
               <label>
                 <MdOutlineComputer size={24} />
                 Tecnologias:
               </label>
               <ul>
-                {projectSelected?.technologies.map((tech) => (
-                  <li key={tech.name}>
-                    <Tooltip
-                      content={tech?.link ? 'Abrir link' : 'Link indisponivel'}
-                    >
-                      <a
-                        key={tech.name}
-                        href={tech?.link}
-                        className={styles.stack}
-                        target="_blank"
+                {projectSelected?.data?.technologies.map((tech) => {
+                  return (
+                    <li key={tech.name}>
+                      <Tooltip
+                        content={
+                          tech?.link ? 'Abrir link' : 'Link indisponivel'
+                        }
                       >
-                        <PiGearSixFill size={18} />
-                        <span>{tech.name}</span>
-                      </a>
-                    </Tooltip>
-                  </li>
-                ))}
+                        <a
+                          href={String(tech?.link)}
+                          className={styles.stack}
+                          target="_blank"
+                        >
+                          <PiGearSixFill size={18} />
+                          <span>{tech.name}</span>
+                        </a>
+                      </Tooltip>
+                    </li>
+                  )
+                })}
               </ul>
             </div>
           )}
           <div className={styles.screenshots}>
-            {!!projectSelected?.screenshots?.length &&
-              projectSelected?.screenshots?.length > 0 && (
+            {!!projectSelected?.data?.screenshots?.length &&
+              projectSelected?.data?.screenshots?.length > 0 && (
                 <label>
                   <FaRegImages size={24} />
                   Screenshots:
                 </label>
               )}
             <br />
-            {projectSelected?.screenshots?.map((screenshot) => (
+            {projectSelected?.data?.screenshots?.map((screenshot) => (
               <Image
-                key={screenshot.image_url}
-                src={screenshot.image_url}
-                alt="screenshot"
+                key={screenshot.image_url.url}
+                src={screenshot.image_url.url}
+                alt=""
                 quality={90}
-                width={1920}
-                height={1080}
+                width={screenshot.image_url.dimensions.width}
+                height={360}
               />
             ))}
           </div>

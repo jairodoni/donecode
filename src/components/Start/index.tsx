@@ -3,17 +3,13 @@ import waves from '@/assets/images/waves.svg'
 import { TypedParagraph } from './TypedParagraph'
 
 import styles from './styles.module.scss'
+import { Title } from './Title'
 
 export function Start() {
   return (
     <section id="start" className={styles.front_cover}>
       <div className={styles.presentation}>
-        <div className={styles.title}>
-          <h1>Desenvolvedor</h1>
-        </div>
-        <div className={styles.title}>
-          <h1>Frontend.</h1>
-        </div>
+        <Title />
         <TypedParagraph />
       </div>
 

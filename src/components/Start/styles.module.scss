@@ -1,4 +1,4 @@
-@import '../../styles/theme/defaultColors.scss';
+@import '@/styles/theme/defaultColors.scss';
 
 .front_cover {
   width: 100%;
@@ -16,35 +16,6 @@
     padding-left: 5.25rem;
     color:  $gray-50;
     font-family: "Lexend", sans-serif;
-
-    .title {
-      background: $purple-600;
-      height: 4rem;
-      width: fit-content;
-      padding: 0 4px;
-      
-      display: flex;
-      align-items: flex-end;
-
-      h1{
-        font-size: 3.125rem;
-        font-weight: 700;
-      }
-    }
-
-    .title + .title {
-      margin-top: 0.75rem;
-    }
-    
-    .typed {
-      max-width: 600px;
-      margin-top: 1.375rem;
-
-      span {
-        font-size: 1.25rem;
-        font-weight: 400;
-      }
-    }
   }
 
   .waves {
@@ -57,18 +28,10 @@
   }
 }
 
-
-
 @media (max-width: 500px){
   .front_cover {
     .presentation {
       padding: 1rem;
-      .title {
-        h1{
-          font-size: 3.125rem;
-          font-weight: 700;
-        }
-      }
     }
   }
 }

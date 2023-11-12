@@ -3,24 +3,24 @@ import Image from 'next/image'
 import { SiGithub, SiGmail } from 'react-icons/si'
 import { Timeline } from './Timeline'
 import { Tooltip } from '../Tooltip'
-import profile from '@/services/data.json'
 
 import styles from './styles.module.scss'
+import { User } from '@/types/profileContextTypes'
 
-export function AboutMe() {
-  const { user } = profile
+interface AboutMeProps {
+  user: User
+}
+
+export async function AboutMe({ user }: AboutMeProps) {
+  const avatar = user.avatar.url ? user.avatar.url : ''
+  const alt = user.avatar.alt ? user.avatar.alt : ''
+  const contacts: any = user?.contacts[0]
 
   return (
     <section id="about_me" className={styles.container}>
       <div className={styles.perfil}>
         <div className={styles.userImage}>
-          <Image
-            src={user.avatar}
-            alt={user.name}
-            priority
-            width={386}
-            height={486}
-          />
+          <Image src={avatar} alt={alt} priority width={386} height={486} />
         </div>
         <div className={styles.info}>
           <div>
@@ -31,25 +31,23 @@ export function AboutMe() {
             <div className={styles.redesSociais}>
               <Tooltip
                 content={
-                  user.contacts.linkedin ? 'Abrir link' : 'Link indisponivel'
+                  contacts?.linkedin?.url ? 'Abrir link' : 'Link indisponivel'
                 }
               >
                 <a
                   className={styles.linkedin}
-                  href={user.contacts.linkedin}
+                  href={String(contacts?.linkedin?.url)}
                   target="_blank"
                 >
                   <ImLinkedin size={28} />
                 </a>
               </Tooltip>
               <Tooltip
-                content={
-                  user.contacts.github ? 'Abrir link' : 'Link indisponivel'
-                }
+                content={contacts.github ? 'Abrir link' : 'Link indisponivel'}
               >
                 <a
                   className={styles.github}
-                  href={user.contacts.github}
+                  href={String(contacts?.github?.url)}
                   target="_blank"
                 >
                   <SiGithub size={30} />
@@ -57,12 +55,12 @@ export function AboutMe() {
               </Tooltip>
               <Tooltip
                 content={
-                  user.contacts.email ? 'Escrever e-mail' : 'Email indisponivel'
+                  contacts?.email ? 'Escrever e-mail' : 'Email indisponivel'
                 }
               >
                 <a
                   className={styles.gmail}
-                  href={`mailto:${user.contacts.email}`}
+                  href={`mailto:${contacts?.email}`}
                   target="_blank"
                 >
                   <SiGmail size={28} />
@@ -71,7 +69,11 @@ export function AboutMe() {
             </div>
           </div>
           <Tooltip content={user.resume ? 'Abrir link' : 'Link indisponivel'}>
-            <a className={styles.button} href={user.resume} target="_blank">
+            <a
+              className={styles.button}
+              href={String(user.resume)}
+              target="_blank"
+            >
               Ver Curriculo Completo
             </a>
           </Tooltip>
@@ -82,8 +84,8 @@ export function AboutMe() {
         {user.timeline.map((point, index) => (
           <Timeline
             key={point.title}
-            title={point.title}
-            description={point.description}
+            title={String(point.title)}
+            description={String(point.description)}
             position={index + 1}
             last={index === user.timeline.length - 1}
           />

@@ -21,7 +21,6 @@ export function CardListLayout({
   const [seeMore, setSeeMore] = useState<boolean>(false)
 
   function handleSeeMore() {
-    console.log(listProjects)
     setSeeMore((state) => {
       return !state
     })
@@ -37,12 +36,12 @@ export function CardListLayout({
         className={`${animationSeeMore} ${styles.cardList}`}
       >
         {seeMore &&
-          listProjects?.slice(0, listProjects.length)?.map((project) => (
+          listProjects.slice(6, listProjects.length)?.map((project) => (
             <CardActiveModalClient key={project.id} project={project}>
               <div className={styles.imageCard}>
                 <Image
-                  src={project.image_url}
-                  alt={project.title}
+                  src={project.data.image_url.url}
+                  alt=""
                   quality={80}
                   width={400}
                   height={200}
@@ -50,11 +49,11 @@ export function CardListLayout({
               </div>
               <div className={styles.info}>
                 <div>
-                  <h4>{project.title}</h4>
-                  <p>{project.description}</p>
+                  <h4>{project.data.name}</h4>
+                  <p>{project.data.description}</p>
                 </div>
                 <div className={styles.stackList}>
-                  {project.technologies?.slice(0, 5).map((tech) => (
+                  {project.data.technologies?.slice(0, 5).map((tech) => (
                     <div key={tech.name} className={styles.stack}>
                       <PiGearSixFill size={16} />
                       <span>{tech.name}</span>

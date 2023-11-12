@@ -1,17 +1,20 @@
 import { CardList } from '../CardList'
-import profile from '@/services/data.json'
+import { createClient } from '@/services/prismicio'
 
 import styles from './styles.module.scss'
 
-export function SoftwaresOnline() {
-  const { deploys } = profile
+export async function SoftwaresOnline() {
+  const prismic = createClient()
+
+  const response = await prismic.getAllByType('websites')
+  const projects: any = response.sort((x, y) => Number(x.uid) - Number(y.uid))
 
   return (
     <>
       <div className={styles.borderBlack} />
       <section id="softwares" className={styles.container}>
         <h3>Websites</h3>
-        <CardList projects={deploys} />
+        <CardList projects={projects} />
       </section>
       <div className={styles.borderBlack} />
     </>

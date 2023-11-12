@@ -1,13 +1,13 @@
 'use client'
 import { ReactNode } from 'react'
 import { useProfile } from '@/hooks/useProfile'
-import { Contribution } from '@/types/profileContextTypes'
+import { Aplicativos } from '@/types/profileContextTypes'
 
 import styles from './styles.module.scss'
 
 interface AppContribution {
   children: ReactNode
-  project: Contribution
+  project: Aplicativos
 }
 
 export function CardLayout({ children, project }: AppContribution) {

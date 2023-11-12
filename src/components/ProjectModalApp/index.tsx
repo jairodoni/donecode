@@ -5,14 +5,6 @@ import { RiCloseLine } from 'react-icons/ri'
 import { PiGearSixFill } from 'react-icons/pi'
 import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
 import { FaGooglePlay, FaApple, FaStar, FaRegImages } from 'react-icons/fa'
-import {
-  CinesystemSmallImage,
-  KinoplexSmallImage,
-  TargetSmallImage,
-  CinesystemLargeImage,
-  KinoplexLargeImage,
-  TargetLargeImage,
-} from './imageImports'
 
 import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
@@ -22,12 +14,14 @@ import styles from './styles.module.scss'
 export function ProjectModalApp() {
   const { showContribution, handleOpenCloseModalApp } = useProfile()
 
-  const { contributionSelected } = useProfile()
-  const playStore = contributionSelected?.data_play_store
-  const appleStore = contributionSelected?.data_apple_store
+  const { appSelected } = useProfile()
+  const playStore = appSelected?.data.data_play_store[0]
+  const appleStore = appSelected?.data.data_apple_store[0]
+  const logoLarge = appSelected?.data.logo_large
+  const logoSmall = appSelected?.data.logo_small
 
   const statusColor =
-    contributionSelected?.status === 'Ativo' ? '#00c237' : '#DBCA2F'
+    appSelected?.data?.status === 'Ativo' ? '#00c237' : '#C14438'
 
   return (
     <Modal
@@ -40,53 +34,24 @@ export function ProjectModalApp() {
         <div className={styles.headerModal}>
           <div className={styles.logo}>
             <div>
-              {contributionSelected?.logo === 'cinesystem' && (
-                <Image
-                  src={CinesystemSmallImage}
-                  alt={contributionSelected?.name}
-                  quality={90}
-                />
-              )}
-              {contributionSelected?.logo === 'kinoplex' && (
-                <Image
-                  src={KinoplexSmallImage}
-                  alt={contributionSelected?.name}
-                  quality={90}
-                />
-              )}
-              {contributionSelected?.logo === 'target' && (
-                <Image
-                  src={TargetSmallImage}
-                  alt={contributionSelected?.name}
-                  quality={90}
-                />
-              )}
+              <Image
+                src={String(logoSmall?.url)}
+                alt=""
+                quality={80}
+                width={logoSmall?.dimensions?.width}
+                height={logoSmall?.dimensions?.height}
+              />
             </div>
           </div>
-          {contributionSelected?.logo === 'cinesystem' && (
-            <Image
-              className={styles.logo_large}
-              src={CinesystemLargeImage}
-              alt={contributionSelected?.name}
-              quality={90}
-            />
-          )}
-          {contributionSelected?.logo === 'kinoplex' && (
-            <Image
-              className={styles.logo_large}
-              src={KinoplexLargeImage}
-              alt={contributionSelected?.name}
-              quality={90}
-            />
-          )}
-          {contributionSelected?.logo === 'target' && (
-            <Image
-              className={styles.logo_large}
-              src={TargetLargeImage}
-              alt={contributionSelected?.name}
-              quality={90}
-            />
-          )}
+
+          <Image
+            className={styles.logo_large}
+            src={String(logoLarge?.url)}
+            alt=""
+            quality={80}
+            width={logoLarge?.dimensions.width}
+            height={logoLarge?.dimensions.height}
+          />
         </div>
         <button
           type="button"
@@ -97,39 +62,39 @@ export function ProjectModalApp() {
         </button>
         <div className={styles.content}>
           <div className={styles.title}>
-            <h3>{contributionSelected?.name}</h3>
+            <h3>{appSelected?.data.name}</h3>
             <div style={{ background: statusColor }}>
-              <span>{contributionSelected?.status}</span>
+              <span>{appSelected?.data.status}</span>
             </div>
           </div>
           <div className="dividerHorizontal" />
           <div className={styles.infomations}>
             <Tooltip
               content={
-                contributionSelected?.play_store
+                appSelected?.data.play_store
                   ? 'Abrir link'
                   : 'Link indisponivel'
               }
             >
               <a
-                href={contributionSelected?.play_store}
+                href={appSelected?.data.play_store.url}
                 className={styles.exportLink}
-                target="_blank"
+                target={appSelected?.data.play_store.target}
               >
                 Play Store App
               </a>
             </Tooltip>
             <Tooltip
               content={
-                contributionSelected?.apple_store
+                appSelected?.data.apple_store
                   ? 'Abrir link'
                   : 'Link indisponivel'
               }
             >
               <a
-                href={contributionSelected?.apple_store}
+                href={appSelected?.data.apple_store.url}
                 className={styles.exportLink}
-                target="_blank"
+                target={appSelected?.data.apple_store.target}
               >
                 Apple Store App
               </a>
@@ -170,23 +135,23 @@ export function ProjectModalApp() {
             <MdOutlineDescription size={24} />
             Descrição:
           </label>
-          <p>{contributionSelected?.description}</p>
+          <p>{appSelected?.data.description}</p>
 
-          {contributionSelected?.technologies && (
+          {appSelected?.data.technologies && (
             <div className={styles.techs}>
               <label>
                 <MdOutlineComputer size={24} />
                 Tecnologias:
               </label>
               <ul>
-                {contributionSelected?.technologies.map((tech) => (
+                {appSelected?.data.technologies.map((tech) => (
                   <li key={tech.name}>
                     <Tooltip
                       content={tech?.link ? 'Abrir link' : 'Link indisponivel'}
                     >
                       <a
                         key={tech.name}
-                        href={tech?.link}
+                        href={tech?.link?.url}
                         className={styles.stack}
                         target="_blank"
                       >
@@ -206,7 +171,7 @@ export function ProjectModalApp() {
               Screenshots:
             </label>
             <br />
-            {contributionSelected?.screenshots?.map((screenshot) => (
+            {appSelected?.data?.screenshots?.map((screenshot) => (
               <Image
                 className={styles.screenshotImg}
                 key={screenshot.image_url}

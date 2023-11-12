@@ -1,0 +1,103 @@
+{
+  "id": "websites",
+  "label": "Websites",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "project_uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Nome",
+          "placeholder": "Digite o nome do projeto"
+        }
+      },
+      "status": {
+        "type": "Select",
+        "config": {
+          "label": "Status",
+          "placeholder": "",
+          "options": ["Concluído", "Em progresso"],
+          "default_value": "Concluído"
+        }
+      },
+      "image_url": {
+        "type": "Image",
+        "config": {
+          "label": "Imagem URL",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "repository_url": {
+        "type": "Text",
+        "config": {
+          "label": "Repositorio",
+          "placeholder": "Digite o link do repositorio"
+        }
+      },
+      "preview_url": {
+        "type": "Link",
+        "config": {
+          "label": "Website",
+          "placeholder": "Digite a URL do website",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Digite a descrição do projeto"
+        }
+      },
+      "technologies": {
+        "type": "Group",
+        "config": {
+          "label": "Technologies",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Nome",
+                "placeholder": "Digite o nome da feature"
+              }
+            },
+            "link": {
+              "type": "Text",
+              "config": {
+                "label": "Link",
+                "placeholder": "Digite o link da feature"
+              }
+            }
+          }
+        }
+      },
+      "screenshots": {
+        "type": "Group",
+        "config": {
+          "label": "Screenshots",
+          "fields": {
+            "image_url": {
+              "type": "Image",
+              "config": {
+                "label": "Imagem URL",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
