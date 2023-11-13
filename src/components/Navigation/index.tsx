@@ -12,18 +12,43 @@ const lexend = Lexend({
 })
 
 export function Navigation() {
-  const windowWidth = typeof window !== 'undefined' ? window.innerWidth : 0
-
   const [activeMenu, setActiveMenu] = useState(false)
+  const [screenWidth, setScreenWidth] = useState(0)
+
+  function handleWindowResize() {
+    setScreenWidth(window.innerWidth)
+  }
 
   useEffect(() => {
-    if (windowWidth <= 980 && !!activeMenu) {
-      setActiveMenu(true)
+    // component is mounted and window is available
+    handleWindowResize()
+    window.addEventListener('resize', handleWindowResize)
+    // unsubscribe from the event on component unmount
+    return () => window.removeEventListener('resize', handleWindowResize)
+  }, [])
+
+  useEffect(() => {
+    if (screenWidth <= 980 && activeMenu) {
+      setActiveMenu((status) => true)
     }
-    if (windowWidth > 980 && !activeMenu) {
-      setActiveMenu(false)
+    if (screenWidth > 980 && !activeMenu) {
+      setActiveMenu((status) => false)
     }
-  }, [windowWidth, activeMenu])
+  }, [screenWidth, activeMenu])
+
+  function handleActiveMenu() {
+    setActiveMenu((status) => !status)
+  }
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (screenWidth > 980) {
+        setActiveMenu(true)
+      }
+    }, 2000)
+
+    return () => clearInterval(timer)
+  }, [screenWidth])
 
   const container = {
     hidden: { opacity: 1, scale: 1 },
@@ -32,8 +57,8 @@ export function Navigation() {
       x: 0,
 
       transition: {
-        delayChildren: windowWidth <= 980 ? 0.3 : 0.2,
-        staggerChildren: windowWidth <= 980 ? 0.2 : 0.1,
+        delayChildren: screenWidth <= 980 ? 0.3 : 0.2,
+        staggerChildren: screenWidth <= 980 ? 0.2 : 0.1,
       },
     },
     closed: { opacity: 0, x: '100%' },
@@ -46,20 +71,6 @@ export function Navigation() {
       opacity: 1,
     },
   }
-
-  function handleActiveMenu() {
-    setActiveMenu(!activeMenu)
-  }
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      if (windowWidth > 980) {
-        setActiveMenu(true)
-      }
-    }, 2000)
-
-    return () => clearInterval(timer)
-  }, [windowWidth])
 
   const active = !activeMenu ? '' : styles.active
 
