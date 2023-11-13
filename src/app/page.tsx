@@ -1,17 +1,17 @@
 import { Metadata } from 'next'
 import { Navigation } from '@/components/Navigation'
+import { Start } from '@/components/Start'
 import { AboutMe } from '@/components/AboutMe'
 import { MyServices } from '@/components/MyServices'
-import { SoftwaresOnline } from '@/components/SoftwaresOnline'
 import { Footer } from '@/components/Footer'
+import { Aplicativos } from '@/components/Aplicativos'
+import { Websites } from '@/components/Websites'
+import { Knowledge } from '@/components/Knowledge'
 import { ProjectModal } from '@/components/ProjectModal'
-import { Contributions } from '@/components/Contributions'
 import { ProjectModalApp } from '@/components/ProjectModalApp'
 import { createClient } from '@/services/prismicio'
 
 import styles from '@/styles/Home.module.scss'
-import { Start } from '@/components/Start'
-import { Knowledge } from '@/components/Knowledge'
 
 export const metadata: Metadata = {
   title: 'Donecode | Portfolio',
@@ -35,8 +35,8 @@ export default async function Home() {
         <Start />
         <AboutMe user={user} />
         <MyServices />
-        <Contributions />
-        <SoftwaresOnline />
+        <Aplicativos />
+        <Websites />
         <Knowledge />
         <Footer contacts={contacts} />
         <ProjectModal />

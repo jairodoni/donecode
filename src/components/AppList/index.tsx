@@ -10,10 +10,10 @@ interface AppContributionProps {
   aplicativos: Aplicativos[]
 }
 
-export function AppContribution({ aplicativos }: AppContributionProps) {
+export function AppList({ aplicativos }: AppContributionProps) {
   return (
     <div className={styles.cardList}>
-      {aplicativos?.reverse()?.map((project) => (
+      {aplicativos?.map((project) => (
         <CardLayout key={project.uid} project={project}>
           <div className={styles.imageCard}>
             <Image
@@ -30,7 +30,7 @@ export function AppContribution({ aplicativos }: AppContributionProps) {
               <p>{project.data.description}</p>
             </div>
             <div className={styles.stackList}>
-              {project.data.technologies?.slice(0, 5).map((tech) => (
+              {project.data.technologies.slice(0, 5).map((tech) => (
                 <div key={tech.name} className={styles.stack}>
                   <PiGearSixFill size={16} />
                   <span>{tech.name}</span>

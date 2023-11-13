@@ -6,11 +6,10 @@ import { ImLinkedin } from 'react-icons/im'
 import { SiGithub, SiGmail } from 'react-icons/si'
 import Modal from 'react-modal'
 
-import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
+import { LinkPrismic } from '@/types/profileContextTypes'
 
 import styles from './styles.module.scss'
-import { LinkPrismic } from '@/types/profileContextTypes'
 
 Modal.setAppElement('#body')
 

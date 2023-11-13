@@ -28,98 +28,6 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
     
     transition: all 0.3s ease 0s;
-    
-    .imageCard {
-      padding-top: 56.25%;
-      position: relative;
-      border-bottom: 2px solid $purple-400;
-
-      img {
-        max-height: 250px;
-        max-width: 400px;
-        height: 100%;
-        width: 100%;
-
-        object-fit: cover;
-
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    .info {
-      height: 100%;
-
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      flex-wrap: wrap;
-
-      padding: 1rem 1rem 1.5rem;
-      color: $gray-50;
-
-      > div:first-child {
-        width: fit-content;
-        h4 {
-          font-size: 1.5rem;
-          font-weight: 500;
-          margin-bottom: 0.5rem;
-        }
-        
-        p {
-          font-size: 0.9rem;
-          font-weight: 300;
-          margin-bottom: 0.5rem;
-          line-height: 1.4;
-          word-break: break-all;
-          text-wrap: wrap;
-        }
-      }
-
-      .stackList {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        
-        .stack {
-          height: 1.5rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: $purple-400;
-          border-radius: 9999px;
-          padding: 0 6px;
-          margin-top: 10px;
-          
-          span {
-            margin-left: 4px;
-            font-family: "Lexend", sans-serif;
-            font-size: 0.875rem;
-            font-weight: 600;
-            line-height: normal;
-          }
-          @media (max-width: 550px) {
-            padding: 0 8px;
-
-            svg {
-              opacity: 0;
-              width: 0;
-              font-size: 0;
-            }
-
-            span {
-              margin: 0 auto;
-            }
-          }
-        }
-        
-        .stack + .stack {
-          margin-left: 12px;
-        }
-      }
-    }
   }
   .card:hover {
     transform: translateY(-5px);
@@ -127,20 +35,6 @@
   }
 }
 
-@media (max-width: 850px) {
-  .cardList {
-    .card {
-      .info {
-        > div:first-child {
-          p {
-            font-size: 0.95rem;
-            font-weight: 400;
-          }
-        }
-      }
-    }
-  }
-}
 
 @media (max-width: 680px) {
   .cardList {
@@ -158,17 +52,6 @@
     grid-template-columns:  1fr;
     grid-template-rows: repeat(auto-fit, minmax(200px, 400px));
     place-items: center;
-
-    .card {
-      .info {
-        > div:first-child {
-          p {
-            font-size: 1rem;
-            font-weight: 400;
-          }
-        }
-      }
-    }
   }
 }
 

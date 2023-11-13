@@ -12,7 +12,7 @@ const lexend = Lexend({
 })
 
 export function Navigation() {
-  const [activeMenu, setActiveMenu] = useState(false)
+  const [activeMenu, setActiveMenuDesktop] = useState(false)
   const [screenWidth, setScreenWidth] = useState(0)
 
   function handleWindowResize() {
@@ -27,23 +27,24 @@ export function Navigation() {
     return () => window.removeEventListener('resize', handleWindowResize)
   }, [])
 
-  useEffect(() => {
-    if (screenWidth <= 980 && activeMenu) {
-      setActiveMenu((status) => true)
-    }
-    if (screenWidth > 980 && !activeMenu) {
-      setActiveMenu((status) => false)
-    }
-  }, [screenWidth, activeMenu])
-
   function handleActiveMenu() {
-    setActiveMenu((status) => !status)
+    if (screenWidth <= 980) {
+      setActiveMenuDesktop((status) => !status)
+    }
   }
+
+  useEffect(() => {
+    if (screenWidth > 980 && activeMenu) {
+      console.log('BBBB')
+      handleActiveMenu()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [screenWidth])
 
   useEffect(() => {
     const timer = setInterval(() => {
       if (screenWidth > 980) {
-        setActiveMenu(true)
+        setActiveMenuDesktop(true)
       }
     }, 2000)
 
@@ -104,7 +105,12 @@ export function Navigation() {
           animate={activeMenu ? 'open' : 'closed'}
         >
           <li onClick={handleActiveMenu}>
-            <motion.a href="#start" className="item" variants={item}>
+            <motion.a
+              href="#start"
+              className="item"
+              variants={item}
+              target="_parent"
+            >
               Início
             </motion.a>
           </li>
@@ -114,7 +120,12 @@ export function Navigation() {
             </motion.a>
           </li>
           <li onClick={handleActiveMenu}>
-            <motion.a href="#services" className="item" variants={item}>
+            <motion.a
+              href="#services"
+              className="item"
+              variants={item}
+              target="_parent"
+            >
               Serviços
             </motion.a>
           </li>

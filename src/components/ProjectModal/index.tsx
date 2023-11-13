@@ -30,6 +30,7 @@ export function ProjectModal() {
           quality={90}
           width={projectSelected?.data.image_url.dimensions.width}
           height={projectSelected?.data.image_url.dimensions.height}
+          priority={true}
         />
         <button
           type="button"
@@ -131,16 +132,18 @@ export function ProjectModal() {
                 </label>
               )}
             <br />
-            {projectSelected?.data?.screenshots?.map((screenshot) => (
-              <Image
-                key={screenshot.image_url.url}
-                src={screenshot.image_url.url}
-                alt=""
-                quality={90}
-                width={screenshot.image_url.dimensions.width}
-                height={360}
-              />
-            ))}
+            {!!projectSelected?.data.screenshots.length &&
+              projectSelected.data.screenshots.length > 0 &&
+              projectSelected.data.screenshots.map((screenshot) => (
+                <Image
+                  key={screenshot?.image_url?.url}
+                  src={String(screenshot?.image_url?.url)}
+                  alt=""
+                  quality={90}
+                  width={screenshot?.image_url?.dimensions.width}
+                  height={360}
+                />
+              ))}
           </div>
         </div>
       </div>

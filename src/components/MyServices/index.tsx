@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+
 import service01 from '@/assets/images/service01.png'
 import service02 from '@/assets/images/service02.png'
 import service03 from '@/assets/images/service03.png'
@@ -11,12 +12,23 @@ import styles from './styles.module.scss'
 
 export function MyServices() {
   const [scaleImage, setScaleImage] = useState(0)
+  const [screenWidth, setScreenWidth] = useState(0)
 
-  const width = typeof window !== 'undefined' ? window.innerWidth : 0
+  function handleWindowResize() {
+    setScreenWidth(window.innerWidth)
+  }
 
   useEffect(() => {
-    if (width <= 900) {
-      if (width <= 720) {
+    // component is mounted and window is available
+    handleWindowResize()
+    window.addEventListener('resize', handleWindowResize)
+    // unsubscribe from the event on component unmount
+    return () => window.removeEventListener('resize', handleWindowResize)
+  }, [])
+
+  useEffect(() => {
+    if (screenWidth <= 900) {
+      if (screenWidth <= 720) {
         setScaleImage(1)
       } else {
         setScaleImage(0.65)
@@ -24,18 +36,19 @@ export function MyServices() {
     } else {
       setScaleImage(1)
     }
-  }, [width])
+  }, [screenWidth])
 
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
   })
+
   const variants = {
     visible: { opacity: 1, scale: 1, y: 0 },
     hidden: {
-      opacity: width <= 720 ? 1 : 0,
+      opacity: screenWidth <= 720 ? 1 : 0,
       scale: scaleImage,
-      y: width <= 1080 ? 30 : 65,
+      y: screenWidth <= 1080 ? 30 : 65,
     },
   }
 

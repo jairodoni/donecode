@@ -1,13 +1,11 @@
 'use client'
 import { ReactNode, useState } from 'react'
-import Image from 'next/image'
-import { PiGearSixFill } from 'react-icons/pi'
-
 import { Project } from '@/types/profileContextTypes'
 import { SeeMoreButton } from './SeeMoreButton'
 import { CardActiveModalClient } from './CardActiveModalClient'
 
 import styles from './styles.module.scss'
+import { InfoComponent } from './InfoComponent'
 
 interface CardListLayoutProps {
   children: ReactNode
@@ -38,29 +36,12 @@ export function CardListLayout({
         {seeMore &&
           listProjects.slice(6, listProjects.length)?.map((project) => (
             <CardActiveModalClient key={project.id} project={project}>
-              <div className={styles.imageCard}>
-                <Image
-                  src={project.data.image_url.url}
-                  alt=""
-                  quality={80}
-                  width={400}
-                  height={200}
-                />
-              </div>
-              <div className={styles.info}>
-                <div>
-                  <h4>{project.data.name}</h4>
-                  <p>{project.data.description}</p>
-                </div>
-                <div className={styles.stackList}>
-                  {project.data.technologies?.slice(0, 5).map((tech) => (
-                    <div key={tech.name} className={styles.stack}>
-                      <PiGearSixFill size={16} />
-                      <span>{tech.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <InfoComponent
+                imageUrl={project.data.image_url.url}
+                name={project.data.name}
+                description={project.data.description}
+                technologies={project.data.technologies}
+              />
             </CardActiveModalClient>
           ))}
       </div>

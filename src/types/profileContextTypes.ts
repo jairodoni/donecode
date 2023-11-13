@@ -51,12 +51,12 @@ export interface Aplicativos {
       number_rating: string
       number_downloads: string | null
     }[]
-    technologies?: {
+    technologies: {
       name: string
       link?: LinkPrismic
     }[]
-    screenshots?: {
-      image_url: string
+    screenshots: {
+      image_url?: string
     }[]
   }
 }
@@ -76,8 +76,8 @@ export interface Project {
       name: string
       link?: LinkPrismic
     }[]
-    screenshots?: {
-      image_url: ImagePrismic
+    screenshots: {
+      image_url?: ImagePrismic
     }[]
   }
 }

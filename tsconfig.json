@@ -33,7 +33,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/AppContribution/styles.sass"
   ],
   "exclude": [
     "node_modules"

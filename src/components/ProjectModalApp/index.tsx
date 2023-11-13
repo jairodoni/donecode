@@ -40,6 +40,7 @@ export function ProjectModalApp() {
                 quality={80}
                 width={logoSmall?.dimensions?.width}
                 height={logoSmall?.dimensions?.height}
+                priority={true}
               />
             </div>
           </div>
@@ -175,9 +176,9 @@ export function ProjectModalApp() {
               <Image
                 className={styles.screenshotImg}
                 key={screenshot.image_url}
-                src={screenshot.image_url}
+                src={String(screenshot.image_url)}
                 alt="screenshot"
-                quality={90}
+                quality={80}
                 height={858}
                 width={484}
               />
