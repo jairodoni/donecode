@@ -35,7 +35,6 @@ export function Navigation() {
 
   useEffect(() => {
     if (screenWidth > 980 && activeMenu) {
-      console.log('BBBB')
       handleActiveMenu()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -46,7 +45,7 @@ export function Navigation() {
       if (screenWidth > 980) {
         setActiveMenuDesktop(true)
       }
-    }, 2000)
+    }, 500)
 
     return () => clearInterval(timer)
   }, [screenWidth])
@@ -131,12 +130,12 @@ export function Navigation() {
           </li>
           <li onClick={handleActiveMenu}>
             <motion.a href="#apps" className="item" variants={item}>
-              Contribuições
+              Aplicativos
             </motion.a>
           </li>
           <li onClick={handleActiveMenu}>
             <motion.a href="#softwares" className="item" variants={item}>
-              Softwares
+              Websites
             </motion.a>
           </li>
           <li onClick={handleActiveMenu}>

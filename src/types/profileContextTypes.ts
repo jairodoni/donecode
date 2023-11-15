@@ -67,6 +67,7 @@ export interface Project {
   last_publication_date: string
   data: {
     name: string
+    order_value: number
     status: string
     image_url: ImagePrismic
     repository_url: string

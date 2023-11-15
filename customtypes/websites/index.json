@@ -13,6 +13,13 @@
         },
         "type": "UID"
       },
+      "order_value": {
+        "type": "Number",
+        "config": {
+          "label": "Posição do projeto",
+          "placeholder": "Digite o numero da posição do projeto"
+        }
+      },
       "name": {
         "type": "Text",
         "config": {
@@ -25,7 +32,7 @@
         "config": {
           "label": "Status",
           "placeholder": "",
-          "options": ["Concluído", "Em progresso"],
+          "options": ["Concluído", "Em desenvolvimento"],
           "default_value": "Concluído"
         }
       },

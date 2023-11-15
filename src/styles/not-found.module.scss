@@ -1,0 +1,176 @@
+@import './theme/defaultColors.scss';
+
+// mixins
+@mixin breakpoint($point) {
+    @if $point==tablet-02 {
+        @media (max-width: 900px) and (min-width: 700px) {
+            @content ;
+        }
+    }
+    @if $point==tablet-01 {
+        @media (max-width: 699px) and (min-width: 481px) {
+            @content ;
+        }
+    }
+    @if $point==mobile {
+        @media (max-width: 480px) and (min-width: 320px) {
+            @content ;
+        }
+    }
+}
+
+// keyrames
+@keyframes floating {
+    from { transform: translateY(0px); }
+    65%  { transform: translateY(15px); }
+    to   { transform: translateY(-0px); }
+}
+
+
+.main{
+  background-image: url('https://assets.codepen.io/1538474/star.svg'),linear-gradient(to bottom, #05007A, #4D007D);
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.mars{
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  height: 22vmin;
+  background: url('https://assets.codepen.io/1538474/mars.svg') no-repeat bottom center;
+  background-size: cover;
+}
+
+.logo404{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0vmin;
+  height: auto;
+  width: 41.125rem;
+
+  @include breakpoint(tablet-02){
+    width: 30rem;
+    top: 5vmin;
+  }
+
+  @include breakpoint(tablet-01){
+    width: 30rem;
+    top: 10vmin;
+  }
+
+  @include breakpoint(mobile){
+    width: 25rem;
+    top: 40vmin;
+  }
+}
+
+.meteor{
+  position: absolute;
+  right: 2vmin;
+  top: 16vmin;
+}
+
+.title{
+  color: $gray-50;
+  font-family: 'Lexend';
+  font-weight: 600;
+  text-align: center;
+  font-size: 5vmin;
+  margin-top: 42vmin;
+
+  @include breakpoint(tablet-02){
+    margin-top: 45vmin;
+  }
+
+  @include breakpoint(tablet-01){
+    margin-top: 55vmin;
+  }
+
+  @include breakpoint(mobile){
+    margin-top: 100vmin;
+  }
+}
+
+.subtitle{
+  color: $gray-50;
+  font-family: 'Lexend';
+  font-weight: 400;
+  text-align: center;
+  font-size: 2.5vmin;
+  margin-top: 1vmin;
+  margin-bottom: 9vmin;
+
+  @include breakpoint(mobile){
+    font-size: 4vmin;
+  }
+}
+
+.componentButton {
+  width: fit-content;
+  margin: 0 auto;
+
+  .btnBack{
+    border: 4px solid  $gray-200;
+    background: $gray-50;
+    color: #4D007D;
+
+    height: 5vmin;
+    padding: 12px;
+    font-family: 'Lexend';
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+
+    transition: filter 0.2s easeIn;
+
+    &:hover{
+      filter: brightness(0.8);
+    }
+
+    @include breakpoint(mobile){
+      font-size: 3.5vmin;
+    }
+  }
+
+  &:hover{
+    margin-top: 10px;
+  }
+}
+
+.astronaut{
+  position: absolute;
+  top: 18vmin;
+  left: 10vmin;
+  height: 25vmin;
+	animation: floating 3s infinite ease-in-out;
+
+  @include breakpoint(tablet-02){
+    top: 0.5vmin;
+    height: 20vmin;
+  }
+  @include breakpoint(tablet-01){
+    top: 0.5vmin;
+  }
+
+  @include breakpoint(mobile){
+    top: 2vmin;
+  }
+}
+
+.spaceship{
+  position: absolute;
+  bottom: 12vmin;
+  right: 24vmin;
+  width: 45vmin;
+
+  @include breakpoint(mobile){
+    bottom: 8vmin;
+  }
+}

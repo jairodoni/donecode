@@ -31,8 +31,11 @@ const nextConfig = {
         hostname: 'play-lh.googleusercontent.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.vexels.com',
+      },
     ],
-    // domains: ['github.com', 'raw.githubusercontent.com'],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

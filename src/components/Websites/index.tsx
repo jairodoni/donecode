@@ -16,6 +16,7 @@ export async function Websites() {
         last_publication_date: project.last_publication_date,
         data: {
           name: project.data.name,
+          order_value: project.data.order_value,
           status: project.data.status,
           image_url: project.data.image_url,
           repository_url: project.data.repository_url,
@@ -26,7 +27,7 @@ export async function Websites() {
         },
       }
     })
-    .sort((x, y) => Number(x.uid) - Number(y.uid))
+    .sort((x, y) => Number(x.data.order_value) - Number(y.data.order_value))
 
   return (
     <>

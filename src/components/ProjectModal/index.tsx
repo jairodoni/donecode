@@ -14,7 +14,7 @@ import styles from './styles.module.scss'
 export function ProjectModal() {
   const { showProject, handleOpenCloseModal, projectSelected } = useProfile()
   const statusColor =
-    projectSelected?.data?.status === 'Concluído' ? '#00c237' : '#DBCA2F'
+    projectSelected?.data?.status === 'Concluído' ? '#00c237' : '#DBB52E'
 
   return (
     <Modal
@@ -48,27 +48,25 @@ export function ProjectModal() {
           </div>
           <div className="dividerHorizontal" />
           <div className={styles.infomations}>
-            {projectSelected?.data?.preview_url?.url && (
-              <Tooltip
-                content={
-                  projectSelected?.data?.preview_url?.url
-                    ? 'Abrir link'
-                    : 'Website indisponivel'
-                }
+            <Tooltip
+              content={
+                projectSelected?.data?.preview_url?.url
+                  ? 'Abrir link'
+                  : 'Website indisponivel'
+              }
+            >
+              <button
+                disabled={!projectSelected?.data?.preview_url?.url}
+                className={styles.exportLink}
               >
-                <button
-                  disabled={!projectSelected?.data?.preview_url?.url}
-                  className={styles.exportLink}
+                <a
+                  href={projectSelected?.data?.preview_url?.url}
+                  target="_blank"
                 >
-                  <a
-                    href={projectSelected?.data?.preview_url?.url}
-                    target="_blank"
-                  >
-                    Ver Website
-                  </a>
-                </button>
-              </Tooltip>
-            )}
+                  Ver Website
+                </a>
+              </button>
+            </Tooltip>
             <Tooltip
               content={
                 projectSelected?.data?.repository_url

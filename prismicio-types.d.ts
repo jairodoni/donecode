@@ -468,6 +468,17 @@ export interface WebsitesDocumentDataScreenshotsItem {
  */
 interface WebsitesDocumentData {
   /**
+   * Posição do projeto field in *Websites*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: Digite o numero da posição do projeto
+   * - **API ID Path**: websites.order_value
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  order_value: prismic.NumberField;
+
+  /**
    * Nome field in *Websites*
    *
    * - **Field Type**: Text
@@ -488,7 +499,7 @@ interface WebsitesDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  status: prismic.SelectField<"Concluído" | "Em progresso", "filled">;
+  status: prismic.SelectField<"Concluído" | "Em desenvolvimento", "filled">;
 
   /**
    * Imagem URL field in *Websites*
