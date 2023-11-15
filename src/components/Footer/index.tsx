@@ -110,6 +110,7 @@ export function Footer({ contacts }: FooterProps) {
             name="name"
             value={name}
             onChange={(event) => setName(event.target.value)}
+            placeholder="Digite seu nome"
           />
           <label>Email:</label>
           <input
@@ -117,12 +118,14 @@ export function Footer({ contacts }: FooterProps) {
             name="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
+            placeholder="Digite um email de contato"
           />
           <label>Mensagem:</label>
           <textarea
             name="message"
             value={message}
             onChange={(event) => setMessage(event.target.value)}
+            placeholder="Digite sua mensagem"
           />
           <Tooltip content="Enviar mensagem">
             <button type="submit">Enviar</button>
