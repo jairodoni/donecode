@@ -69,11 +69,7 @@ export async function AboutMe({ user }: AboutMeProps) {
             </div>
           </div>
           <Tooltip content={user.resume ? 'Abrir link' : 'Link indisponivel'}>
-            <a
-              className={styles.button}
-              href={String(user.resume)}
-              target="_blank"
-            >
+            <a className={styles.button} href={user.resume.url} target="_blank">
               Ver Curriculo Completo
             </a>
           </Tooltip>

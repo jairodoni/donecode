@@ -137,7 +137,7 @@ export function ProjectModal() {
                   key={screenshot?.image_url?.url}
                   src={String(screenshot?.image_url?.url)}
                   alt=""
-                  quality={90}
+                  quality={85}
                   width={screenshot?.image_url?.dimensions.width}
                   height={360}
                 />

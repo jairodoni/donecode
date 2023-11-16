@@ -151,8 +151,8 @@ export function ProjectModalApp() {
                       content={tech?.link ? 'Abrir link' : 'Link indisponivel'}
                     >
                       <a
-                        key={tech.name}
-                        href={tech?.link?.url}
+                        key={String(tech?.name)}
+                        href={String(tech?.link)}
                         className={styles.stack}
                         target="_blank"
                       >
