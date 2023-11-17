@@ -71,8 +71,8 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
 
   - **[Next][next]**
   - **[Typescript][typescript]**
-  - **[Prismic][prismic]**
   - **[Sass][sass]**
+  - **[Prismic][prismic]**
   - **[Radix UI][radix_ui]**
   - **[Framer Motion][framer_motion]**
   - **[Email JS][emailjs]**
