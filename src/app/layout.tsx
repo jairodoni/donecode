@@ -1,4 +1,7 @@
+import { ReactNode } from 'react'
 import { Lexend, Inter, Ubuntu } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
+
 import { ProfileProvider } from '@/contexts/profile'
 
 import '@/styles/global.scss'
@@ -24,11 +27,11 @@ const ubuntu = Ubuntu({
   weight: ['300', '400', '500', '700'],
 })
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+interface RootLayoutProps {
+  children: ReactNode
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
@@ -45,7 +48,10 @@ export default function RootLayout({
       <body id="body" className={lexend.className}>
         <div className={inter.className}>
           <div className={ubuntu.className}>
-            <ProfileProvider>{children}</ProfileProvider>
+            <ProfileProvider>
+              {children}
+              <Analytics />
+            </ProfileProvider>
           </div>
         </div>
       </body>

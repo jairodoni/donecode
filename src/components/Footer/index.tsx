@@ -13,9 +13,9 @@ import styles from './styles.module.scss'
 
 Modal.setAppElement('#body')
 
-const SERVICE_ID = `${process.env.VITE_APP_SERVICE_ID}`
-const TEMPLATE_ID = `${process.env.VITE_APP_TEMPLATE_ID}`
-const USER_ID = `${process.env.VITE_APP_USER_ID}`
+const SERVICE_ID = `${process.env.EMAILJS_SERVICE_ID}`
+const TEMPLATE_ID = `${process.env.EMAILJS_TEMPLATE_ID}`
+const USER_ID = `${process.env.EMAILJS_USER_ID}`
 
 interface FooterProps {
   contacts: {

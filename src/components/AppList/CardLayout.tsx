@@ -11,10 +11,10 @@ interface AppContribution {
 }
 
 export function CardLayout({ children, project }: AppContribution) {
-  const { getContribution } = useProfile()
+  const { getAppProject } = useProfile()
 
   return (
-    <div className={styles.card} onClick={() => getContribution(project)}>
+    <div className={styles.card} onClick={() => getAppProject(project)}>
       {children}
     </div>
   )

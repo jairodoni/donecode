@@ -5,16 +5,14 @@ import { RiCloseLine } from 'react-icons/ri'
 import { PiGearSixFill } from 'react-icons/pi'
 import { MdOutlineComputer, MdOutlineDescription } from 'react-icons/md'
 import { FaGooglePlay, FaApple, FaStar, FaRegImages } from 'react-icons/fa'
-
 import { useProfile } from '../../hooks/useProfile'
 import { Tooltip } from '../Tooltip'
 
 import styles from './styles.module.scss'
 
 export function ProjectModalApp() {
-  const { showContribution, handleOpenCloseModalApp } = useProfile()
+  const { showAppProject, handleOpenCloseModalApp, appSelected } = useProfile()
 
-  const { appSelected } = useProfile()
   const playStore = appSelected?.data.data_play_store[0]
   const appleStore = appSelected?.data.data_apple_store[0]
   const logoLarge = appSelected?.data.logo_large
@@ -25,7 +23,7 @@ export function ProjectModalApp() {
 
   return (
     <Modal
-      isOpen={showContribution}
+      isOpen={showAppProject}
       onRequestClose={handleOpenCloseModalApp}
       overlayClassName="react-modal-overlay"
       className="react-modal-content"

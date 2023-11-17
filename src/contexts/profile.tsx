@@ -4,11 +4,11 @@ import { Project, Aplicativos } from '../types/profileContextTypes'
 
 interface ProfileContextData {
   showProject: boolean
-  showContribution: boolean
+  showAppProject: boolean
   projectSelected: Project | null
   appSelected: Aplicativos | null
   getProject: (project: Project) => void
-  getContribution: (app: Aplicativos) => void
+  getAppProject: (app: Aplicativos) => void
   handleOpenCloseModal: () => void
   handleOpenCloseModalApp: () => void
 }
@@ -21,7 +21,7 @@ export const ProfileContext = createContext({} as ProfileContextData)
 
 export function ProfileProvider({ children }: ProfileProviderProps) {
   const [showProject, setShowProject] = useState(false)
-  const [showContribution, setShowContribution] = useState(false)
+  const [showAppProject, setShowAppProject] = useState(false)
   const [projectSelected, setProjectSelected] = useState<Project | null>(null)
   const [appSelected, setAppSelected] = useState<Aplicativos | null>(null)
 
@@ -35,10 +35,10 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
   }
 
   function handleOpenCloseModalApp() {
-    setShowContribution(!showContribution)
+    setShowAppProject(!showAppProject)
   }
 
-  function getContribution(app: Aplicativos) {
+  function getAppProject(app: Aplicativos) {
     setAppSelected(app)
     handleOpenCloseModalApp()
   }
@@ -48,9 +48,9 @@ export function ProfileProvider({ children }: ProfileProviderProps) {
       value={{
         projectSelected,
         showProject,
-        showContribution,
+        showAppProject,
         getProject,
-        getContribution,
+        getAppProject,
         appSelected,
         handleOpenCloseModal,
         handleOpenCloseModalApp,
