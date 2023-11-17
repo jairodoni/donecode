@@ -1,10 +1,10 @@
-@import '@/styles/theme/defaultColors.scss';
+@import '../../../styles/theme/defaultColors.scss';
 
 .title {
   background: $purple-600;
   height: 4rem;
   width: fit-content;
-  padding: 0 4px;
+  padding: 0 8px;
   
   display: flex;
   align-items: flex-end;
@@ -12,6 +12,7 @@
   h1{
     font-size: 3.125rem;
     font-weight: 700;
+    text-shadow: -4px 5px 2px $gray-900;
   }
 }
 
