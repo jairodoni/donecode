@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="donecode" title="donecode" src=".github/donecode.png"/>
+    <img alt="logo-donecode" title="donecode" src=".github/logo.png"/>
 </h1>
 
 <div align="center">
@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img alt="" src=".github/ignite-shop.png" width="100%">
+  <img alt="" src=".github/donecode.png" width="100%">
 </p>
 </div>
 
@@ -72,6 +72,7 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
   - **[Next][next]**
   - **[Typescript][typescript]**
   - **[Prismic][prismic]**
+  - **[Sass][sass]**
   - **[Radix UI][radix_ui]**
   - **[Framer Motion][framer_motion]**
   - **[Email JS][emailjs]**
@@ -168,15 +169,16 @@ $ pnpm dev
 
 [next]: https://nextjs.org/
 
+[sass]: https://sass-lang.com
+
 [prismic]: https://prismic.io
 
 [emailjs]: https://www.emailjs.com
 
 [radix_ui]: https://www.radix-ui.com
 
-[sass]: https://sass-lang.com
-
 [framer_motion]: https://www.framer.com/motion/
+
 
 [prettier]: https://prettier.io
 
