@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import { HamburgerSpin } from 'react-animated-burgers'
 import { Lexend } from 'next/font/google'
 
 import styles from './styles.module.scss'
@@ -45,7 +46,7 @@ export function Navigation() {
       if (screenWidth > 980) {
         setActiveMenuDesktop(true)
       }
-    }, 500)
+    }, 1000)
 
     return () => clearInterval(timer)
   }, [screenWidth])
@@ -73,6 +74,7 @@ export function Navigation() {
   }
 
   const active = !activeMenu ? '' : styles.active
+  const hiddenHamburger = !(screenWidth <= 980)
 
   return (
     <header className={`${styles.navigation} ${lexend.className}`}>
@@ -89,14 +91,16 @@ export function Navigation() {
             <span style={{ color: '#7064fb' }}>.</span>
           </motion.a>
         </motion.h1>
-        <div
-          className={`${styles.mobileMenu} ${active}`}
-          onClick={handleActiveMenu}
-        >
-          <div className={styles.line1}></div>
-          <div className={styles.line2}></div>
-          <div className={styles.line3}></div>
-        </div>
+
+        {!hiddenHamburger && (
+          <HamburgerSpin
+            isActive={activeMenu}
+            toggleButton={handleActiveMenu}
+            barColor="#E5E5E5"
+            buttonWidth={28}
+          />
+        )}
+
         <motion.ul
           className={`${styles.navList} ${active}`}
           variants={container}

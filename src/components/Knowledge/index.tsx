@@ -29,12 +29,12 @@ export function Knowledge() {
   function onCurrentStack(stack: string) {
     if (stack !== currentStack) {
       switch (stack) {
-        case 'React':
+        case 'React JS':
           setCurrentStack(stack)
           setStackDescription({
-            title: 'React',
+            title: 'React JS',
             description:
-              'React é uma biblioteca para web e interfaces de usuário nativas. O React permite que você crie interfaces de usuário a partir de peças individuais chamadas de componentes.',
+              'React JS é uma biblioteca para web e interfaces de usuário nativas. O React permite que você crie interfaces de usuário a partir de peças individuais chamadas de componentes.',
           })
           break
         case 'React Native':
@@ -45,12 +45,12 @@ export function Knowledge() {
               'React Native é um framework baseado em React para desenvolvimento de aplicativos para Android e IOS. React Native combina as melhores partes do desenvolvimento nativo com React, a melhor biblioteca JavaScript da categoria para construção de interfaces de usuário.',
           })
           break
-        case 'Next.js':
+        case 'Next':
           setCurrentStack(stack)
           setStackDescription({
-            title: 'Next.js',
+            title: 'Next',
             description:
-              'Next.js é um framework baseado em React para construir aplicativos web full-stack. Você usa React Components para construir interfaces de usuário e Next.js para recursos e otimizações adicionais.',
+              'Next é um framework baseado em React para construir aplicativos web full-stack. Você usa React Components para construir interfaces de usuário e Next.js para recursos e otimizações adicionais.',
           })
           break
         case 'HTML5':
@@ -61,18 +61,18 @@ export function Knowledge() {
               'HTML5 (Hypertext Markup Language, versão 5) é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software.',
           })
           break
-        case 'Typescript':
+        case 'TypeScript':
           setCurrentStack(stack)
           setStackDescription({
-            title: 'Typescript',
+            title: 'TypeScript',
             description:
               'TypeScript é uma linguagem de programação fortemente tipada que se baseia em JavaScript, oferecendo melhores ferramentas em qualquer escala.',
           })
           break
-        case 'Javascript':
+        case 'JavaScript (ES6)':
           setCurrentStack(stack)
           setStackDescription({
-            title: 'Javascript',
+            title: 'JavaScript (ES6)',
             description:
               'JavaScript® (às vezes abreviado para JS) é uma linguagem leve, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos.',
           })
@@ -119,22 +119,22 @@ export function Knowledge() {
           <p>{stackDescription.description}</p>
         </div>
         <div className={styles.stacks}>
-          <Stack onCurrentStack={onCurrentStack} stack="React">
+          <Stack onCurrentStack={onCurrentStack} stack="React JS">
             <FaReact size={80} />
           </Stack>
           <Stack onCurrentStack={onCurrentStack} stack="React Native">
             <SiReact size={80} />
           </Stack>
-          <Stack onCurrentStack={onCurrentStack} stack="Next.js">
+          <Stack onCurrentStack={onCurrentStack} stack="Next">
             <SiNextdotjs size={80} />
           </Stack>
           <Stack onCurrentStack={onCurrentStack} stack="HTML5">
             <FaHtml5 size={80} />
           </Stack>
-          <Stack onCurrentStack={onCurrentStack} stack="Typescript">
+          <Stack onCurrentStack={onCurrentStack} stack="TypeScript">
             <SiTypescript size={70} />
           </Stack>
-          <Stack onCurrentStack={onCurrentStack} stack="Javascript">
+          <Stack onCurrentStack={onCurrentStack} stack="JavaScript (ES6)">
             <IoLogoJavascript size={80} />
           </Stack>
           <Stack onCurrentStack={onCurrentStack} stack="CSS3">

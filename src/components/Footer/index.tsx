@@ -66,7 +66,9 @@ export function Footer({ contacts }: FooterProps) {
         <div className={styles.contacts}>
           <h3>Contatos:</h3>
           <Tooltip
-            content={contacts.linkedin ? 'Abrir link' : 'Link indisponivel'}
+            content={
+              contacts.linkedin ? 'Abrir perfil LinkedIn' : 'Link indisponivel'
+            }
           >
             <a
               href={contacts.linkedin.url}
@@ -78,7 +80,9 @@ export function Footer({ contacts }: FooterProps) {
             </a>
           </Tooltip>
           <Tooltip
-            content={contacts?.github ? 'Abrir link' : 'Link indisponivel'}
+            content={
+              contacts?.github ? 'Abrir perfil GitHub' : 'Link indisponivel'
+            }
           >
             <a
               href={contacts.github.url}

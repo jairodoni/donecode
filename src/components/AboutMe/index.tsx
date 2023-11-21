@@ -31,7 +31,9 @@ export async function AboutMe({ user }: AboutMeProps) {
             <div className={styles.redesSociais}>
               <Tooltip
                 content={
-                  contacts?.linkedin?.url ? 'Abrir link' : 'Link indisponivel'
+                  contacts?.linkedin?.url
+                    ? 'Abrir perfil LinkedIn'
+                    : 'Link indisponivel'
                 }
               >
                 <a
@@ -43,7 +45,9 @@ export async function AboutMe({ user }: AboutMeProps) {
                 </a>
               </Tooltip>
               <Tooltip
-                content={contacts.github ? 'Abrir link' : 'Link indisponivel'}
+                content={
+                  contacts.github ? 'Abrir perfil GitHub' : 'Link indisponivel'
+                }
               >
                 <a
                   className={styles.github}
